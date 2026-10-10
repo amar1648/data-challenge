@@ -1,6 +1,2 @@
-pydantic
-requests
-python-dotenv
-jsonschema
-pytest
-ruff
+lxml>=5
+beautifulsoup4>=4.12

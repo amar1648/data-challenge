@@ -1,125 +1,96 @@
-# Aufgabenstellung Werkstudent: NRW-Datensatz und Daily Pipeline (mit n8n)
+# Data Challenge: Gesetzestexte vorbereiten
+
+Plane etwa 4 bis 6 Stunden ein.
 
 ## Kontext
-Wir bauen einen belastbaren Datenprozess fuer Rechtsdokumente aus Nordrhein-Westfalen (NRW).  
-Ziel ist ein reproduzierbares, erweiterbares Setup, das ein moeglichst vollstaendiges Dataset aufbaut und danach taeglich neue bzw. geaenderte Dokumente verarbeitet.
 
-## Rahmenbedingungen
-- **Technologie der Wahl (explizit): `n8n`**
-- Sprache der Dokumentation: Deutsch (Code und technische Bezeichner koennen Englisch sein)
-- Fokus: Stabilitaet, Nachvollziehbarkeit, Wartbarkeit
+sustaind baut eine globale Gesetzesdatenbank über mehr als 120 Länder. Die Texte kommen aus vielen Quellen und Formaten. Wir harmonisieren sie, damit sie danach sauber weiterverarbeitet werden können: Stände vergleichen, gezielt durchsuchen, eine einzelne Stelle abrufen.
 
-## Ziel der Aufgabenstellung
-Implementiere einen End-to-End-Workflow in `n8n` fuer NRW-Rechtsquellen mit zwei Betriebsmodi:
+Dabei gilt eine Maßgabe. So deterministisch und regelbasiert wie möglich. Ein KI-Modell dort, wo eine Regel nicht trägt oder wo es einen klaren Mehrwert liefert. Der typische Mehrwert in dieser Aufgabe: den Text so aufbereiten, dass er durchsuchbar wird, ohne ihn vollständig in einen Agenten zu laden.
 
-1. **Initialer Vollaufbau des Datasets (Natürlich nur angedeutet: wie bekämen wir Vollständigkeit hin, WENN wir das jetzt durchlaufen ließen?)** 
-2. **Daily Update Pipeline**
+Modelle darfst du dafür einsetzen. Welches, und an welcher Stelle, entscheidest du. Der Einstieg gibt keines vor.
 
-Wir interessieren uns ausschließlich für Gesetze, die in Kraft sind.
+## Worum es geht
 
-## Konkrete Aufgaben
+Die Quellen liefern nicht dasselbe Format: mal XML mit Gliederung und Metadaten, mal HTML, mal PDF. Der Text soll so vorbereitet werden, dass drei Konsumenten ihn nutzen können, ohne dass jeder Konsument den Rohtext neu versteht.
 
-### 1) Quellenanalyse und Datenmodell
-- Identifiziere relevante NRW-Quellen (z. B. Amtsblatt/Gesetzesportale/APIs/RSS, falls verfuegbar).
-- Dokumentiere Feldmapping Quelle -> Zieldatenmodell (siehe `schemas/enriched_legal_act.schema.json`).
+**Vergleich in der Anwendung.** Zwei Stände desselben Akts stehen nebeneinander, und es ist sichtbar, was sich geändert hat. Abzugeben ist eine strukturierte Gegenüberstellung: alte Einheit, neue Einheit, Art der Änderung. Eine Oberfläche bauen wir daraus später selbst.
 
-### 2) Vollstaendiges Dataset aufbauen (Backfill)
-- Implementiere einen `n8n`-Workflow fuer den initialen Datenaufbau.
-- Anforderungen:
-  - Pagination/Batching fuer grosse Datenmengen
-  - Deduplizierung (z. B. ueber `legal_act.document_id` + `legal_act.entity_type`)
-  - Robuste Fehlerbehandlung mit Retry-Strategie
-  - Checkpoints/Resume-Moeglichkeit bei Abbruch
-- Ergebnis: reproduzierbarer Vollimport mit nachvollziehbarem Laufprotokoll.
+**Agent.** Aus dem vorbereiteten Text sollen sich Stellen holen lassen, die eine Frage beantworten. Die beiden Fragen für diese Aufgabe:
 
-### 3) Daily Fetch / Extract / Enrich
-- Implementiere einen taeglichen `n8n`-Workflow (Scheduler/Cron in `n8n`), der:
-  1. neue/geaenderte Dokumente erkennt (`fetch`)
-  2. strukturierte Inhalte extrahiert (`extract`)
-  3. Metadaten mit LLM anreichert (`enrich`)
-- Definiere klare Regeln fuer:
-  - Idempotenz (mehrfaches Laufen ohne doppelte Seiteneffekte)
-  - Fehlerklassen (temporar vs. permanent)
-  - Monitoring/Alerting (mindestens bei Laufabbruch und hoher Fehlerquote)
+- Für wen gilt dieser Akt?
+- Welche Pflichten ergeben sich daraus?
 
-### 4) Qualitaet und Nachvollziehbarkeit
-- Fuehre minimale Datenqualitaetschecks ein:
-  - Pflichtfelder vorhanden
-  - Plausible Datumswerte
-  - Nicht-leere Inhalte bei erfolgreich verarbeiteten Dokumenten
-- Stelle pro Lauf einen Report bereit:
-  - Anzahl fetched/extracted/enriched
-  - Anzahl Fehler + Top-Fehlergruende
-  - Anzahl neuer vs. aktualisierter Dokumente
+Der Agent soll dafür nicht den ganzen Text in den Kontext bekommen. Die Antwort sind die betroffenen Stellen, mit einer Adresse und dem Textstück.
 
-## Zielmodell (`enriched`) als Vorgabe
-Das Zielmodell soll explizit im Repository liegen, damit klar ist, wie das Endergebnis aussieht.
+**API.** Kundinnen und Kunden holen gezielt eine Stelle, zum Beispiel Paragraph 3 Absatz 4. Dieselbe Schnittstelle soll die beiden inhaltlichen Fragen bedienen können, nicht nur die Stellenangabe.
 
-Beispiel (`schemas/enriched_legal_act.schema.json`):
+Lookup, Query und Diff sind drei Lesarten einer Struktur. Gliederung, die in der Quelle schon steht, liest du regelbasiert aus. Ob die beiden Fragen darüber hinaus ein Modell brauchen, begründest du im Ansatz.
 
-```json
-{
-  "legal_act": {
-    "document_id": "string",
-    "jurisdiction": "de_nw",
-    "title": "string|null",
-    "summary": "string|null",
-    "publication_date": "YYYY-MM-DD|null",
-    "entity_type": "legal_act|consolidated_act"
-  },
-  "legal_act_relations": [
-    {
-      "source_document_id": "string",
-      "target_document_id": "string",
-      "relation_type": "string",
-      "concerned_sections": [
-        {
-          "subdivision_concerned": "string",
-          "comment": "string|null"
-        }
-      ]
-    }
-  ]
-}
+## Was du abgibst
+
+- `submission/ANSATZ.md`, ausgefüllt
+- Code, der auf den beigelegten Beispielen läuft
+
+Die Sprache ist frei. Im Repo liegt ein Python-Einstieg, damit Setup und Befehle in unter 15 Minuten stehen.
+
+PDF kommt in der Realität vor und gehört in den Ansatz. Der Code muss es nicht verarbeiten. Amtsblätter und Portal-Exporte liegen oft ohne verlässliche Textschicht vor, mit Kopfzeilen, Seitenzahlen und mehreren Spalten.
+
+Nicht Teil der Aufgabe: Quellen anbinden, Zeitpläne, eine Oberfläche, eine produktive API, weitere Länder.
+
+## Beispiele
+
+Beschreibung, Herkunft und Lizenz stehen in [`samples/README.md`](samples/README.md). Dort steht auch, wo weitere Texte liegen: Gesetze im Internet als XML, EUR-Lex als HTML oder PDF, Formex über die CELLAR-Schnittstelle.
+
+Im Repo:
+
+- `samples/de/`, zehn Bundesgesetze als XML, darunter `de-burlg`
+- `samples/eu/formex/`, EU-Rechtsakte als Formex-Zip, Deutsch und Englisch, bei zwei Akten je zwei Stände
+- `samples/eu/32015R2120_de.html` und `samples/eu/02015R2120-20240515_de.html`, dieselbe Verordnung als HTML in zwei Ständen
+
+## Was der Prototyp kann
+
+Der Vertrag liegt an der Kommandozeile. Die Form der Dateien unter `output/` ist Teil der Lösung und hier nicht vorgegeben.
+
+```bash
+python -m challenge prepare
+python -m challenge lookup --act de-burlg --ref "§ 3 Abs. 1"
+python -m challenge query --act de-burlg --question applicability
+python -m challenge query --act de-burlg --question obligations
+python -m challenge diff \
+  --from samples/eu/32015R2120_de.html \
+  --to samples/eu/02015R2120-20240515_de.html
 ```
 
-## Erwartete Deliverables (Minimal)
-- `README.md` als zentrale Aufgabenstellung + technische Doku
-- Exportierte `n8n`-Workflows (`.json`)
-- Ergebnisse als JSON-Dateien im Repo (z. B. `results/*.json`)
-- Abgabe als Pull Request
+- `prepare` schreibt die eigene Struktur nach `output/`.
+- `lookup` gibt die genannte Stelle aus. Läuft ohne Modell.
+- `query` gibt Treffer aus: Adresse und Textstück, nicht den ganzen Akt. `applicability` ist die Frage nach dem Geltungsbereich, `obligations` die Frage nach den Pflichten. Ob dafür ein Modell nötig ist und welches, steht im Ansatz. Der Stub gibt keines vor und ruft keines auf.
+- `diff` gibt die strukturierte Gegenüberstellung der beiden Stände aus. Läuft ohne Modell.
 
-## Abnahmekriterien
-- Backfill laeuft reproduzierbar durch (oder dokumentiert sauber, wo Quellen blockieren).
-- Daily-Workflow laeuft automatisiert und ist idempotent.
-- Deduplizierung funktioniert sichtbar.
-- Fehler sind nachvollziehbar geloggt und in Reports sichtbar.
-- Setup ist fuer Dritte in < 30 Minuten startbar.
+Die mitgelieferten Befehle laden die Beispiele und melden, dass die Schritte noch offen sind.
 
-## Schnellstart fuer Werkstudenten (von 0)
-1. Repository auschecken und in den Projektordner wechseln.
-2. Python-Umgebung aufsetzen und Dependencies installieren:
-   - `python3 -m venv .venv`
-   - `source .venv/bin/activate`
-   - `pip install -r requirements.txt`
-3. Umgebungsvariablen anlegen:
-   - `.env.example` nach `.env` kopieren
-   - benoetigte Werte eintragen (mindestens Quellen + optional LLM Key)
-4. `n8n` lokal starten und Workflows importieren:
-   - `workflows/nrw_backfill.json`
-   - `workflows/nrw_daily_pipeline.json`
-5. Ergebnis- und Reportformat anhand von:
-   - `results/sample_records.json`
-   - `results/run_report_example.json`
-6. Vor Abgabe sicherstellen:
-   - Workflows exportiert und aktualisiert
-   - offene Punkte dokumentiert
-   - PR mit Testhinweisen erstellt
+## Setup
 
-### Optionaler Komfort via Makefile
-- `make setup` erstellt lokale venv und installiert `requirements.txt`.
-- `make check` validiert die JSON-Beispieldateien auf gueltiges JSON.
-- `make run-backfill` und `make run-daily` zeigen die vorgesehenen Startpunkte in `n8n`.
+Python 3.11 oder neuer. Die Befehle im Projektordner ausführen.
 
-Freue mich sehr auf deine Ergebnisse!
-NM
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+```
+
+Schlüssel, die die eigene Lösung braucht, kommen in eine `.env` im Projektordner. Die Datei ist ignoriert und wird nicht mit abgegeben. Name und Zweck der Variablen stehen im Ansatz.
+
+```bash
+python -m challenge --help
+```
+
+## Bewertung
+
+- Eine Struktur trägt Lookup, Query und Diff.
+- Regeln tragen, was die Quelle schon hergibt. Ein Modell ist begründet, inklusive der Stelle, an der es einen Mehrwert liefert, den eine Regel nicht hergibt.
+- Stellen bleiben über die Aufbereitung hinweg adressierbar.
+- Der Code läuft auf den beigelegten Dateien.
+- Der Ansatz benennt Grenzen und das, was bewusst wegfällt.
+
+Viel Erfolg.
