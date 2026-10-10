@@ -23,9 +23,15 @@ Die Quellen liefern nicht dasselbe Format: mal XML mit Gliederung und Metadaten,
 
 Der Agent soll dafür nicht den ganzen Text in den Kontext bekommen. Die Antwort sind die betroffenen Stellen, mit einer Adresse und dem Textstück.
 
-**API.** Kundinnen und Kunden holen gezielt eine Stelle, zum Beispiel Paragraph 3 Absatz 4. Dieselbe Schnittstelle soll die beiden inhaltlichen Fragen bedienen können, nicht nur die Stellenangabe.
+Diese Antwort ist nur brauchbar, wenn sie die Stellen trifft, die jemand wirklich braucht. Fehlt eine relevante Stelle, handelt der Kunde oder der Agent auf einer unvollständigen Grundlage. Kommt fast der ganze Akt zurück, trägt die Frage nichts mehr.
+
+Ein Fall, den eine flache Liste über den ganzen Akt nicht beantwortet: Jemand fällt unter den Akt, weil er Hersteller ist, jemand anderes, weil er Händler ist. Die Pflichten sind nicht dieselben. Wird eine Pflicht nicht erfüllt, kann daraus etwas folgen. Ob deine Struktur das trägt, gehört in den Ansatz.
+
+**API.** Kundinnen und Kunden holen gezielt eine Stelle, zum Beispiel Paragraph 3 Absatz 4. Dieselbe Schnittstelle soll die beiden inhaltlichen Fragen bedienen können, nicht nur die Stellenangabe. Dieselben Kundinnen und Kunden wechseln die Sprache desselben Akts. Eine Stelle, die auf Deutsch eine Pflicht beschreibt, beschreibt auf Englisch dieselbe Pflicht. Im Repo liegen dafür bei vielen EU-Akten beide Sprachfassungen.
 
 Lookup, Query und Diff sind drei Lesarten einer Struktur. Gliederung, die in der Quelle schon steht, liest du regelbasiert aus. Ob die beiden Fragen darüber hinaus ein Modell brauchen, begründest du im Ansatz.
+
+Allein in Deutschland sind es über 6000 Gesetze, und sie ändern sich. Ein neuer Stand darf nicht heißen, dass unveränderter Text noch einmal genauso viel kostet. Wie die Kosten im Rahmen bleiben, gehört in den Ansatz.
 
 ## Was du abgibst
 
@@ -87,8 +93,8 @@ python -m challenge --help
 
 ## Bewertung
 
-- Eine Struktur trägt Lookup, Query und Diff.
-- Regeln tragen, was die Quelle schon hergibt. Ein Modell ist begründet, inklusive der Stelle, an der es einen Mehrwert liefert, den eine Regel nicht hergibt.
+- Eine Struktur trägt Lookup, Query und Diff, den Sprachwechsel und die Frage, welche Stellen in eine Antwort gehören.
+- Regeln tragen, was die Quelle schon hergibt. Ein Modell ist begründet, inklusive der Stelle, an der es einen Mehrwert liefert, den eine Regel nicht hergibt. Die Kosten bleiben bei tausenden Akten und neuen Ständen nachvollziehbar.
 - Stellen bleiben über die Aufbereitung hinweg adressierbar.
 - Der Code läuft auf den beigelegten Dateien.
 - Der Ansatz benennt Grenzen und das, was bewusst wegfällt.

@@ -8,11 +8,11 @@ Was braucht die Vergleichsansicht, was braucht der Agent, was braucht die API? W
 
 ## Harmonisiertes Modell
 
-Welche Einheiten gibt es, wie adressiert man sie, wie hängen zwei Stände desselben Akts zusammen? Die Struktur an einem kurzen Ausschnitt aus den Beispielen zeigen.
+Welche Einheiten gibt es, wie adressiert man sie, wie hängen zwei Stände desselben Akts zusammen? Was bleibt gleich, wenn dieselbe Stelle auf Deutsch und auf Englisch gelesen wird? Die Struktur an einem kurzen Ausschnitt aus den Beispielen zeigen.
 
 ## Deterministisch und Sprachmodell
 
-Wo reichen Regeln, und wo liefert ein Modell einen Mehrwert, den eine Regel nicht hergibt? Wenn du eines benutzt: welches, warum dieses, was ein Aufruf als Eingabe bekommt, und was dadurch durchsuchbar wird. Kein Anbieter ist vorgegeben.
+Wo reichen Regeln, und wo liefert ein Modell einen Mehrwert, den eine Regel nicht hergibt? Wenn du eines benutzt: welches, warum dieses, was ein Aufruf als Eingabe bekommt, und was dadurch durchsuchbar wird. Was wird bei einem neuen Stand neu gerechnet, was nicht? Kein Anbieter ist vorgegeben.
 
 ## PDF
 
@@ -20,7 +20,7 @@ Die Beispiele enthalten kein PDF. Beschreiben, wie ein Amtsblatt-PDF vorbereitet
 
 ## Lookup, Query, Diff
 
-Wie beantwortet das Modell eine Stellenangabe, die beiden Fragen und den Vergleich zweier Stände? Ob weitere Fragen, die ein Agent oder ein API-Kunde später stellen könnte, von derselben Struktur getragen werden.
+Wie beantwortest du eine Stellenangabe, die beiden Fragen und den Vergleich zweier Stände? Woran machst du fest, was in die Antwort gehört und was draußen bleibt? Der Hersteller und der Händler fallen unter denselben Akt und haben nicht dieselben Pflichten. Was folgt, wenn eine Pflicht nicht erfüllt wird? Trägt deine Struktur das?
 
 ## Grenzen
 
