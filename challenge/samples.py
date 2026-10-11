@@ -13,6 +13,12 @@ EU_ORIGINAL = SAMPLES / "eu" / "32015R2120_de.html"
 EU_CONSOLIDATED = SAMPLES / "eu" / "02015R2120-20240515_de.html"
 
 
+def relative(path: Path) -> str:
+    """Path as recorded in Act.source: relative to the repo root when inside it."""
+    resolved = path.resolve()
+    return str(resolved.relative_to(ROOT)) if resolved.is_relative_to(ROOT) else str(resolved)
+
+
 def german_acts() -> dict[str, Path]:
     return {f"de-{path.stem}": path for path in sorted(DE_DIR.glob("*.xml"))}
 

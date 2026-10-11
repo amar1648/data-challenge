@@ -11,7 +11,7 @@ from pathlib import Path
 from lxml import etree
 
 from challenge.model import Act, Unit, normalize_space, unit_hash
-from challenge.samples import ROOT, parse_xml
+from challenge.samples import parse_xml, relative
 
 # Elements whose content is not part of the running text of a unit.
 _SKIP = {"DL", "FnR", "Footnote", "FnArea", "Footnotes"}
@@ -39,7 +39,7 @@ def parse(path: Path, work_id: str) -> tuple[Act, list[Unit]]:
         work_id=work_id,
         version=_version(norms[0]),
         language="de",
-        source=str(path.relative_to(ROOT)),
+        source=relative(path),
     )
     units: list[Unit] = []
     for norm in norms:

@@ -1,14 +1,18 @@
 """Command-line stub: prepare, lookup, query and diff on harmonized structure."""
 
 import argparse
+import json
+import sys
 from pathlib import Path
 
-from challenge import de_gii
+from challenge import de_gii, eurlex_html
+from challenge.diff import diff, german_summary
 from challenge.lookup import lookup
-from challenge.model import write_act
+from challenge.model import Act, Unit, write_act
 from challenge.samples import (
+    EU_CONSOLIDATED,
+    EU_ORIGINAL,
     ROOT,
-    describe_html,
     describe_xml,
     german_acts,
     iter_samples,
@@ -18,6 +22,7 @@ from challenge.samples import (
 OUTPUT = ROOT / "output"
 # Acts whose parser is implemented and checked; the rest is reported as skipped.
 SUPPORTED = {"de-burlg"}
+EU_HTML = (EU_ORIGINAL, EU_CONSOLIDATED)
 
 
 def main() -> None:
@@ -62,12 +67,17 @@ def prepare() -> None:
         if act_id not in SUPPORTED:
             print(f"übersprungen  {path.relative_to(ROOT)} (Parser noch nicht freigegeben)")
             continue
-        act, units = de_gii.parse(path, act_id)
-        target = write_act(OUTPUT, act, units)
-        print(f"geschrieben   {target.relative_to(ROOT)} ({len(units)} Einheiten)")
-    other = [path for path in iter_samples() if path.parent.name != "de"]
+        _write(*de_gii.parse(path, act_id))
+    for path in EU_HTML:
+        _write(*eurlex_html.parse(path))
+    other = [path for path in iter_samples() if path.parent.name != "de" and path not in EU_HTML]
     if other:
-        print(f"übersprungen  {len(other)} EU-Dateien unter samples/eu/ (Parser noch offen)")
+        print(f"übersprungen  {len(other)} Formex-Dateien unter samples/eu/formex/ (Parser noch offen)")
+
+
+def _write(act: Act, units: list[Unit]) -> None:
+    target = write_act(OUTPUT, act, units)
+    print(f"geschrieben   {target.relative_to(ROOT)} ({len(units)} Einheiten)")
 
 
 def lookup_cmd(act_id: str, ref: str, language: str) -> None:
@@ -86,17 +96,21 @@ def query_cmd(act_id: str, question: str) -> None:
 
 
 def diff_cmd(source: str, target: str) -> None:
-    _pending(
-        "diff soll eine strukturierte Gegenüberstellung der beiden Stände ausgeben.",
-        [describe_html(_html_path(source)), describe_html(_html_path(target))],
-    )
+    result = diff(*_parse_source(source), *_parse_source(target))
+    print(json.dumps(result, ensure_ascii=False, indent=2))
+    print(german_summary(result), file=sys.stderr)
 
 
-def _html_path(value: str) -> Path:
+def _parse_source(value: str) -> tuple[Act, list[Unit]]:
+    """Parse a raw source file; the format follows from the file extension."""
     path = Path(value)
     if not path.is_absolute():
         path = ROOT / path
-    return path
+    if path.suffix == ".html":
+        return eurlex_html.parse(path)
+    if path.suffix == ".xml":
+        return de_gii.parse(path, f"de-{path.stem}")
+    raise SystemExit(f"Unbekanntes Format: {path.name} (erwartet .html oder .xml)")
 
 
 def _pending(task: str, loaded: list[str]) -> None:
