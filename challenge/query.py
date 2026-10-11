@@ -1,6 +1,9 @@
 """Answer the two content questions from the tags written at prepare time; no model call, no parsing.
 
-Three readings of the same tags:
+Four readings of the same tags:
+- "hybrid" (default): role from the rules. The addressee comes from the model only where the
+  rule infers it (explicit=false) or reports "unbestimmt" and the model names one; addressees
+  the rule finds in the text stay.
 - "rules": tags["roles"] from the rule-based tagger only.
 - "combined": rules as pre-filter. For a candidate (rule hit, or unit of an article whose
   heading names scope or definitions) the model answer in tags["model"] decides role and
@@ -9,17 +12,19 @@ Three readings of the same tags:
 - "model": the model answer decides for every unit that has one; rules only as fallback.
 """
 
+import re
+
 from challenge.model import Act, Unit
 from challenge.tagging import _SCOPE_HEADING, UNDETERMINED
 
-MODES = ("rules", "combined", "model")
+MODES = ("hybrid", "rules", "combined", "model")
 QUESTIONS = {"applicability": "applicability", "obligations": "obligation"}
 TYPE_ORDER = {"regulated": 0, "authority": 1, "unknown": 2}
 TYPE_LABEL = {"regulated": "Normadressat", "authority": "Behörde/Organ", "unknown": "Adressat unbestimmt"}
 KIND_LABEL = {"duty": "Pflicht", "sanction": "Sanktion", "consequence": "Rechtsfolge"}
 
 
-def query(units: list[Unit], question: str, mode: str = "combined") -> list[dict]:
+def query(units: list[Unit], question: str, mode: str = "hybrid") -> list[dict]:
     """Hits for one question: address, label, text (with list items), reason, addressees."""
     role_name = QUESTIONS[question]
     by_address = {unit.address: unit for unit in units}
@@ -53,6 +58,8 @@ def is_candidate(unit: Unit, article: Unit) -> bool:
 def _findings(unit: Unit, article: Unit, role_name: str, mode: str) -> list[dict]:
     rules = [role for role in unit.tags.get("roles", []) if role["role"] == role_name]
     model = unit.tags.get("model")
+    if mode == "hybrid":
+        return [_with_model_addressees(role, model) for role in rules]
     if mode == "rules" or model is None or (mode == "combined" and not is_candidate(unit, article)):
         return rules
     if model["role"] != role_name:
@@ -67,6 +74,24 @@ def _findings(unit: Unit, article: Unit, role_name: str, mode: str) -> list[dict
         ] or [{"name": UNDETERMINED, "type": "unknown", "explicit": False}]
         finding.update(kind=kind, addressees=addressees)
     return [finding]
+
+
+def _with_model_addressees(role: dict, model: dict | None) -> dict:
+    """Replace inferred or undetermined rule addressees by the model's, if it names any."""
+    if role["role"] != "obligation" or model is None or model["role"] != "obligation" or not model["addressees"]:
+        return role
+    if any(a["explicit"] for a in role["addressees"]):
+        return role
+    addressees = [
+        {"name": _without_article(a["name"]), "type": a["type"], "explicit": False, "source": "model"}
+        for a in model["addressees"]
+    ]
+    return {**role, "addressees": addressees, "rule": [*role["rule"], "model-addressee"]}
+
+
+def _without_article(name: str) -> str:
+    """The model sometimes answers "Das Unternehmen"; addressees are listed without article."""
+    return re.sub(r"^(?:der|die|das)\s+", "", name.strip(), flags=re.IGNORECASE)
 
 
 def group_by_addressee(hits: list[dict]) -> list[tuple[dict, list[dict]]]:
@@ -101,6 +126,8 @@ def _render_hit(hit: dict, with_addressee: bool, addressee: str | None = None) -
     if with_addressee:
         named = next((a for a in hit["addressees"] if a["name"] == addressee), None)
         how = "genannt" if named and named["explicit"] else "erschlossen"
+        if named and named.get("source") == "model":
+            how = "vom Modell erschlossen"
         if named and named["type"] == "unknown":
             how = "unbestimmt"
         reason = f"{KIND_LABEL.get(hit['kind'], hit['kind'])}, Adressat {how}; {reason}"

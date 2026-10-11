@@ -1,6 +1,7 @@
 """Command-line stub: prepare, lookup, query and diff on harmonized structure."""
 
 import argparse
+import copy
 import json
 import sys
 from pathlib import Path
@@ -53,8 +54,9 @@ def main() -> None:
     query.add_argument("--lang", default="de", help="Sprachfassung, Standard: de")
     query.add_argument("--json", action="store_true", help="Treffer als JSON ausgeben")
     query.add_argument(
-        "--mode", choices=MODES, default="combined",
-        help="rules: nur Regeln; combined: Regeln als Vorfilter + Modell (Standard); model: Modell auf allen Einheiten",
+        "--mode", choices=MODES, default="hybrid",
+        help="hybrid: Rolle aus Regeln, erschlossene Adressaten aus dem Modell (Standard); rules: nur Regeln; "
+        "combined: Regeln als Vorfilter + Modell; model: Modell auf allen Einheiten",
     )
 
     diff = sub.add_parser("diff", help="Zwei Stände gegenüberstellen")
@@ -74,15 +76,16 @@ def main() -> None:
 
 def prepare(with_model: bool = False) -> None:
     cache = enrich.Cache() if with_model else None
+    tagged: dict[tuple[str, str], list[Unit]] = {}  # German versions, source of the tag transfer
     for act_id, path in german_acts().items():
         act, units, issues = de_gii.parse_with_issues(path, act_id)
-        _write(act, units, cache)
+        _write(act, units, cache, tagged)
         _report(issues)
     for path in EU_HTML:
-        _write(*eurlex_html.parse(path), cache)
-    for path in FORMEX:
+        _write(*eurlex_html.parse(path), cache, tagged)
+    for path in FORMEX:  # German before English
         act, units, issues = formex.parse_with_issues(path)
-        _write(act, units, cache)
+        _write(act, units, cache, tagged)
         _report(issues)
     other = [path for path in iter_samples() if path.parent.name != "de" and path not in EU_HTML + FORMEX]
     if other:
@@ -97,15 +100,40 @@ def _report(issues: dict[str, list[str]]) -> None:
         print(f"              {category}: {len(examples)} ({shown})")
 
 
-def _write(act: Act, units: list[Unit], cache: enrich.Cache | None) -> None:
+def _write(act: Act, units: list[Unit], cache: enrich.Cache | None, tagged: dict) -> None:
     if act.language == "de":  # the tagging rules are German wording
         tag_units(units)
+        tagged[(act.work_id, act.version)] = units
+    else:
+        _transfer_tags(act, units, tagged.get((act.work_id, act.version)))
     if cache is not None and enrich.ENRICHED.get(act.work_id) == act.version:
         counts = enrich.enrich(act, units, cache)
         print(f"              Modell: {counts['units']} Einheiten, {counts['cached']} aus dem Cache, "
               f"{counts['called']} neu abgefragt")
     target = write_act(OUTPUT, act, units)
     print(f"geschrieben   {target.relative_to(ROOT)} ({len(units)} Einheiten)")
+
+
+def _transfer_tags(act: Act, units: list[Unit], german: list[Unit] | None) -> None:
+    """Roles of a language version come from the German one, matched by address.
+
+    Only when both versions have exactly the same addresses; the same address is the same
+    provision, so the same obligation, in every language.
+    """
+    if german is None:
+        print(f"              Keine deutsche Fassung, keine Tags für {act.language}")
+        return
+    if [u.address for u in german] != [u.address for u in units]:
+        print(f"              Adressen weichen von der deutschen Fassung ab, keine Tags übertragen")
+        return
+    for source, target in zip(german, units):
+        for name in ("roles", "sanctions"):
+            if name in source.tags:
+                target.tags[name] = copy.deepcopy(source.tags[name])
+        if "roles" in source.tags:
+            target.tags["transferred_from"] = "de"
+    count = sum(1 for u in units if "transferred_from" in u.tags)
+    print(f"              Tags von der deutschen Fassung übertragen: {count} Einheiten")
 
 
 def lookup_cmd(act_id: str, ref: str, language: str) -> None:

@@ -105,8 +105,11 @@ def _names(hit: dict) -> set[str]:
 
 
 def _name(name: str) -> str:
-    """Addressee names compared without case and inflection: "Regulierungsbehörde(n)", "Mitgliedstaat(en)"."""
+    """Addressee names compared without case, leading article and inflection:
+    "Regulierungsbehörde(n)", "Mitgliedstaat(en)", "(Das) Unternehmen"."""
     words = re.findall(r"[a-zäöüß-]+", name.casefold())
+    if words and words[0] in ("der", "die", "das"):
+        words = words[1:]
     return " ".join(re.sub(r"(?:en|n|e|s)$", "", word) for word in words)
 
 
@@ -142,7 +145,7 @@ def render(act_id: str, version: str, report: dict) -> str:
     return "\n".join(lines)
 
 
-MODE_LABEL = {"rules": "Regeln", "combined": "Regeln+Modell", "model": "Modell alle"}
+MODE_LABEL = {"hybrid": "Hybrid", "rules": "Regeln", "combined": "Regeln+Modell", "model": "Modell alle"}
 
 
 def compare(golds: list[tuple[dict, list[Unit]]]) -> str:

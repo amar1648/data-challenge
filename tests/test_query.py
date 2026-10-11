@@ -88,6 +88,25 @@ class Rules(unittest.TestCase):
         self.assertEqual(query(units, "obligations", "combined"), [])
         self.assertEqual(query(units, "obligations", "model")[0]["addressees"][0]["name"], "Arbeitgeber")
 
+    def test_hybrid_replaces_only_inferred_addressees(self):
+        model = {
+            "role": "obligation", "addressees": [{"name": "Das Unternehmen", "type": "regulated"}],
+            "addressee_explicit": True, "kind": "duty", "model": "test", "prompt_version": "v0",
+        }
+        inferred = _unit("art-1/par-1", "Der Urlaub ist zu gewähren.")
+        named = _unit("art-1/par-1", "Der Arbeitgeber ist verpflichtet, Urlaub zu gewähren.")
+        for units in (inferred, named):
+            tag_units(units)
+            units[1].tags["model"] = dict(model)
+        hit = query(inferred, "obligations")[0]  # hybrid is the default reading
+        self.assertEqual(hit["addressees"], [
+            {"name": "Unternehmen", "type": "regulated", "explicit": False, "source": "model"},
+        ])
+        self.assertEqual(query(named, "obligations")[0]["addressees"][0]["name"], "Arbeitgeber")
+        # A model obligation without addressee is not taken over.
+        inferred[1].tags["model"]["addressees"] = []
+        self.assertEqual(query(inferred, "obligations")[0]["addressees"][0]["name"], "unbestimmt")
+
     def test_query_only_reads_tags(self):
         units = _unit("art-1/par-1", "Der Arbeitgeber ist verpflichtet, Urlaub zu gewähren.")
         self.assertEqual(query(units, "obligations"), [])

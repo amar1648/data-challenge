@@ -22,7 +22,6 @@ from lxml import etree
 
 from challenge.model import Act, Unit, normalize_space
 from challenge.samples import ROOT
-from challenge.query import is_candidate
 
 OLLAMA_URL = os.environ.get("OLLAMA_URL", "http://host.docker.internal:11434").rstrip("/")
 MODEL = os.environ.get("LLM_MODEL", "qwen3:4b")
@@ -63,16 +62,6 @@ addressee_explicit: true nur, wenn der Pflichtträger im Pflichtsatz grammatisch
 kind: "duty", "sanction" (Sanktion/Bußgeld), "consequence" (angeordnete Rechtsfolge) bei "obligation", sonst "none".
 
 Beurteile nur die gegebene Einheit; der Einleitungstext des Elternteils dient nur als Kontext."""
-
-
-def candidates(units: list[Unit]) -> list[Unit]:
-    """Rule hits plus every text unit of an article whose heading names scope or definitions."""
-    by_address = {unit.address: unit for unit in units}
-    return [
-        unit for unit in units
-        if unit.type in ("paragraph", "sentence", "point") and unit.text
-        and is_candidate(unit, _article(unit, by_address))
-    ]
 
 
 def prompt(title: str, unit: Unit, units_by_address: dict[str, Unit]) -> list[dict]:
