@@ -3,8 +3,8 @@
 from challenge.model import Act, Unit
 
 QUESTIONS = {"applicability": "applicability", "obligations": "obligation"}
-TYPE_ORDER = {"regulated": 0, "authority": 1}
-TYPE_LABEL = {"regulated": "Normadressat", "authority": "Behörde/Organ"}
+TYPE_ORDER = {"regulated": 0, "authority": 1, "unknown": 2}
+TYPE_LABEL = {"regulated": "Normadressat", "authority": "Behörde/Organ", "unknown": "Adressat unbestimmt"}
 KIND_LABEL = {"duty": "Pflicht", "sanction": "Sanktion", "consequence": "Rechtsfolge"}
 
 
@@ -53,7 +53,10 @@ def render(act: Act, question: str, hits: list[dict]) -> str:
             lines.extend(_render_hit(hit, with_addressee=False))
         return "\n".join(lines)
     for addressee, group in group_by_addressee(hits):
-        lines.append(f"## {addressee['name']} ({TYPE_LABEL.get(addressee['type'], addressee['type'])}), {len(group)} Treffer")
+        if addressee["type"] == "unknown":
+            lines.append(f"## {TYPE_LABEL['unknown']}, {len(group)} Treffer")
+        else:
+            lines.append(f"## {addressee['name']} ({TYPE_LABEL.get(addressee['type'], addressee['type'])}), {len(group)} Treffer")
         lines.append("")
         for hit in group:
             lines.extend(_render_hit(hit, with_addressee=True, addressee=addressee["name"]))
@@ -65,6 +68,8 @@ def _render_hit(hit: dict, with_addressee: bool, addressee: str | None = None) -
     if with_addressee:
         named = next((a for a in hit["addressees"] if a["name"] == addressee), None)
         how = "genannt" if named and named["explicit"] else "erschlossen"
+        if named and named["type"] == "unknown":
+            how = "unbestimmt"
         reason = f"{KIND_LABEL.get(hit['kind'], hit['kind'])}, Adressat {how}; {reason}"
     lines = [f"- {hit['label']}  [{hit['address']}]  {hit['heading'] or ''}".rstrip(), f"  {reason}"]
     if hit["sanctions"]:
@@ -109,13 +114,13 @@ def _text(unit: Unit, members: list[Unit]) -> str:
 
 
 def _article(unit: Unit, by_address: dict[str, Unit]) -> Unit:
-    while unit.parent:
+    while unit.parent and by_address[unit.parent].type != "division":
         unit = by_address[unit.parent]
     return unit
 
 
 def _citation(unit: Unit, by_address: dict[str, Unit]) -> str:
     chain = [unit]
-    while chain[0].parent:
+    while chain[0].parent and by_address[chain[0].parent].type != "division":
         chain.insert(0, by_address[chain[0].parent])
     return " ".join(u.label for u in chain if u.label)

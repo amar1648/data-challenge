@@ -10,7 +10,7 @@ _ADDRESS = re.compile(r"[a-z]+-[0-9a-z]+(?:/[a-z]+-[0-9a-z]+)*")
 _NUMBER = r"\d+(?:[a-z](?![a-z]))?|[a-z]{1,2}(?![a-z])"
 _HEAD = re.compile(rf"(?:§|art(?:ikel|icle)?\.?)\s*({_NUMBER})", re.IGNORECASE)
 _PART = re.compile(
-    r"\s*(?:(abs(?:atz)?\.?|par(?:agraph)?\.?|buchst(?:abe)?\.?|nr\.?|nummer|lit\.?|point)"
+    r"\s*(?:(abs(?:atz)?\.?|par(?:agraph)?\.?|satz|buchst(?:abe)?\.?|nr\.?|nummer|lit\.?|point)"
     rf"\s*\(?({_NUMBER})\)?|\(({_NUMBER})\))\s*",
     re.IGNORECASE,
 )
@@ -35,7 +35,10 @@ def ref_to_address(ref: str) -> str:
         number = (number or bracketed).lower()
         # "(1)" directly after the article is the paragraph, every later level is a point.
         is_paragraph = word.lower().startswith(_PARAGRAPH_WORDS) if word else len(parts) == 1
-        parts.append(f"par-{number}" if is_paragraph else f"pt-{number}")
+        if word and word.lower() == "satz":
+            parts.append(f"sen-{number}")  # only lists of multi-list Absätze carry a sentence
+        else:
+            parts.append(f"par-{number}" if is_paragraph else f"pt-{number}")
         position = part.end()
     return "/".join(parts)
 
@@ -67,7 +70,7 @@ def find(units: list[Unit], address: str) -> Unit:
 def render(act: Act, units: list[Unit], unit: Unit) -> str:
     by_address = {u.address: u for u in units}
     chain = [unit]
-    while chain[0].parent:
+    while chain[0].parent and by_address[chain[0].parent].type != "division":
         chain.insert(0, by_address[chain[0].parent])
     citation = " ".join(u.label for u in chain if u.label)
     heading = next((u.heading for u in reversed(chain) if u.heading), None)

@@ -20,8 +20,6 @@ from challenge.samples import (
 )
 
 OUTPUT = ROOT / "output"
-# Acts whose parser is implemented and checked; the rest is reported as skipped.
-SUPPORTED = {"de-burlg"}
 EU_HTML = (EU_ORIGINAL, EU_CONSOLIDATED)
 
 
@@ -66,10 +64,13 @@ def main() -> None:
 
 def prepare() -> None:
     for act_id, path in german_acts().items():
-        if act_id not in SUPPORTED:
-            print(f"übersprungen  {path.relative_to(ROOT)} (Parser noch nicht freigegeben)")
-            continue
-        _write(*de_gii.parse(path, act_id))
+        act, units, issues = de_gii.parse_with_issues(path, act_id)
+        _write(act, units)
+        for category, examples in issues.items():
+            shown = ", ".join(dict.fromkeys(examples))
+            if len(shown) > 90:
+                shown = shown[:90].rsplit(",", 1)[0] + ", …"
+            print(f"              {category}: {len(examples)} ({shown})")
     for path in EU_HTML:
         _write(*eurlex_html.parse(path))
     other = [path for path in iter_samples() if path.parent.name != "de" and path not in EU_HTML]

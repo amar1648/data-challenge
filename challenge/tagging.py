@@ -32,6 +32,7 @@ def _actor(name, type_, pattern, feminine_or_plural=False, holder=False) -> Acto
 
 
 GENERIC_PROVIDER = "Anbieter"
+UNDETERMINED = "unbestimmt"  # obligation recognised, addressee not derivable
 # Most specific first: a span matched by one actor is not matched again by a later one.
 ACTORS = [
     _actor("Anbieter von Internetzugangsdiensten", "regulated",
@@ -122,7 +123,7 @@ def tag_units(units: list[Unit]) -> None:
     act_actor = _act_default_addressee(units)
 
     for unit in units:
-        if unit.type not in ("paragraph", "point") or not unit.text:
+        if unit.type not in ("paragraph", "sentence", "point") or not unit.text:
             continue
         article = by_address[article_of[unit.address]]
         roles: list[dict] = []
@@ -172,6 +173,11 @@ def _obligations(unit: Unit, provider: str, act_actor: str) -> list[dict]:
         elif _actor_present(clause, provider):
             subjects = _actor_present(clause, provider)
             finding = ("duty", "actor-present", subjects[0]["name"])
+        elif _conditional_passive(clause):
+            # "Erkrankt ein Arbeitnehmer …, so werden … nicht angerechnet": a rule without a
+            # named or inferable addressee is reported rather than dropped.
+            subjects = [_addressee(UNDETERMINED, explicit=False)]
+            finding = ("duty", "conditional-passive", _conditional_passive(clause))
         if not finding:
             continue
         if not subjects:
@@ -186,6 +192,17 @@ def _obligations(unit: Unit, provider: str, act_actor: str) -> list[dict]:
             "role": "obligation", "kind": kind, "rule": rule, "evidence": evidence, "addressees": subjects,
         })
     return findings
+
+
+def _conditional_passive(clause: str) -> str | None:
+    """Evidence if a verb-first condition is followed by a passive main clause."""
+    if not _CONDITIONAL.match(clause):
+        return None
+    main = re.sub(r"^\s*so\s+", "", clause.partition(",")[2])
+    passive = _PASSIVE.search(main)
+    if not passive or _NOT_A_DUTY.search(main):
+        return None
+    return f"{passive.group(0)} … {main.split()[-1].rstrip('.')}"
 
 
 def _actor_present(clause: str, provider: str) -> list[dict]:
@@ -212,7 +229,8 @@ def _subjects(clause: str, provider: str, subject_only: bool = True) -> list[dic
                 _SUBORDINATE.search(clause[: match.start()]) or not _is_subject(clause[: match.start()], actor)
             ):
                 continue
-            name = provider if actor.name == GENERIC_PROVIDER and provider else actor.name
+            specific = provider in ACTOR_BY_NAME and provider != GENERIC_PROVIDER
+            name = provider if actor.name == GENERIC_PROVIDER and specific else actor.name
             found.append((match.start(), name))
     names = []
     for _, name in sorted(found):
@@ -248,6 +266,8 @@ def _counterparts(clause: str, provider: str, act_actor: str) -> list[dict]:
 
 
 def _addressee(name: str, explicit: bool) -> dict:
+    if name == UNDETERMINED:
+        return {"name": name, "type": "unknown", "explicit": False}
     actor = ACTOR_BY_NAME.get(name)
     return {"name": name, "type": actor.type if actor else "regulated", "explicit": explicit}
 
@@ -273,7 +293,7 @@ def _act_default_addressee(units: list[Unit]) -> str:
         for match in HOLDERS.finditer(unit.text):
             name = re.sub(r"(?:n|s)$", "", match.group(0))
             counter[COUNTERPART.get(name, GENERIC_PROVIDER)] += 1
-    return counter.most_common(1)[0][0] if counter else GENERIC_PROVIDER
+    return counter.most_common(1)[0][0] if counter else UNDETERMINED
 
 
 def _sanctioned(unit: Unit, article: Unit) -> list[str]:
@@ -327,6 +347,7 @@ def _clauses(text: str) -> list[str]:
 
 
 def _article(unit: Unit, by_address: dict[str, Unit]) -> str:
-    while unit.parent:
+    """The article (or annex, preamble) a unit belongs to; divisions above it are not part of it."""
+    while unit.parent and by_address[unit.parent].type != "division":
         unit = by_address[unit.parent]
     return unit.address

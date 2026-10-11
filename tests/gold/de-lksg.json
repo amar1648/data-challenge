@@ -1,0 +1,431 @@
+{
+  "act": "de-lksg",
+  "version": "2021-07-16",
+  "language": "de",
+  "match": "A hit counts for a gold entry only if it is that unit or a descendant of it; ancestors do not count. Hits on borderline entries (or their descendants) are not scored.",
+  "scope": [
+    "art-1",
+    "art-2",
+    "art-3",
+    "art-4",
+    "art-5",
+    "art-6",
+    "art-7",
+    "art-8",
+    "art-9",
+    "art-10"
+  ],
+  "applicability": [
+    {
+      "address": "art-1/par-1",
+      "reason": "Überschrift „Anwendungsbereich“; „Dieses Gesetz ist anzuwenden auf Unternehmen ungeachtet ihrer Rechtsform“ mit Sitz im Inland (Satz 1) oder Zweigniederlassung nach § 13d HGB (Satz 2) und „mindestens 3 000 Arbeitnehmer“, ab 2024 „1 000 Arbeitnehmer“."
+    },
+    {
+      "address": "art-1/par-2",
+      "reason": "„Leiharbeitnehmer sind bei der Berechnung der Arbeitnehmerzahl … des Entleihunternehmens zu berücksichtigen“: bestimmt mit, welche Unternehmen den Schwellenwert erreichen."
+    },
+    {
+      "address": "art-1/par-3",
+      "reason": "„Innerhalb von verbundenen Unternehmen … sind die … Arbeitnehmer sämtlicher konzernangehöriger Gesellschaften … der Obergesellschaft zu berücksichtigen“: Konzernzurechnung für den Schwellenwert."
+    }
+  ],
+  "obligations": [
+    {
+      "address": "art-3/par-1",
+      "addressees": [
+        {
+          "name": "Unternehmen",
+          "type": "regulated"
+        }
+      ],
+      "addressee_explicit": true,
+      "kind": "duty",
+      "reason": "„Unternehmen sind dazu verpflichtet, … die … Sorgfaltspflichten in angemessener Weise zu beachten“; Nr. 1–9 zählen die Einzelpflichten auf."
+    },
+    {
+      "address": "art-4/par-1",
+      "addressees": [
+        {
+          "name": "Unternehmen",
+          "type": "regulated"
+        }
+      ],
+      "addressee_explicit": true,
+      "kind": "duty",
+      "reason": "„Unternehmen müssen ein angemessenes und wirksames Risikomanagement … einrichten“; Satz 2 „ist … zu verankern“."
+    },
+    {
+      "address": "art-4/par-3",
+      "addressees": [
+        {
+          "name": "Unternehmen",
+          "type": "regulated"
+        },
+        {
+          "name": "Geschäftsleitung",
+          "type": "regulated"
+        }
+      ],
+      "addressee_explicit": true,
+      "kind": "duty",
+      "reason": "„Das Unternehmen hat dafür zu sorgen, dass festgelegt ist, wer … zuständig ist“; „Die Geschäftsleitung hat sich regelmäßig, mindestens einmal jährlich, … zu informieren“."
+    },
+    {
+      "address": "art-4/par-4",
+      "addressees": [
+        {
+          "name": "Unternehmen",
+          "type": "regulated"
+        }
+      ],
+      "addressee_explicit": true,
+      "kind": "duty",
+      "reason": "„Das Unternehmen hat … die Interessen seiner Beschäftigten … angemessen zu berücksichtigen“."
+    },
+    {
+      "address": "art-5/par-1",
+      "addressees": [
+        {
+          "name": "Unternehmen",
+          "type": "regulated"
+        }
+      ],
+      "addressee_explicit": true,
+      "kind": "duty",
+      "reason": "„hat das Unternehmen eine angemessene Risikoanalyse … durchzuführen“."
+    },
+    {
+      "address": "art-5/par-2",
+      "addressees": [
+        {
+          "name": "Unternehmen",
+          "type": "regulated"
+        }
+      ],
+      "addressee_explicit": false,
+      "kind": "duty",
+      "reason": "„Die ermittelten … Risiken sind angemessen zu gewichten und zu priorisieren“: passiv, der Adressat folgt aus Abs. 1."
+    },
+    {
+      "address": "art-5/par-3",
+      "addressees": [
+        {
+          "name": "Unternehmen",
+          "type": "regulated"
+        }
+      ],
+      "addressee_explicit": true,
+      "kind": "duty",
+      "reason": "„Das Unternehmen muss dafür Sorge tragen, dass die Ergebnisse der Risikoanalyse … kommuniziert werden“."
+    },
+    {
+      "address": "art-5/par-4",
+      "addressees": [
+        {
+          "name": "Unternehmen",
+          "type": "regulated"
+        }
+      ],
+      "addressee_explicit": false,
+      "kind": "duty",
+      "reason": "„Die Risikoanalyse ist einmal im Jahr sowie anlassbezogen durchzuführen“: passiv; „das Unternehmen“ steht nur in der Bedingung („rechnen muss“), nicht als Pflichtträger."
+    },
+    {
+      "address": "art-6/par-1",
+      "addressees": [
+        {
+          "name": "Unternehmen",
+          "type": "regulated"
+        }
+      ],
+      "addressee_explicit": true,
+      "kind": "duty",
+      "reason": "„Stellt ein Unternehmen … ein Risiko fest, hat es unverzüglich angemessene Präventionsmaßnahmen … zu ergreifen“."
+    },
+    {
+      "address": "art-6/par-2",
+      "addressees": [
+        {
+          "name": "Unternehmen",
+          "type": "regulated"
+        },
+        {
+          "name": "Unternehmensleitung",
+          "type": "regulated"
+        }
+      ],
+      "addressee_explicit": true,
+      "kind": "duty",
+      "reason": "„Das Unternehmen muss eine Grundsatzerklärung … abgeben. Die Unternehmensleitung hat die Grundsatzerklärung abzugeben“; Nr. 1–3 Mindestinhalt."
+    },
+    {
+      "address": "art-6/par-3",
+      "addressees": [
+        {
+          "name": "Unternehmen",
+          "type": "regulated"
+        }
+      ],
+      "addressee_explicit": true,
+      "kind": "duty",
+      "reason": "„Das Unternehmen muss angemessene Präventionsmaßnahmen im eigenen Geschäftsbereich verankern“; Nr. 1–4."
+    },
+    {
+      "address": "art-6/par-4",
+      "addressees": [
+        {
+          "name": "Unternehmen",
+          "type": "regulated"
+        }
+      ],
+      "addressee_explicit": true,
+      "kind": "duty",
+      "reason": "„Das Unternehmen muss angemessene Präventionsmaßnahmen gegenüber einem unmittelbaren Zulieferer verankern“; Nr. 1–4."
+    },
+    {
+      "address": "art-6/par-5",
+      "addressees": [
+        {
+          "name": "Unternehmen",
+          "type": "regulated"
+        }
+      ],
+      "addressee_explicit": false,
+      "kind": "duty",
+      "reason": "„Die Wirksamkeit der Präventionsmaßnahmen ist einmal im Jahr … zu überprüfen“, „sind bei Bedarf unverzüglich zu aktualisieren“: passiv."
+    },
+    {
+      "address": "art-7/par-1",
+      "addressees": [
+        {
+          "name": "Unternehmen",
+          "type": "regulated"
+        }
+      ],
+      "addressee_explicit": true,
+      "kind": "duty",
+      "reason": "„Stellt das Unternehmen fest, dass die Verletzung … eingetreten ist …, hat es unverzüglich angemessene Abhilfemaßnahmen zu ergreifen“; im Inland „muss die Abhilfemaßnahme zu einer Beendigung … führen“."
+    },
+    {
+      "address": "art-7/par-2",
+      "addressees": [
+        {
+          "name": "Unternehmen",
+          "type": "regulated"
+        }
+      ],
+      "addressee_explicit": true,
+      "kind": "duty",
+      "reason": "„muss es unverzüglich ein Konzept zur Beendigung oder Minimierung erstellen und umsetzen“; „Das Konzept muss einen konkreten Zeitplan enthalten“."
+    },
+    {
+      "address": "art-7/par-4",
+      "addressees": [
+        {
+          "name": "Unternehmen",
+          "type": "regulated"
+        }
+      ],
+      "addressee_explicit": false,
+      "kind": "duty",
+      "reason": "„Die Wirksamkeit der Abhilfemaßnahmen ist einmal im Jahr … zu überprüfen“: passiv."
+    },
+    {
+      "address": "art-8/par-1",
+      "addressees": [
+        {
+          "name": "Unternehmen",
+          "type": "regulated"
+        },
+        {
+          "name": "mit dem Verfahren betraute Personen",
+          "type": "regulated"
+        }
+      ],
+      "addressee_explicit": true,
+      "kind": "duty",
+      "reason": "„Das Unternehmen hat dafür zu sorgen, dass ein … Beschwerdeverfahren … eingerichtet ist“; „Der Eingang des Hinweises ist … zu bestätigen“; „Die … betrauten Personen haben den Sachverhalt … zu erörtern“."
+    },
+    {
+      "address": "art-8/par-2",
+      "addressees": [
+        {
+          "name": "Unternehmen",
+          "type": "regulated"
+        }
+      ],
+      "addressee_explicit": true,
+      "kind": "duty",
+      "reason": "„Das Unternehmen legt eine Verfahrensordnung in Textform fest, die öffentlich zugänglich ist“: Indikativ mit Gebotsbedeutung, ohne Modalverb."
+    },
+    {
+      "address": "art-8/par-3",
+      "addressees": [
+        {
+          "name": "mit dem Verfahren betraute Personen",
+          "type": "regulated"
+        }
+      ],
+      "addressee_explicit": true,
+      "kind": "duty",
+      "reason": "Die betrauten Personen „müssen Gewähr für unparteiisches Handeln bieten“, „sind zur Verschwiegenheit verpflichtet“."
+    },
+    {
+      "address": "art-8/par-4",
+      "addressees": [
+        {
+          "name": "Unternehmen",
+          "type": "regulated"
+        }
+      ],
+      "addressee_explicit": true,
+      "kind": "duty",
+      "reason": "„Das Unternehmen muss … Informationen … öffentlich zugänglich machen“; das Verfahren „muss … zugänglich sein“."
+    },
+    {
+      "address": "art-8/par-5",
+      "addressees": [
+        {
+          "name": "Unternehmen",
+          "type": "regulated"
+        }
+      ],
+      "addressee_explicit": false,
+      "kind": "duty",
+      "reason": "„Die Wirksamkeit des Beschwerdeverfahrens ist mindestens einmal im Jahr … zu überprüfen“: passiv."
+    },
+    {
+      "address": "art-9/par-1",
+      "addressees": [
+        {
+          "name": "Unternehmen",
+          "type": "regulated"
+        }
+      ],
+      "addressee_explicit": true,
+      "kind": "duty",
+      "reason": "„Das Unternehmen muss das Beschwerdeverfahren nach § 8 so einrichten, dass …“ auch Hinweise zu mittelbaren Zulieferern möglich sind."
+    },
+    {
+      "address": "art-9/par-2",
+      "addressees": [
+        {
+          "name": "Unternehmen",
+          "type": "regulated"
+        }
+      ],
+      "addressee_explicit": true,
+      "kind": "duty",
+      "reason": "„Das Unternehmen muss … sein bestehendes Risikomanagement … anpassen“."
+    },
+    {
+      "address": "art-9/par-3",
+      "addressees": [
+        {
+          "name": "Unternehmen",
+          "type": "regulated"
+        }
+      ],
+      "addressee_explicit": true,
+      "kind": "duty",
+      "reason": "„Liegen einem Unternehmen tatsächliche Anhaltspunkte vor …, so hat es anlassbezogen unverzüglich“ Nr. 1–4 (Risikoanalyse, Prävention, Konzept, Grundsatzerklärung)."
+    },
+    {
+      "address": "art-10/par-1",
+      "addressees": [
+        {
+          "name": "Unternehmen",
+          "type": "regulated"
+        }
+      ],
+      "addressee_explicit": false,
+      "kind": "duty",
+      "reason": "„Die Erfüllung der Sorgfaltspflichten … ist unternehmensintern fortlaufend zu dokumentieren“, „mindestens sieben Jahre lang aufzubewahren“: passiv."
+    },
+    {
+      "address": "art-10/par-2",
+      "addressees": [
+        {
+          "name": "Unternehmen",
+          "type": "regulated"
+        }
+      ],
+      "addressee_explicit": true,
+      "kind": "duty",
+      "reason": "„Das Unternehmen hat jährlich einen Bericht … zu erstellen und … öffentlich zugänglich zu machen“; Nr. 1–4 Mindestinhalt."
+    }
+  ],
+  "borderline": [
+    {
+      "address": "art-2/par-2",
+      "question": "obligations",
+      "reason": "Liste von Verboten („das Verbot der Beschäftigung eines Kindes …“) definiert nur das menschenrechtliche Risiko; kein Adressat, keine eigene Pflicht in diesem Gesetz."
+    },
+    {
+      "address": "art-2/par-3",
+      "question": "obligations",
+      "reason": "Wie Abs. 2 für das umweltbezogene Risiko: Verbote aus Minamata-, POPs- und Basler Übereinkommen als Begriffsinhalt."
+    },
+    {
+      "address": "art-2/par-5",
+      "question": "applicability",
+      "reason": "„Lieferkette … bezieht sich auf alle Produkte und Dienstleistungen eines Unternehmens“: bestimmt die sachliche Reichweite der Pflichten, nicht den Adressatenkreis."
+    },
+    {
+      "address": "art-2/par-6",
+      "question": "applicability",
+      "reason": "Eigener Geschäftsbereich; Satz 3 rechnet konzernangehörige Gesellschaften bei „bestimmendem Einfluss“ der Obergesellschaft zu: Reichweite, nicht Adressatenkreis."
+    },
+    {
+      "address": "art-2/par-7",
+      "question": "applicability",
+      "reason": "Begriff „Unmittelbarer Zulieferer“: definiert eine Personengruppe, die Gegenstand, nicht Adressat der Pflichten ist."
+    },
+    {
+      "address": "art-2/par-8",
+      "question": "applicability",
+      "reason": "Begriff „Mittelbarer Zulieferer“: wie Abs. 7."
+    },
+    {
+      "address": "art-3/par-2",
+      "question": "obligations",
+      "reason": "„Die angemessene Weise eines Handelns … bestimmt sich nach“ Nr. 1–4: Maßstab für die Pflichten, keine eigene Pflicht."
+    },
+    {
+      "address": "art-3/par-3",
+      "question": "obligations",
+      "reason": "„begründet keine zivilrechtliche Haftung“: schließt eine Rechtsfolge aus, statt eine anzuordnen."
+    },
+    {
+      "address": "art-4/par-2",
+      "question": "obligations",
+      "reason": "„Wirksam sind solche Maßnahmen, die …“: Begriffsbestimmung zu Abs. 1, keine eigene Pflicht."
+    },
+    {
+      "address": "art-5/par-1",
+      "question": "applicability",
+      "reason": "Satz 2: bei „Umgehungsgeschäft … gilt ein mittelbarer Zulieferer als unmittelbarer Zulieferer“: Fiktion, die die Reichweite erweitert (die Pflicht aus Satz 1 ist als Pflicht im Goldset)."
+    },
+    {
+      "address": "art-7/par-3",
+      "question": "obligations",
+      "reason": "„Der Abbruch einer Geschäftsbeziehung ist nur geboten, wenn“ Nr. 1–3; Satz 2 „führt nicht zu einer Pflicht zum Abbruch“: begründet und begrenzt eine Ultima-ratio-Pflicht zugleich."
+    },
+    {
+      "address": "art-9/par-4",
+      "question": "obligations",
+      "reason": "„Das Bundesministerium für Arbeit und Soziales wird ermächtigt, … durch Rechtsverordnung … zu regeln“: Ermächtigung einer Behörde, keine Pflicht."
+    },
+    {
+      "address": "art-10/par-3",
+      "question": "obligations",
+      "reason": "„sind keine weiteren Ausführungen nach Absatz 2 Satz 2 Nummer 2 bis 4 erforderlich“: Entlastung, begrenzt die Berichtspflicht."
+    },
+    {
+      "address": "art-10/par-4",
+      "question": "obligations",
+      "reason": "„Der Wahrung von Betriebs- und Geschäftsgeheimnissen ist dabei gebührend Rechnung zu tragen“: der Form nach ein Gebot, wirkt aber als Schranke der Berichtspflicht."
+    }
+  ],
+  "notes": "§§ 1–10 enthalten keine Sanktions- oder Konsequenzvorschrift (Bußgelder in § 24, Ausschluss von Vergaben in § 22, beide außerhalb des Scopes); alle Pflichten sind deshalb kind=duty, Adressaten ausschließlich regulated. addressee_explicit=true nur, wenn der Pflichtträger grammatisch im Pflichtsatz steht (auch als Pronomen „es“, das auf „ein Unternehmen“ im selben Satz zeigt); bei Passivsätzen, in denen „das Unternehmen“ nur in einer Bedingung vorkommt, gilt false. Nummern unterhalb eines Absatzes sind über den Absatz erfasst, weil die Pflicht im Einleitungssatz steht. Parser-Befund: In art-1/par-1 und art-7/par-3 fehlt im Absatztext der Einleitungssatz vor der Nummernliste („die Abweichend …“, „nur geboten, wenn Die bloße Tatsache …“)."
+}

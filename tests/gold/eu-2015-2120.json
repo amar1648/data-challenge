@@ -88,11 +88,15 @@
         {
           "name": "Anbieter öffentlicher elektronischer Kommunikation",
           "type": "regulated"
+        },
+        {
+          "name": "Anbieter von Internetzugangsdiensten",
+          "type": "regulated"
         }
       ],
       "addressee_explicit": true,
       "kind": "duty",
-      "reason": "„dürfen diese anderen Dienste nur dann anbieten …, wenn die Netzkapazität ausreicht“; sie „dürfen nicht als Ersatz für Internetzugangsdienste nutzbar sein“."
+      "reason": "„dürfen diese anderen Dienste nur dann anbieten …, wenn die Netzkapazität ausreicht“; sie „dürfen nicht als Ersatz für Internetzugangsdienste nutzbar sein“. Ausdrücklich „einschließlich der Internetzugangsanbieter“."
     },
     {
       "address": "art-4/par-1",
@@ -148,11 +152,15 @@
         {
           "name": "Anbieter öffentlicher elektronischer Kommunikation",
           "type": "regulated"
+        },
+        {
+          "name": "Anbieter von Internetzugangsdiensten",
+          "type": "regulated"
         }
       ],
       "addressee_explicit": true,
       "kind": "duty",
-      "reason": "„legen auf Ersuchen der nationalen Regulierungsbehörde dieser Informationen … vor“; „übermitteln die angeforderten Informationen gemäß dem … verlangten Zeitplan“."
+      "reason": "„legen auf Ersuchen der nationalen Regulierungsbehörde dieser Informationen … vor“; „übermitteln die angeforderten Informationen gemäß dem … verlangten Zeitplan“. Ausdrücklich „einschließlich der Internetzugangsanbieter“."
     },
     {
       "address": "art-5/par-3",

@@ -23,13 +23,20 @@ def covers(hit: str, gold: str) -> bool:
 
 
 def evaluate(gold: dict, units: list[Unit]) -> dict:
-    total_chars = sum(len(unit.text) for unit in units)
+    """With gold["scope"] (article addresses), only hits and text inside the scope are counted."""
+    scope = gold.get("scope")
+
+    def in_scope(address: str) -> bool:
+        return scope is None or any(covers(address, s) for s in scope)
+
+    # query runs on the whole act (parents, sanction references); only scoring is limited.
+    total_chars = sum(len(unit.text) for unit in units if in_scope(unit.address))
     text_of = {unit.address: unit.text for unit in units}
     report = {}
     for question in ("applicability", "obligations"):
         entries = gold[question]
         borderline = [b["address"] for b in gold["borderline"] if b["question"] == question]
-        hits = _by_address(query(units, question))
+        hits = {a: h for a, h in _by_address(query(units, question)).items() if in_scope(a)}
         scored = {a: h for a, h in hits.items() if not any(covers(a, b) for b in borderline)}
 
         def matching(address: str) -> list[dict]:
@@ -37,7 +44,7 @@ def evaluate(gold: dict, units: list[Unit]) -> dict:
 
         found = [e for e in entries if any(covers(a, e["address"]) for a in hits)]
         true_hits = [a for a in scored if matching(a)]
-        covered = {member for hit in hits.values() for member in hit["covered"]}
+        covered = {member for hit in hits.values() for member in hit["covered"] if in_scope(member)}
         result = {
             "recall": _ratio(len(found), len(entries)),
             "precision": _ratio(len(true_hits), len(scored)),

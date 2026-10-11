@@ -40,13 +40,14 @@ class Rules(unittest.TestCase):
         tag_units(units)
         self.assertEqual(_addressees(units, "art-1/par-1"), [("Arbeitgeber", False)])
 
-    def test_verb_first_conditional(self):
+    def test_verb_first_conditional_keeps_the_rule_with_undetermined_addressee(self):
         units = _unit(
             "art-1/par-1",
             "Erkrankt ein Arbeitnehmer während des Urlaubs, so werden die Tage nicht angerechnet.",
         )
         tag_units(units)
-        self.assertNotIn("roles", units[1].tags)
+        # The subject of the condition is not the addressee; the rule is reported anyway.
+        self.assertEqual(_addressees(units, "art-1/par-1"), [("unbestimmt", False)])
 
     def test_claim_against_names_the_counterpart(self):
         units = _unit("art-1/par-1", "Zwischenmeister haben gegen ihren Auftraggeber Anspruch auf die Beträge.")
