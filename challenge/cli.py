@@ -36,7 +36,8 @@ def main() -> None:
     prepare_parser = sub.add_parser("prepare", help="Harmonisierte Struktur nach output/ schreiben")
     prepare_parser.add_argument(
         "--enrich", action="store_true",
-        help="Modell-Anreicherung aus enrichment/cache.json; fehlende Einträge über Ollama (OLLAMA_URL, LLM_MODEL)",
+        help="fehlende Modellergebnisse über Ollama abfragen (OLLAMA_URL, LLM_MODEL); "
+        "ohne die Option werden nur vorhandene Einträge aus enrichment/cache.json übernommen",
     )
 
     lookup_parser = sub.add_parser("lookup", help="Eine Stelle aus einem Akt holen")
@@ -55,7 +56,8 @@ def main() -> None:
     query.add_argument("--json", action="store_true", help="Treffer als JSON ausgeben")
     query.add_argument(
         "--mode", choices=MODES, default="hybrid",
-        help="hybrid: Rolle aus Regeln, erschlossene Adressaten aus dem Modell (Standard); rules: nur Regeln; "
+        help="hybrid: Rolle aus Regeln, Ersatz-Adressaten aus dem Modell (Standard); hybrid-wide: alle erschlossenen "
+        "Adressaten aus dem Modell; rules: nur Regeln; "
         "combined: Regeln als Vorfilter + Modell; model: Modell auf allen Einheiten",
     )
 
@@ -74,18 +76,19 @@ def main() -> None:
         diff_cmd(args.source, args.target)
 
 
-def prepare(with_model: bool = False) -> None:
-    cache = enrich.Cache() if with_model else None
+def prepare(call_model: bool = False) -> None:
+    """Cached model answers are always applied; only with call_model are missing ones requested."""
+    cache = enrich.Cache()
     tagged: dict[tuple[str, str], list[Unit]] = {}  # German versions, source of the tag transfer
     for act_id, path in german_acts().items():
         act, units, issues = de_gii.parse_with_issues(path, act_id)
-        _write(act, units, cache, tagged)
+        _write(act, units, cache, tagged, call_model)
         _report(issues)
     for path in EU_HTML:
-        _write(*eurlex_html.parse(path), cache, tagged)
+        _write(*eurlex_html.parse(path), cache, tagged, call_model)
     for path in FORMEX:  # German before English
         act, units, issues = formex.parse_with_issues(path)
-        _write(act, units, cache, tagged)
+        _write(act, units, cache, tagged, call_model)
         _report(issues)
     other = [path for path in iter_samples() if path.parent.name != "de" and path not in EU_HTML + FORMEX]
     if other:
@@ -100,16 +103,18 @@ def _report(issues: dict[str, list[str]]) -> None:
         print(f"              {category}: {len(examples)} ({shown})")
 
 
-def _write(act: Act, units: list[Unit], cache: enrich.Cache | None, tagged: dict) -> None:
+def _write(act: Act, units: list[Unit], cache: enrich.Cache, tagged: dict, call_model: bool = False) -> None:
     if act.language == "de":  # the tagging rules are German wording
         tag_units(units)
         tagged[(act.work_id, act.version)] = units
     else:
         _transfer_tags(act, units, tagged.get((act.work_id, act.version)))
-    if cache is not None and enrich.ENRICHED.get(act.work_id) == act.version:
-        counts = enrich.enrich(act, units, cache)
-        print(f"              Modell: {counts['units']} Einheiten, {counts['cached']} aus dem Cache, "
-              f"{counts['called']} neu abgefragt")
+    if enrich.ENRICHED.get(act.work_id) == act.version:
+        counts = enrich.enrich(act, units, cache, offline=not call_model)
+        line = f"Modell: {counts['units']} Einheiten, {counts['cached']} aus dem Cache, {counts['called']} neu abgefragt"
+        if counts["missing"]:
+            line += f", {counts['missing']} fehlen (prepare --enrich fragt sie ab)"
+        print(f"              {line}")
     target = write_act(OUTPUT, act, units)
     print(f"geschrieben   {target.relative_to(ROOT)} ({len(units)} Einheiten)")
 

@@ -145,7 +145,7 @@ def render(act_id: str, version: str, report: dict) -> str:
     return "\n".join(lines)
 
 
-MODE_LABEL = {"hybrid": "Hybrid", "rules": "Regeln", "combined": "Regeln+Modell", "model": "Modell alle"}
+MODE_LABEL = {"hybrid": "Hybrid", "hybrid-wide": "Hybrid breit", "rules": "Regeln", "combined": "Regeln+Modell", "model": "Modell alle"}
 
 
 def compare(golds: list[tuple[dict, list[Unit]]]) -> str:

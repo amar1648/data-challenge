@@ -135,7 +135,8 @@ def tag_units(units: list[Unit]) -> None:
             if scope_text:
                 roles.append({"role": "applicability", "rule": "scope-wording", "evidence": scope_text.group(0)})
             provider = article_actor.get(article.address) or act_actor
-            roles.extend(_obligations(unit, provider, act_actor))
+            fallback = "article-default" if article.address in article_actor else "act-default"
+            roles.extend(_obligations(unit, provider, fallback))
         if roles:
             unit.tags["roles"] = _merge(roles)
         sanctioned = _sanctioned(unit, article)
@@ -143,7 +144,7 @@ def tag_units(units: list[Unit]) -> None:
             unit.tags["sanctions"] = sanctioned
 
 
-def _obligations(unit: Unit, provider: str, act_actor: str) -> list[dict]:
+def _obligations(unit: Unit, provider: str, fallback: str) -> list[dict]:
     findings = []
     for clause in _clauses(unit.text):
         subjects = _subjects(clause, provider)
@@ -157,7 +158,7 @@ def _obligations(unit: Unit, provider: str, act_actor: str) -> list[dict]:
             if against:
                 subjects = _subjects(against.group(1), provider, subject_only=False)
             else:
-                subjects = _counterparts(clause, provider, act_actor)
+                subjects = _counterparts(clause, provider, fallback)
                 for subject in subjects:
                     subject["explicit"] = False
             finding = ("duty", "claim-counterpart", _CLAIM.search(clause).group(0))
@@ -176,12 +177,12 @@ def _obligations(unit: Unit, provider: str, act_actor: str) -> list[dict]:
         elif _conditional_passive(clause):
             # "Erkrankt ein Arbeitnehmer …, so werden … nicht angerechnet": a rule without a
             # named or inferable addressee is reported rather than dropped.
-            subjects = [_addressee(UNDETERMINED, explicit=False)]
+            subjects = [_addressee(UNDETERMINED, explicit=False, via="undetermined")]
             finding = ("duty", "conditional-passive", _conditional_passive(clause))
         if not finding:
             continue
         if not subjects:
-            subjects = _counterparts(clause, provider, act_actor)
+            subjects = _counterparts(clause, provider, fallback)
             for subject in subjects:
                 subject["explicit"] = False
         kind, rule, evidence = finding
@@ -236,7 +237,7 @@ def _subjects(clause: str, provider: str, subject_only: bool = True) -> list[dic
     for _, name in sorted(found):
         if name not in names:
             names.append(name)
-    return [_addressee(name, explicit=True) for name in names]
+    return [_addressee(name, explicit=True, via="named") for name in names]
 
 
 def _is_subject(before: str, actor: Actor) -> bool:
@@ -253,23 +254,28 @@ def _is_subject(before: str, actor: Actor) -> bool:
     return True
 
 
-def _counterparts(clause: str, provider: str, act_actor: str) -> list[dict]:
-    """Implicit addressee: the counterpart of a rights holder named in the clause, else the default."""
+def _counterparts(clause: str, provider: str, fallback: str) -> list[dict]:
+    """Implicit addressee: the counterpart of a rights holder named in the clause, else the default.
+
+    via records the derivation: "holder-counterpart", or the fallback ("article-default" when the
+    article names a regulated actor, "act-default" for the act-wide default).
+    """
     holder = HOLDERS.search(clause)
     if holder:
         name = holder.group(0)
         for actor_name, counterpart in COUNTERPART.items():
             if name.startswith(actor_name):
-                return [_addressee(counterpart, explicit=False)]
-        return [_addressee(provider, explicit=False)]
-    return [_addressee(provider or act_actor, explicit=False)]
+                return [_addressee(counterpart, explicit=False, via="holder-counterpart")]
+        return [_addressee(provider, explicit=False, via="holder-counterpart")]
+    return [_addressee(provider, explicit=False, via=fallback)]
 
 
-def _addressee(name: str, explicit: bool) -> dict:
+def _addressee(name: str, explicit: bool, via: str) -> dict:
+    """via: named | holder-counterpart | article-default | act-default | undetermined."""
     if name == UNDETERMINED:
-        return {"name": name, "type": "unknown", "explicit": False}
+        return {"name": name, "type": "unknown", "explicit": False, "via": via}
     actor = ACTOR_BY_NAME.get(name)
-    return {"name": name, "type": actor.type if actor else "regulated", "explicit": explicit}
+    return {"name": name, "type": actor.type if actor else "regulated", "explicit": explicit, "via": via}
 
 
 def _dominant_actors(units: list[Unit], article_of: dict[str, str]) -> dict[str, str]:

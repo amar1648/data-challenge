@@ -1,9 +1,10 @@
 """Answer the two content questions from the tags written at prepare time; no model call, no parsing.
 
-Four readings of the same tags:
-- "hybrid" (default): role from the rules. The addressee comes from the model only where the
-  rule infers it (explicit=false) or reports "unbestimmt" and the model names one; addressees
-  the rule finds in the text stay.
+Five readings of the same tags:
+- "hybrid" (default): role from the rules. The model replaces only addressees that come from
+  the act-wide default or are "unbestimmt", and only if it names one. Addressees the rule
+  derives (named in the clause, counterpart of a rights holder, actor of the article) stay.
+- "hybrid-wide": like hybrid, but the model replaces every inferred addressee (explicit=false).
 - "rules": tags["roles"] from the rule-based tagger only.
 - "combined": rules as pre-filter. For a candidate (rule hit, or unit of an article whose
   heading names scope or definitions) the model answer in tags["model"] decides role and
@@ -17,7 +18,7 @@ import re
 from challenge.model import Act, Unit
 from challenge.tagging import _SCOPE_HEADING, UNDETERMINED
 
-MODES = ("hybrid", "rules", "combined", "model")
+MODES = ("hybrid", "hybrid-wide", "rules", "combined", "model")
 QUESTIONS = {"applicability": "applicability", "obligations": "obligation"}
 TYPE_ORDER = {"regulated": 0, "authority": 1, "unknown": 2}
 TYPE_LABEL = {"regulated": "Normadressat", "authority": "Behörde/Organ", "unknown": "Adressat unbestimmt"}
@@ -58,8 +59,8 @@ def is_candidate(unit: Unit, article: Unit) -> bool:
 def _findings(unit: Unit, article: Unit, role_name: str, mode: str) -> list[dict]:
     rules = [role for role in unit.tags.get("roles", []) if role["role"] == role_name]
     model = unit.tags.get("model")
-    if mode == "hybrid":
-        return [_with_model_addressees(role, model) for role in rules]
+    if mode in ("hybrid", "hybrid-wide"):
+        return [_with_model_addressees(role, model, wide=mode == "hybrid-wide") for role in rules]
     if mode == "rules" or model is None or (mode == "combined" and not is_candidate(unit, article)):
         return rules
     if model["role"] != role_name:
@@ -76,11 +77,17 @@ def _findings(unit: Unit, article: Unit, role_name: str, mode: str) -> list[dict
     return [finding]
 
 
-def _with_model_addressees(role: dict, model: dict | None) -> dict:
-    """Replace inferred or undetermined rule addressees by the model's, if it names any."""
+# Rule addressees the model may replace in the default reading.
+REPLACEABLE = {"act-default", "undetermined"}
+
+
+def _with_model_addressees(role: dict, model: dict | None, wide: bool = False) -> dict:
+    """Replace default or undetermined rule addressees (wide: every inferred one) by the model's."""
     if role["role"] != "obligation" or model is None or model["role"] != "obligation" or not model["addressees"]:
         return role
     if any(a["explicit"] for a in role["addressees"]):
+        return role
+    if not wide and not all(a.get("via") in REPLACEABLE for a in role["addressees"]):
         return role
     addressees = [
         {"name": _without_article(a["name"]), "type": a["type"], "explicit": False, "source": "model"}

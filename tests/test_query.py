@@ -107,6 +107,18 @@ class Rules(unittest.TestCase):
         inferred[1].tags["model"]["addressees"] = []
         self.assertEqual(query(inferred, "obligations")[0]["addressees"][0]["name"], "unbestimmt")
 
+    def test_hybrid_keeps_the_counterpart_of_a_rights_holder(self):
+        units = _unit("art-1/par-1", "Die Urlaubswünsche des Arbeitnehmers sind zu berücksichtigen.")
+        tag_units(units)
+        units[1].tags["model"] = {
+            "role": "obligation", "addressees": [{"name": "Arbeitnehmer", "type": "regulated"}],
+            "addressee_explicit": False, "kind": "duty", "model": "test", "prompt_version": "v0",
+        }
+        rule = query(units, "obligations", "rules")[0]["addressees"][0]
+        self.assertEqual((rule["name"], rule["via"]), ("Arbeitgeber", "holder-counterpart"))
+        self.assertEqual(query(units, "obligations")[0]["addressees"][0]["name"], "Arbeitgeber")
+        self.assertEqual(query(units, "obligations", "hybrid-wide")[0]["addressees"][0]["name"], "Arbeitnehmer")
+
     def test_query_only_reads_tags(self):
         units = _unit("art-1/par-1", "Der Arbeitgeber ist verpflichtet, Urlaub zu gewähren.")
         self.assertEqual(query(units, "obligations"), [])
