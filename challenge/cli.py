@@ -1,35 +1,38 @@
-"""Command-line stub. Loading the samples is implemented; the task is not."""
+"""Command-line stub: prepare, lookup, query and diff on harmonized structure."""
 
 import argparse
 from pathlib import Path
 
+from challenge import de_gii
+from challenge.lookup import lookup
+from challenge.model import write_act
 from challenge.samples import (
-    EU_CONSOLIDATED,
-    EU_ORIGINAL,
     ROOT,
     describe_html,
-    describe_sample,
     describe_xml,
+    german_acts,
     iter_samples,
     resolve_act,
 )
 
+OUTPUT = ROOT / "output"
+# Acts whose parser is implemented and checked; the rest is reported as skipped.
+SUPPORTED = {"de-burlg"}
+
 
 def main() -> None:
     parser = argparse.ArgumentParser(
-        prog="python -m challenge",
-        description=(
-            "Einstieg für die Data Challenge. Die Befehle laden die Beispiele "
-            "und melden, dass die Aufbereitung noch offen ist."
-        ),
+    prog="python -m challenge",
+    description="Gesetzestexte harmonisieren und abfragen: Stelle nachschlagen, Fragen beantworten, Stände vergleichen.",
     )
     sub = parser.add_subparsers(dest="command", required=True)
 
     sub.add_parser("prepare", help="Harmonisierte Struktur nach output/ schreiben")
 
-    lookup = sub.add_parser("lookup", help="Eine Stelle aus einem Akt holen")
-    lookup.add_argument("--act", required=True)
-    lookup.add_argument("--ref", required=True)
+    lookup_parser = sub.add_parser("lookup", help="Eine Stelle aus einem Akt holen")
+    lookup_parser.add_argument("--act", required=True)
+    lookup_parser.add_argument("--ref", required=True)
+    lookup_parser.add_argument("--lang", default="de", help="Sprachfassung, Standard: de")
 
     query = sub.add_parser("query", help="Stellen zu einer Frage holen")
     query.add_argument("--act", required=True)
@@ -47,7 +50,7 @@ def main() -> None:
     if args.command == "prepare":
         prepare()
     elif args.command == "lookup":
-        lookup_cmd(args.act, args.ref)
+        lookup_cmd(args.act, args.ref, args.lang)
     elif args.command == "query":
         query_cmd(args.act, args.question)
     elif args.command == "diff":
@@ -55,18 +58,20 @@ def main() -> None:
 
 
 def prepare() -> None:
-    _pending(
-        "prepare soll die eigene Struktur nach output/ schreiben.",
-        [describe_sample(path) for path in iter_samples()],
-    )
+    for act_id, path in german_acts().items():
+        if act_id not in SUPPORTED:
+            print(f"übersprungen  {path.relative_to(ROOT)} (Parser noch nicht freigegeben)")
+            continue
+        act, units = de_gii.parse(path, act_id)
+        target = write_act(OUTPUT, act, units)
+        print(f"geschrieben   {target.relative_to(ROOT)} ({len(units)} Einheiten)")
+    other = [path for path in iter_samples() if path.parent.name != "de"]
+    if other:
+        print(f"übersprungen  {len(other)} EU-Dateien unter samples/eu/ (Parser noch offen)")
 
 
-def lookup_cmd(act_id: str, ref: str) -> None:
-    path = resolve_act(act_id)
-    _pending(
-        f"lookup soll die Stelle {ref!r} aus {act_id} liefern.",
-        [describe_xml(path)],
-    )
+def lookup_cmd(act_id: str, ref: str, language: str) -> None:
+    print(lookup(OUTPUT, act_id, ref, language))
 
 
 def query_cmd(act_id: str, question: str) -> None:
