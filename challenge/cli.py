@@ -5,10 +5,10 @@ import json
 import sys
 from pathlib import Path
 
-from challenge import de_gii, eurlex_html
+from challenge import de_gii, enrich, eurlex_html, formex
 from challenge.diff import diff, german_summary
 from challenge.lookup import latest_version, lookup
-from challenge.query import query, render
+from challenge.query import MODES, query, render
 from challenge.tagging import tag_units
 from challenge.model import Act, Unit, read_act, write_act
 from challenge.samples import (
@@ -20,6 +20,8 @@ from challenge.samples import (
 )
 
 OUTPUT = ROOT / "output"
+# Formex zips with a parser; the other samples in samples/eu/formex/ are reported as skipped.
+FORMEX = tuple(ROOT / "samples" / "eu" / "formex" / f"32016R0679_{lang}.fmx.zip" for lang in ("de", "en"))
 EU_HTML = (EU_ORIGINAL, EU_CONSOLIDATED)
 
 
@@ -30,7 +32,11 @@ def main() -> None:
     )
     sub = parser.add_subparsers(dest="command", required=True)
 
-    sub.add_parser("prepare", help="Harmonisierte Struktur nach output/ schreiben")
+    prepare_parser = sub.add_parser("prepare", help="Harmonisierte Struktur nach output/ schreiben")
+    prepare_parser.add_argument(
+        "--enrich", action="store_true",
+        help="Modell-Anreicherung aus enrichment/cache.json; fehlende Einträge über Ollama (OLLAMA_URL, LLM_MODEL)",
+    )
 
     lookup_parser = sub.add_parser("lookup", help="Eine Stelle aus einem Akt holen")
     lookup_parser.add_argument("--act", required=True)
@@ -46,6 +52,10 @@ def main() -> None:
     )
     query.add_argument("--lang", default="de", help="Sprachfassung, Standard: de")
     query.add_argument("--json", action="store_true", help="Treffer als JSON ausgeben")
+    query.add_argument(
+        "--mode", choices=MODES, default="combined",
+        help="rules: nur Regeln; combined: Regeln als Vorfilter + Modell (Standard); model: Modell auf allen Einheiten",
+    )
 
     diff = sub.add_parser("diff", help="Zwei Stände gegenüberstellen")
     diff.add_argument("--from", dest="source", required=True)
@@ -53,33 +63,47 @@ def main() -> None:
 
     args = parser.parse_args()
     if args.command == "prepare":
-        prepare()
+        prepare(args.enrich)
     elif args.command == "lookup":
         lookup_cmd(args.act, args.ref, args.lang)
     elif args.command == "query":
-        query_cmd(args.act, args.question, args.lang, args.json)
+        query_cmd(args.act, args.question, args.lang, args.json, args.mode)
     elif args.command == "diff":
         diff_cmd(args.source, args.target)
 
 
-def prepare() -> None:
+def prepare(with_model: bool = False) -> None:
+    cache = enrich.Cache() if with_model else None
     for act_id, path in german_acts().items():
         act, units, issues = de_gii.parse_with_issues(path, act_id)
-        _write(act, units)
-        for category, examples in issues.items():
-            shown = ", ".join(dict.fromkeys(examples))
-            if len(shown) > 90:
-                shown = shown[:90].rsplit(",", 1)[0] + ", …"
-            print(f"              {category}: {len(examples)} ({shown})")
+        _write(act, units, cache)
+        _report(issues)
     for path in EU_HTML:
-        _write(*eurlex_html.parse(path))
-    other = [path for path in iter_samples() if path.parent.name != "de" and path not in EU_HTML]
+        _write(*eurlex_html.parse(path), cache)
+    for path in FORMEX:
+        act, units, issues = formex.parse_with_issues(path)
+        _write(act, units, cache)
+        _report(issues)
+    other = [path for path in iter_samples() if path.parent.name != "de" and path not in EU_HTML + FORMEX]
     if other:
-        print(f"übersprungen  {len(other)} Formex-Dateien unter samples/eu/formex/ (Parser noch offen)")
+        print(f"übersprungen  {len(other)} Formex-Dateien unter samples/eu/formex/ (Parser noch nicht freigegeben)")
 
 
-def _write(act: Act, units: list[Unit]) -> None:
-    tag_units(units)
+def _report(issues: dict[str, list[str]]) -> None:
+    for category, examples in issues.items():
+        shown = ", ".join(dict.fromkeys(examples))
+        if len(shown) > 90:
+            shown = shown[:90].rsplit(",", 1)[0] + ", …"
+        print(f"              {category}: {len(examples)} ({shown})")
+
+
+def _write(act: Act, units: list[Unit], cache: enrich.Cache | None) -> None:
+    if act.language == "de":  # the tagging rules are German wording
+        tag_units(units)
+    if cache is not None and enrich.ENRICHED.get(act.work_id) == act.version:
+        counts = enrich.enrich(act, units, cache)
+        print(f"              Modell: {counts['units']} Einheiten, {counts['cached']} aus dem Cache, "
+              f"{counts['called']} neu abgefragt")
     target = write_act(OUTPUT, act, units)
     print(f"geschrieben   {target.relative_to(ROOT)} ({len(units)} Einheiten)")
 
@@ -88,9 +112,9 @@ def lookup_cmd(act_id: str, ref: str, language: str) -> None:
     print(lookup(OUTPUT, act_id, ref, language))
 
 
-def query_cmd(act_id: str, question: str, language: str, as_json: bool) -> None:
+def query_cmd(act_id: str, question: str, language: str, as_json: bool, mode: str) -> None:
     act, units = read_act(latest_version(OUTPUT, act_id, language))
-    hits = query(units, question)
+    hits = query(units, question, mode)
     if as_json:
         print(json.dumps({"act": act.__dict__, "question": question, "hits": hits}, ensure_ascii=False, indent=2))
     else:

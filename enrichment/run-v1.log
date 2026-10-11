@@ -1,0 +1,319 @@
+10:51:59 Modell qwen3:4b, Prompt v1, http://host.docker.internal:11434
+10:51:59 de-burlg formula 3.19s in=508 out=37 -> {"role": "applicability", "addressees": [], "addressee_explicit": false, "kind": "none"}
+10:52:04 de-burlg art-1/par-1 4.56s in=514 out=60 -> {"role": "obligation", "addressees": [{"name": "Arbeitnehmer", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+10:52:09 de-burlg art-2/par-1 4.98s in=567 out=61 -> {"role": "obligation", "addressees": [{"name": "Arbeitnehmer", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+10:52:12 de-burlg art-3/par-1 3.07s in=511 out=37 -> {"role": "obligation", "addressees": [], "addressee_explicit": false, "kind": "none"}
+10:52:16 de-burlg art-3/par-2 4.25s in=518 out=60 -> {"role": "obligation", "addressees": [{"name": "Arbeitnehmer", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+10:52:21 de-burlg art-4/par-1 4.62s in=520 out=60 -> {"role": "obligation", "addressees": [{"name": "Arbeitnehmer", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+10:52:25 de-burlg art-5/par-1 4.53s in=524 out=60 -> {"role": "obligation", "addressees": [{"name": "Arbeitnehmer", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+10:52:27 de-burlg art-5/par-1/pt-a 4.89s in=566 out=61 -> {"role": "obligation", "addressees": [{"name": "Arbeitnehmer", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+10:52:32 de-burlg art-5/par-1/pt-b 4.18s in=547 out=59 -> {"role": "obligation", "addressees": [{"name": "Arbeitnehmer", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+10:52:36 de-burlg art-5/par-1/pt-c 4.4s in=558 out=60 -> {"role": "obligation", "addressees": [{"name": "Arbeitnehmer", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+10:52:41 de-burlg art-5/par-2 4.55s in=522 out=60 -> {"role": "obligation", "addressees": [{"name": "Arbeitnehmer", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+10:52:45 de-burlg art-5/par-3 4.47s in=543 out=60 -> {"role": "obligation", "addressees": [{"name": "Arbeitnehmer", "type": "regulated"}], "addressee_explicit": true, "kind": "consequence"}
+10:52:50 de-burlg art-6/par-1 4.73s in=537 out=60 -> {"role": "obligation", "addressees": [{"name": "Arbeitnehmer", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+10:52:54 de-burlg art-6/par-2 4.51s in=551 out=60 -> {"role": "obligation", "addressees": [{"name": "Arbeitgeber", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+10:52:57 de-burlg art-7/par-1 5.34s in=620 out=59 -> {"role": "obligation", "addressees": [{"name": "Arbeitnehmer", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+10:53:02 de-burlg art-7/par-2 5.06s in=616 out=60 -> {"role": "obligation", "addressees": [{"name": "Arbeitnehmer", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+10:53:07 de-burlg art-7/par-3 5.25s in=643 out=59 -> {"role": "obligation", "addressees": [{"name": "Arbeitnehmer", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+10:53:12 de-burlg art-7/par-4 4.51s in=536 out=61 -> {"role": "obligation", "addressees": [{"name": "Arbeitnehmer", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+10:53:16 de-burlg art-8/par-1 4.67s in=522 out=61 -> {"role": "obligation", "addressees": [{"name": "Arbeitnehmer", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+10:53:21 de-burlg art-9/par-1 4.78s in=537 out=61 -> {"role": "obligation", "addressees": [{"name": "Arbeitnehmer", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+10:53:23 de-burlg art-10/par-1 4.98s in=564 out=61 -> {"role": "obligation", "addressees": [{"name": "Arbeitnehmer", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+10:53:28 de-burlg art-11/par-1 4.62s in=713 out=36 -> {"role": "obligation", "addressees": [], "addressee_explicit": false, "kind": "none"}
+10:53:32 de-burlg art-11/par-2 4.24s in=515 out=60 -> {"role": "obligation", "addressees": [{"name": "Arbeitnehmer", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+10:53:36 de-burlg art-12/par-1 3.69s in=604 out=36 -> {"role": "applicability", "addressees": [], "addressee_explicit": false, "kind": "none"}
+10:53:46 de-burlg art-12/par-1/pt-1 9.71s in=802 out=101 -> {"role": "obligation", "addressees": [{"name": "Heimarbeiter", "type": "regulated"}, {"name": "nach § 1 Abs. 2 Buchstabe a des Heimarbeitsgesetzes Gleichgestellte", "type": "regulated"}], "addressee_explicit": false, "kind": "duty"}
+10:53:52 de-burlg art-12/par-1/pt-2 5.17s in=701 out=64 -> {"role": "obligation", "addressees": [{"name": "Anspruchsberechtigter", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+10:53:53 de-burlg art-12/par-1/pt-3 4.43s in=646 out=59 -> {"role": "obligation", "addressees": [{"name": "Arbeitnehmer", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+10:54:02 de-burlg art-12/par-1/pt-4 9.07s in=785 out=107 -> {"role": "obligation", "addressees": [{"name": "Hausgewerbetreibende", "type": "regulated"}, {"name": "nach § 1 Abs. 2 Buchstaben b und c des Heimarbeitsgesetzes Gleichgestellte", "type": "regulated"}], "addressee_explicit": false, "kind": "duty"}
+10:54:07 de-burlg art-12/par-1/pt-5 4.95s in=676 out=61 -> {"role": "obligation", "addressees": [{"name": "Zwischenmeister", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+10:54:11 de-burlg art-12/par-1/pt-6 4.41s in=636 out=59 -> {"role": "obligation", "addressees": [{"name": "Arbeitnehmer", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+10:54:16 de-burlg art-12/par-1/pt-7 4.69s in=681 out=59 -> {"role": "obligation", "addressees": [{"name": "Heimarbeiter", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+10:54:18 de-burlg art-12/par-1/pt-8 5.37s in=725 out=62 -> {"role": "obligation", "addressees": [{"name": "fremden Hilfskräfte", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+10:54:24 de-burlg art-13/par-1 5.27s in=632 out=59 -> {"role": "obligation", "addressees": [{"name": "Arbeitnehmer", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+10:54:29 de-burlg art-13/par-2 5.32s in=643 out=59 -> {"role": "obligation", "addressees": [{"name": "Arbeitnehmer", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+10:54:34 de-burlg art-13/par-3 5.12s in=621 out=59 -> {"role": "obligation", "addressees": [{"name": "Unternehmen", "type": "regulated"}], "addressee_explicit": false, "kind": "consequence"}
+10:54:37 de-burlg art-14/par-1 3.27s in=547 out=36 -> {"role": "applicability", "addressees": [], "addressee_explicit": false, "kind": "none"}
+10:54:42 de-burlg art-15/par-1 4.96s in=710 out=36 -> {"role": "applicability", "addressees": [], "addressee_explicit": false, "kind": "none"}
+10:54:45 de-burlg art-15/par-2 5.35s in=583 out=67 -> {"role": "obligation", "addressees": [{"name": "landesrechtliche Vorschriften", "type": "regulated"}], "addressee_explicit": false, "kind": "consequence"}
+10:54:50 de-burlg art-15a/par-1 5.14s in=596 out=60 -> {"role": "obligation", "addressees": [{"name": "Arbeitnehmer", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+10:54:53 de-burlg art-16/par-1 3.11s in=514 out=37 -> {"role": "obligation", "addressees": [], "addressee_explicit": false, "kind": "none"}
+10:54:53 de-burlg 2013-04-20: {'units': 40, 'cached': 0, 'called': 40, 'missing': 0, 'seconds': 193.4, 'prompt_tokens': 23854, 'output_tokens': 2334}
+10:54:57 eu-2015-2120 art-1/par-1 4.28s in=655 out=36 -> {"role": "applicability", "addressees": [], "addressee_explicit": false, "kind": "none"}
+10:55:02 eu-2015-2120 art-1/par-2 4.75s in=660 out=60 -> {"role": "obligation", "addressees": [{"name": "Endkunden", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+10:55:07 eu-2015-2120 art-1/par-3 5.18s in=693 out=59 -> {"role": "obligation", "addressees": [{"name": "Verbraucher", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+10:55:11 eu-2015-2120 art-2/par-1 3.25s in=643 out=36 -> {"role": "applicability", "addressees": [], "addressee_explicit": false, "kind": "none"}
+10:55:14 eu-2015-2120 art-2/par-1/pt-1 5.74s in=690 out=69 -> {"role": "obligation", "addressees": [{"name": "Anbieter öffentlicher elektronischer Kommunikation", "type": "regulated"}], "addressee_explicit": false, "kind": "duty"}
+10:55:17 eu-2015-2120 art-2/par-1/pt-2 3.2s in=711 out=36 -> {"role": "applicability", "addressees": [], "addressee_explicit": false, "kind": "none"}
+10:55:20 eu-2015-2120 art-2/par-1/pt-3 3.39s in=740 out=36 -> {"role": "applicability", "addressees": [], "addressee_explicit": false, "kind": "none"}
+10:55:23 eu-2015-2120 art-2/par-1/pt-4 3.24s in=717 out=37 -> {"role": "obligation", "addressees": [], "addressee_explicit": false, "kind": "none"}
+10:55:27 eu-2015-2120 art-2/par-1/pt-5 3.34s in=717 out=37 -> {"role": "obligation", "addressees": [], "addressee_explicit": false, "kind": "none"}
+10:55:30 eu-2015-2120 art-2/par-1/pt-6 3.33s in=719 out=37 -> {"role": "obligation", "addressees": [], "addressee_explicit": false, "kind": "none"}
+10:55:33 eu-2015-2120 art-2/par-1/pt-7 3.21s in=719 out=37 -> {"role": "obligation", "addressees": [], "addressee_explicit": false, "kind": "none"}
+10:55:39 eu-2015-2120 art-3/par-1 5.78s in=742 out=60 -> {"role": "obligation", "addressees": [{"name": "Endnutzer", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+10:55:42 eu-2015-2120 art-3/par-2 5.42s in=690 out=66 -> {"role": "obligation", "addressees": [{"name": "Anbieter von Internetzugangsdiensten", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+10:55:50 eu-2015-2120 art-3/par-3 7.98s in=956 out=66 -> {"role": "obligation", "addressees": [{"name": "Anbieter von Internetzugangsdiensten", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+10:55:59 eu-2015-2120 art-3/par-3/pt-a 9.28s in=1072 out=66 -> {"role": "obligation", "addressees": [{"name": "Anbieter von Internetzugangsdiensten", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+10:56:04 eu-2015-2120 art-3/par-3/pt-b 5.4s in=992 out=66 -> {"role": "obligation", "addressees": [{"name": "Anbieter von Internetzugangsdiensten", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+10:56:07 eu-2015-2120 art-3/par-3/pt-c 5.62s in=1012 out=66 -> {"role": "obligation", "addressees": [{"name": "Anbieter von Internetzugangsdiensten", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+10:56:13 eu-2015-2120 art-3/par-4 5.72s in=729 out=63 -> {"role": "obligation", "addressees": [{"name": "Verwaltungsbehörde", "type": "authority"}], "addressee_explicit": false, "kind": "duty"}
+10:56:20 eu-2015-2120 art-3/par-5 7.17s in=847 out=69 -> {"role": "obligation", "addressees": [{"name": "Anbieter öffentlicher elektronischer Kommunikation", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+10:56:26 eu-2015-2120 art-4/par-1 5.42s in=667 out=66 -> {"role": "obligation", "addressees": [{"name": "Anbieter von Internetzugangsdiensten", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+10:56:31 eu-2015-2120 art-4/par-1/pt-a 5.77s in=729 out=66 -> {"role": "obligation", "addressees": [{"name": "Anbieter von Internetzugangsdiensten", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+10:56:34 eu-2015-2120 art-4/par-1/pt-b 5.39s in=739 out=67 -> {"role": "obligation", "addressees": [{"name": "Anbieter von Internetzugangsdiensten", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+10:56:39 eu-2015-2120 art-4/par-1/pt-c 5.25s in=749 out=66 -> {"role": "obligation", "addressees": [{"name": "Anbieter von Internetzugangsdiensten", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+10:56:45 eu-2015-2120 art-4/par-1/pt-d 5.97s in=812 out=66 -> {"role": "obligation", "addressees": [{"name": "Anbieter von Internetzugangsdiensten", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+10:56:51 eu-2015-2120 art-4/par-1/pt-e 5.41s in=764 out=66 -> {"role": "obligation", "addressees": [{"name": "Anbieter von Internetzugangsdiensten", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+10:56:56 eu-2015-2120 art-4/par-2 5.23s in=667 out=66 -> {"role": "obligation", "addressees": [{"name": "Anbieter von Internetzugangsdiensten", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+10:57:02 eu-2015-2120 art-4/par-3 5.72s in=746 out=61 -> {"role": "obligation", "addressees": [{"name": "Mitgliedstaaten", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+10:57:05 eu-2015-2120 art-4/par-4 5.98s in=797 out=59 -> {"role": "obligation", "addressees": [{"name": "Verbraucher", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+10:57:12 eu-2015-2120 art-5/par-1 6.64s in=812 out=65 -> {"role": "obligation", "addressees": [{"name": "nationalen Regulierungsbehörden", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+10:57:17 eu-2015-2120 art-5/par-2 5.85s in=739 out=69 -> {"role": "obligation", "addressees": [{"name": "Anbieter öffentlicher elektronischer Kommunikation", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+10:57:22 eu-2015-2120 art-5/par-3 4.69s in=680 out=60 -> {"role": "obligation", "addressees": [{"name": "GEREK", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+10:57:27 eu-2015-2120 art-5/par-4 4.68s in=642 out=62 -> {"role": "obligation", "addressees": [{"name": "Mitgliedstaaten", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+10:57:29 eu-2015-2120 art-5a/par-1 4.9s in=675 out=59 -> {"role": "obligation", "addressees": [{"name": "Endkunden", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+10:57:35 eu-2015-2120 art-5a/par-2 6.37s in=784 out=70 -> {"role": "obligation", "addressees": [{"name": "Anbieter regulierter intra-EU-Kommunikation", "type": "regulated"}], "addressee_explicit": false, "kind": "duty"}
+10:57:40 eu-2015-2120 art-5a/par-3 4.84s in=709 out=59 -> {"role": "obligation", "addressees": [{"name": "Verbraucher", "type": "regulated"}], "addressee_explicit": true, "kind": "consequence"}
+10:57:45 eu-2015-2120 art-5a/par-4 4.83s in=698 out=59 -> {"role": "obligation", "addressees": [{"name": "Anbieter", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+10:57:51 eu-2015-2120 art-5a/par-5 5.79s in=801 out=59 -> {"role": "obligation", "addressees": [{"name": "Unternehmen", "type": "regulated"}], "addressee_explicit": false, "kind": "duty"}
+10:57:56 eu-2015-2120 art-5a/par-6 8.22s in=1005 out=65 -> {"role": "obligation", "addressees": [{"name": "nationalen Regulierungsbehörde", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+10:58:02 eu-2015-2120 art-5a/par-7 5.37s in=757 out=59 -> {"role": "obligation", "addressees": [{"name": "Anbieter", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+10:58:08 eu-2015-2120 art-5a/par-8 6.05s in=824 out=59 -> {"role": "obligation", "addressees": [{"name": "Anbieter", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+10:58:12 eu-2015-2120 art-5a/par-9 4.52s in=676 out=58 -> {"role": "obligation", "addressees": [{"name": "Kommission", "type": "authority"}], "addressee_explicit": true, "kind": "duty"}
+10:58:16 eu-2015-2120 art-5a/par-10 4.16s in=621 out=59 -> {"role": "obligation", "addressees": [{"name": "Endkunden", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+10:58:21 eu-2015-2120 art-5a/par-10/pt-a 4.38s in=647 out=59 -> {"role": "obligation", "addressees": [{"name": "Endkunden", "type": "regulated"}], "addressee_explicit": false, "kind": "duty"}
+10:58:22 eu-2015-2120 art-5a/par-10/pt-b 4.42s in=678 out=59 -> {"role": "obligation", "addressees": [{"name": "Endkunden", "type": "regulated"}], "addressee_explicit": false, "kind": "duty"}
+10:58:27 eu-2015-2120 art-5a/par-10/pt-c 4.52s in=671 out=59 -> {"role": "obligation", "addressees": [{"name": "Endkunden", "type": "regulated"}], "addressee_explicit": false, "kind": "duty"}
+10:58:33 eu-2015-2120 art-5a/par-10/pt-d 5.96s in=824 out=59 -> {"role": "obligation", "addressees": [{"name": "Anbieter", "type": "regulated"}], "addressee_explicit": false, "kind": "consequence"}
+10:58:36 eu-2015-2120 art-5a/par-10/pt-e 2.99s in=672 out=36 -> {"role": "obligation", "addressees": [], "addressee_explicit": false, "kind": "none"}
+10:58:41 eu-2015-2120 art-5a/par-10/pt-f 4.75s in=710 out=59 -> {"role": "obligation", "addressees": [{"name": "Verbraucher", "type": "regulated"}], "addressee_explicit": true, "kind": "consequence"}
+10:58:46 eu-2015-2120 art-5a/par-11 5.74s in=784 out=59 -> {"role": "obligation", "addressees": [{"name": "Anbieter", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+10:58:49 eu-2015-2120 art-5b/par-1 4.92s in=691 out=58 -> {"role": "obligation", "addressees": [{"name": "Kommission", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+10:58:51 eu-2015-2120 art-5b/par-2 2.84s in=625 out=36 -> {"role": "applicability", "addressees": [], "addressee_explicit": false, "kind": "none"}
+10:58:58 eu-2015-2120 art-6/par-1 6.62s in=835 out=61 -> {"role": "obligation", "addressees": [{"name": "Mitgliedstaaten", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+10:59:03 eu-2015-2120 art-9/par-1 4.82s in=664 out=59 -> {"role": "obligation", "addressees": [{"name": "Kommission", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+10:59:06 eu-2015-2120 art-10/par-1 3.04s in=625 out=36 -> {"role": "applicability", "addressees": [], "addressee_explicit": false, "kind": "none"}
+10:59:09 eu-2015-2120 art-10/par-2 2.98s in=622 out=37 -> {"role": "applicability", "addressees": [], "addressee_explicit": false, "kind": "none"}
+10:59:16 eu-2015-2120 art-10/par-2/pt-a 6.65s in=998 out=36 -> {"role": "applicability", "addressees": [], "addressee_explicit": false, "kind": "none"}
+10:59:18 eu-2015-2120 art-10/par-2/pt-b 4.76s in=719 out=58 -> {"role": "obligation", "addressees": [{"name": "Kommission", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+10:59:22 eu-2015-2120 art-10/par-2/pt-c 4.17s in=643 out=59 -> {"role": "obligation", "addressees": [{"name": "Unternehmen", "type": "regulated"}], "addressee_explicit": false, "kind": "consequence"}
+10:59:25 eu-2015-2120 art-10/par-2/pt-d 2.82s in=651 out=36 -> {"role": "applicability", "addressees": [], "addressee_explicit": false, "kind": "none"}
+10:59:30 eu-2015-2120 art-10/par-3 5.19s in=704 out=61 -> {"role": "obligation", "addressees": [{"name": "Mitgliedstaaten", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+10:59:35 eu-2015-2120 art-10/par-4 5.13s in=717 out=58 -> {"role": "obligation", "addressees": [{"name": "Kommission", "type": "authority"}], "addressee_explicit": true, "kind": "consequence"}
+10:59:38 eu-2015-2120 art-10/par-5 2.75s in=622 out=36 -> {"role": "obligation", "addressees": [], "addressee_explicit": false, "kind": "none"}
+10:59:38 eu-2015-2120 2024-05-15: {'units': 62, 'cached': 0, 'called': 62, 'missing': 0, 'seconds': 311.8, 'prompt_tokens': 45899, 'output_tokens': 3468}
+10:59:43 de-lksg art-1/par-1 5.18s in=568 out=60 -> {"role": "obligation", "addressees": [{"name": "Unternehmen", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+10:59:43 de-lksg art-1/par-1/sen-1 3.27s in=591 out=37 -> {"role": "applicability", "addressees": [], "addressee_explicit": false, "kind": "none"}
+10:59:49 de-lksg art-1/par-1/sen-1/pt-1 5.06s in=573 out=61 -> {"role": "obligation", "addressees": [{"name": "Unternehmen", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+10:59:53 de-lksg art-1/par-1/sen-1/pt-2 4.59s in=574 out=60 -> {"role": "obligation", "addressees": [{"name": "Unternehmen", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+10:59:58 de-lksg art-1/par-1/sen-2 4.96s in=604 out=59 -> {"role": "obligation", "addressees": [{"name": "Unternehmen", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+11:00:03 de-lksg art-1/par-1/sen-2/pt-1 4.7s in=579 out=61 -> {"role": "obligation", "addressees": [{"name": "Unternehmen", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+11:00:07 de-lksg art-1/par-1/sen-2/pt-2 4.24s in=574 out=61 -> {"role": "obligation", "addressees": [{"name": "Unternehmen", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+11:00:12 de-lksg art-1/par-2 4.71s in=578 out=62 -> {"role": "obligation", "addressees": [{"name": "Entleihunternehmen", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+11:00:14 de-lksg art-1/par-3 5.05s in=604 out=60 -> {"role": "obligation", "addressees": [{"name": "Arbeitnehmer", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+11:00:18 de-lksg art-2/par-1 3.48s in=569 out=37 -> {"role": "obligation", "addressees": [], "addressee_explicit": false, "kind": "none"}
+11:00:21 de-lksg art-2/par-2 3.28s in=563 out=37 -> {"role": "obligation", "addressees": [], "addressee_explicit": false, "kind": "none"}
+11:00:27 de-lksg art-2/par-2/pt-1 6.51s in=728 out=60 -> {"role": "obligation", "addressees": [{"name": "Unternehmen", "type": "regulated"}], "addressee_explicit": false, "kind": "duty"}
+11:00:33 de-lksg art-2/par-2/pt-2 5.27s in=676 out=59 -> {"role": "obligation", "addressees": [{"name": "Unternehmen", "type": "regulated"}], "addressee_explicit": false, "kind": "duty"}
+11:00:37 de-lksg art-2/par-2/pt-2/pt-a 4.53s in=714 out=36 -> {"role": "obligation", "addressees": [], "addressee_explicit": false, "kind": "none"}
+11:00:39 de-lksg art-2/par-2/pt-2/pt-b 4.7s in=667 out=59 -> {"role": "obligation", "addressees": [{"name": "Unternehmen", "type": "regulated"}], "addressee_explicit": false, "kind": "duty"}
+11:00:44 de-lksg art-2/par-2/pt-2/pt-c 4.72s in=672 out=59 -> {"role": "obligation", "addressees": [{"name": "Unternehmen", "type": "regulated"}], "addressee_explicit": false, "kind": "duty"}
+11:00:47 de-lksg art-2/par-2/pt-2/pt-d 3.08s in=677 out=36 -> {"role": "obligation", "addressees": [], "addressee_explicit": false, "kind": "none"}
+11:00:53 de-lksg art-2/par-2/pt-3 6.4s in=788 out=59 -> {"role": "obligation", "addressees": [{"name": "Unternehmen", "type": "regulated"}], "addressee_explicit": false, "kind": "duty"}
+11:00:58 de-lksg art-2/par-2/pt-4 4.55s in=636 out=60 -> {"role": "obligation", "addressees": [{"name": "Unternehmen", "type": "regulated"}], "addressee_explicit": false, "kind": "duty"}
+11:01:03 de-lksg art-2/par-2/pt-5 4.64s in=629 out=61 -> {"role": "obligation", "addressees": [{"name": "Unternehmen", "type": "regulated"}], "addressee_explicit": false, "kind": "duty"}
+11:01:07 de-lksg art-2/par-2/pt-5/pt-a 4.66s in=621 out=59 -> {"role": "obligation", "addressees": [{"name": "Unternehmen", "type": "regulated"}], "addressee_explicit": false, "kind": "duty"}
+11:01:09 de-lksg art-2/par-2/pt-5/pt-b 4.35s in=621 out=59 -> {"role": "obligation", "addressees": [{"name": "Unternehmen", "type": "regulated"}], "addressee_explicit": false, "kind": "duty"}
+11:01:13 de-lksg art-2/par-2/pt-5/pt-c 4.37s in=639 out=59 -> {"role": "obligation", "addressees": [{"name": "Unternehmen", "type": "regulated"}], "addressee_explicit": false, "kind": "duty"}
+11:01:17 de-lksg art-2/par-2/pt-5/pt-d 4.28s in=600 out=62 -> {"role": "obligation", "addressees": [{"name": "Beschäftigte", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+11:01:21 de-lksg art-2/par-2/pt-6 3.08s in=580 out=37 -> {"role": "applicability", "addressees": [], "addressee_explicit": false, "kind": "none"}
+11:01:25 de-lksg art-2/par-2/pt-6/pt-a 4.49s in=557 out=60 -> {"role": "obligation", "addressees": [{"name": "Arbeitnehmer", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+11:01:29 de-lksg art-2/par-2/pt-6/pt-b 4.35s in=582 out=60 -> {"role": "obligation", "addressees": [{"name": "Unternehmen", "type": "regulated"}], "addressee_explicit": false, "kind": "duty"}
+11:01:34 de-lksg art-2/par-2/pt-6/pt-c 4.54s in=586 out=63 -> {"role": "obligation", "addressees": [{"name": "Gewerkschaften", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+11:01:37 de-lksg art-2/par-2/pt-7 5.38s in=680 out=61 -> {"role": "obligation", "addressees": [{"name": "Unternehmen", "type": "regulated"}], "addressee_explicit": false, "kind": "duty"}
+11:01:41 de-lksg art-2/par-2/pt-8 4.65s in=629 out=61 -> {"role": "obligation", "addressees": [{"name": "Unternehmen", "type": "regulated"}], "addressee_explicit": false, "kind": "duty"}
+11:01:46 de-lksg art-2/par-2/pt-9 4.36s in=618 out=59 -> {"role": "obligation", "addressees": [{"name": "Unternehmen", "type": "regulated"}], "addressee_explicit": false, "kind": "duty"}
+11:01:50 de-lksg art-2/par-2/pt-9/pt-a 4.62s in=598 out=60 -> {"role": "obligation", "addressees": [{"name": "Unternehmen", "type": "regulated"}], "addressee_explicit": false, "kind": "duty"}
+11:01:54 de-lksg art-2/par-2/pt-9/pt-b 4.1s in=592 out=59 -> {"role": "obligation", "addressees": [{"name": "Person", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+11:01:58 de-lksg art-2/par-2/pt-9/pt-c 4.09s in=591 out=59 -> {"role": "obligation", "addressees": [{"name": "Person", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+11:02:00 de-lksg art-2/par-2/pt-9/pt-d 3.88s in=583 out=58 -> {"role": "obligation", "addressees": [{"name": "Person", "type": "regulated"}], "addressee_explicit": false, "kind": "duty"}
+11:02:05 de-lksg art-2/par-2/pt-10 5.11s in=641 out=60 -> {"role": "obligation", "addressees": [{"name": "Unternehmen", "type": "regulated"}], "addressee_explicit": false, "kind": "duty"}
+11:02:09 de-lksg art-2/par-2/pt-11 4.25s in=621 out=59 -> {"role": "obligation", "addressees": [{"name": "Unternehmen", "type": "regulated"}], "addressee_explicit": false, "kind": "duty"}
+11:02:14 de-lksg art-2/par-2/pt-11/pt-a 4.79s in=603 out=60 -> {"role": "obligation", "addressees": [{"name": "Unternehmen", "type": "regulated"}], "addressee_explicit": false, "kind": "duty"}
+11:02:18 de-lksg art-2/par-2/pt-11/pt-b 4.06s in=585 out=61 -> {"role": "obligation", "addressees": [{"name": "Unternehmen", "type": "regulated"}], "addressee_explicit": false, "kind": "duty"}
+11:02:22 de-lksg art-2/par-2/pt-11/pt-c 4.1s in=594 out=60 -> {"role": "obligation", "addressees": [{"name": "Unternehmen", "type": "regulated"}], "addressee_explicit": false, "kind": "consequence"}
+11:02:27 de-lksg art-2/par-2/pt-12 5.01s in=656 out=59 -> {"role": "obligation", "addressees": [{"name": "Unternehmen", "type": "regulated"}], "addressee_explicit": false, "kind": "duty"}
+11:02:27 de-lksg art-2/par-3 3.0s in=565 out=37 -> {"role": "obligation", "addressees": [], "addressee_explicit": false, "kind": "none"}
+11:02:31 de-lksg art-2/par-3/pt-1 3.5s in=656 out=36 -> {"role": "applicability", "addressees": [], "addressee_explicit": false, "kind": "none"}
+11:02:34 de-lksg art-2/par-3/pt-2 3.05s in=648 out=36 -> {"role": "applicability", "addressees": [], "addressee_explicit": false, "kind": "none"}
+11:02:38 de-lksg art-2/par-3/pt-3 4.38s in=610 out=60 -> {"role": "obligation", "addressees": [{"name": "Unternehmen", "type": "regulated"}], "addressee_explicit": false, "kind": "duty"}
+11:02:43 de-lksg art-2/par-3/pt-4 5.06s in=847 out=36 -> {"role": "applicability", "addressees": [], "addressee_explicit": false, "kind": "none"}
+11:02:48 de-lksg art-2/par-3/pt-5 4.54s in=646 out=59 -> {"role": "obligation", "addressees": [{"name": "Unternehmen", "type": "regulated"}], "addressee_explicit": false, "kind": "duty"}
+11:02:53 de-lksg art-2/par-3/pt-6 5.58s in=918 out=36 -> {"role": "applicability", "addressees": [], "addressee_explicit": false, "kind": "none"}
+11:02:58 de-lksg art-2/par-3/pt-6/pt-a 7.61s in=921 out=61 -> {"role": "obligation", "addressees": [{"name": "Vertragspartei", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+11:03:03 de-lksg art-2/par-3/pt-6/pt-b 5.22s in=967 out=62 -> {"role": "obligation", "addressees": [{"name": "Einfuhrstaat", "type": "regulated"}], "addressee_explicit": false, "kind": "consequence"}
+11:03:08 de-lksg art-2/par-3/pt-6/pt-c 4.51s in=905 out=59 -> {"role": "obligation", "addressees": [{"name": "Unternehmen", "type": "regulated"}], "addressee_explicit": false, "kind": "duty"}
+11:03:13 de-lksg art-2/par-3/pt-6/pt-d 4.71s in=930 out=59 -> {"role": "obligation", "addressees": [{"name": "Unternehmen", "type": "regulated"}], "addressee_explicit": false, "kind": "duty"}
+11:03:18 de-lksg art-2/par-3/pt-7 5.03s in=650 out=59 -> {"role": "obligation", "addressees": [{"name": "Unternehmen", "type": "regulated"}], "addressee_explicit": false, "kind": "duty"}
+11:03:21 de-lksg art-2/par-3/pt-8 2.95s in=618 out=36 -> {"role": "applicability", "addressees": [], "addressee_explicit": false, "kind": "none"}
+11:03:21 de-lksg art-2/par-4 3.19s in=607 out=36 -> {"role": "obligation", "addressees": [], "addressee_explicit": false, "kind": "none"}
+11:03:24 de-lksg art-2/par-5 3.09s in=608 out=36 -> {"role": "applicability", "addressees": [], "addressee_explicit": false, "kind": "none"}
+11:03:28 de-lksg art-2/par-5/pt-1 3.33s in=625 out=36 -> {"role": "applicability", "addressees": [], "addressee_explicit": false, "kind": "none"}
+11:03:30 de-lksg art-2/par-5/pt-2 2.58s in=624 out=36 -> {"role": "applicability", "addressees": [], "addressee_explicit": false, "kind": "none"}
+11:03:33 de-lksg art-2/par-5/pt-3 2.59s in=624 out=37 -> {"role": "obligation", "addressees": [], "addressee_explicit": false, "kind": "none"}
+11:03:36 de-lksg art-2/par-6 3.65s in=657 out=34 -> {"role": "none", "addressees": [], "addressee_explicit": false, "kind": "none"}
+11:03:41 de-lksg art-2/par-7 4.84s in=600 out=61 -> {"role": "obligation", "addressees": [{"name": "Unternehmen", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+11:03:46 de-lksg art-2/par-8 4.55s in=591 out=60 -> {"role": "obligation", "addressees": [{"name": "Unternehmen", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+11:03:51 de-lksg art-3/par-1 5.08s in=633 out=59 -> {"role": "obligation", "addressees": [{"name": "Unternehmen", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+11:03:53 de-lksg art-3/par-1/pt-1 5.15s in=652 out=59 -> {"role": "obligation", "addressees": [{"name": "Unternehmen", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+11:03:57 de-lksg art-3/par-1/pt-2 4.09s in=656 out=59 -> {"role": "obligation", "addressees": [{"name": "Unternehmen", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+11:04:01 de-lksg art-3/par-1/pt-3 4.03s in=650 out=59 -> {"role": "obligation", "addressees": [{"name": "Unternehmen", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+11:04:05 de-lksg art-3/par-1/pt-4 4.02s in=652 out=59 -> {"role": "obligation", "addressees": [{"name": "Unternehmen", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+11:04:10 de-lksg art-3/par-1/pt-5 4.49s in=684 out=59 -> {"role": "obligation", "addressees": [{"name": "Unternehmen", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+11:04:14 de-lksg art-3/par-1/pt-6 4.18s in=658 out=59 -> {"role": "obligation", "addressees": [{"name": "Unternehmen", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+11:04:18 de-lksg art-3/par-1/pt-7 4.01s in=650 out=59 -> {"role": "obligation", "addressees": [{"name": "Unternehmen", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+11:04:20 de-lksg art-3/par-1/pt-8 4.3s in=669 out=59 -> {"role": "obligation", "addressees": [{"name": "Unternehmen", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+11:04:24 de-lksg art-3/par-1/pt-9 4.23s in=665 out=59 -> {"role": "obligation", "addressees": [{"name": "Unternehmen", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+11:04:28 de-lksg art-3/par-2 4.4s in=548 out=61 -> {"role": "obligation", "addressees": [{"name": "Unternehmen", "type": "regulated"}], "addressee_explicit": false, "kind": "duty"}
+11:04:33 de-lksg art-3/par-2/pt-1 4.37s in=565 out=60 -> {"role": "obligation", "addressees": [{"name": "Unternehmen", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+11:04:37 de-lksg art-3/par-2/pt-2 4.61s in=609 out=60 -> {"role": "obligation", "addressees": [{"name": "Unternehmen", "type": "regulated"}], "addressee_explicit": false, "kind": "duty"}
+11:04:41 de-lksg art-3/par-2/pt-3 3.34s in=602 out=37 -> {"role": "obligation", "addressees": [], "addressee_explicit": false, "kind": "none"}
+11:04:45 de-lksg art-3/par-2/pt-4 4.45s in=605 out=59 -> {"role": "obligation", "addressees": [{"name": "Unternehmen", "type": "regulated"}], "addressee_explicit": false, "kind": "duty"}
+11:04:46 de-lksg art-3/par-3 3.13s in=564 out=38 -> {"role": "obligation", "addressees": [], "addressee_explicit": false, "kind": "consequence"}
+11:04:50 de-lksg art-4/par-1 4.89s in=584 out=61 -> {"role": "obligation", "addressees": [{"name": "Unternehmen", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+11:04:55 de-lksg art-4/par-2 4.86s in=615 out=61 -> {"role": "obligation", "addressees": [{"name": "Unternehmen", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+11:05:01 de-lksg art-4/par-3 5.73s in=595 out=79 -> {"role": "obligation", "addressees": [{"name": "Das Unternehmen", "type": "regulated"}, {"name": "Die Geschäftsleitung", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+11:05:06 de-lksg art-4/par-4 4.89s in=621 out=60 -> {"role": "obligation", "addressees": [{"name": "Unternehmen", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+11:05:11 de-lksg art-5/par-1 5.45s in=685 out=59 -> {"role": "obligation", "addressees": [{"name": "Unternehmen", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+11:05:13 de-lksg art-5/par-2 4.4s in=568 out=61 -> {"role": "obligation", "addressees": [{"name": "Unternehmen", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+11:05:17 de-lksg art-5/par-3 4.42s in=566 out=61 -> {"role": "obligation", "addressees": [{"name": "Unternehmen", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+11:05:22 de-lksg art-5/par-4 4.65s in=615 out=59 -> {"role": "obligation", "addressees": [{"name": "Unternehmen", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+11:05:27 de-lksg art-6/par-1 4.58s in=567 out=61 -> {"role": "obligation", "addressees": [{"name": "Unternehmen", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+11:05:31 de-lksg art-6/par-2 4.5s in=581 out=60 -> {"role": "obligation", "addressees": [{"name": "Unternehmen", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+11:05:36 de-lksg art-6/par-2/pt-1 4.91s in=639 out=59 -> {"role": "obligation", "addressees": [{"name": "Unternehmen", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+11:05:38 de-lksg art-6/par-2/pt-2 4.4s in=614 out=61 -> {"role": "obligation", "addressees": [{"name": "Unternehmen", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+11:05:42 de-lksg art-6/par-2/pt-3 4.57s in=639 out=61 -> {"role": "obligation", "addressees": [{"name": "Unternehmen", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+11:05:47 de-lksg art-6/par-3 4.36s in=543 out=61 -> {"role": "obligation", "addressees": [{"name": "Unternehmen", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+11:05:50 de-lksg art-6/par-3/pt-1 2.94s in=575 out=36 -> {"role": "applicability", "addressees": [], "addressee_explicit": false, "kind": "none"}
+11:05:54 de-lksg art-6/par-3/pt-2 4.41s in=582 out=61 -> {"role": "obligation", "addressees": [{"name": "Unternehmen", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+11:05:58 de-lksg art-6/par-3/pt-3 4.15s in=560 out=61 -> {"role": "obligation", "addressees": [{"name": "Unternehmen", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+11:06:03 de-lksg art-6/par-3/pt-4 4.39s in=594 out=60 -> {"role": "obligation", "addressees": [{"name": "Unternehmen", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+11:06:07 de-lksg art-6/par-4 4.34s in=547 out=60 -> {"role": "obligation", "addressees": [{"name": "Unternehmen", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+11:06:09 de-lksg art-6/par-4/pt-1 4.64s in=586 out=60 -> {"role": "obligation", "addressees": [{"name": "Unternehmen", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+11:06:14 de-lksg art-6/par-4/pt-2 4.97s in=613 out=67 -> {"role": "obligation", "addressees": [{"name": "unmittelbarer Zulieferer", "type": "regulated"}], "addressee_explicit": false, "kind": "duty"}
+11:06:18 de-lksg art-6/par-4/pt-3 4.31s in=585 out=61 -> {"role": "obligation", "addressees": [{"name": "Unternehmen", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+11:06:23 de-lksg art-6/par-4/pt-4 4.47s in=604 out=60 -> {"role": "obligation", "addressees": [{"name": "Unternehmen", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+11:06:28 de-lksg art-6/par-5 5.38s in=653 out=61 -> {"role": "obligation", "addressees": [{"name": "Unternehmen", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+11:06:34 de-lksg art-7/par-1 5.71s in=725 out=59 -> {"role": "obligation", "addressees": [{"name": "Unternehmen", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+11:06:36 de-lksg art-7/par-2 5.1s in=638 out=61 -> {"role": "obligation", "addressees": [{"name": "Unternehmen", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+11:06:42 de-lksg art-7/par-2/pt-1 5.66s in=678 out=60 -> {"role": "obligation", "addressees": [{"name": "Unternehmen", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+11:06:46 de-lksg art-7/par-2/pt-2 4.36s in=679 out=59 -> {"role": "obligation", "addressees": [{"name": "Unternehmen", "type": "regulated"}], "addressee_explicit": false, "kind": "duty"}
+11:06:51 de-lksg art-7/par-2/pt-3 4.31s in=663 out=60 -> {"role": "obligation", "addressees": [{"name": "Unternehmen", "type": "regulated"}], "addressee_explicit": false, "kind": "consequence"}
+11:06:56 de-lksg art-7/par-3 5.24s in=638 out=60 -> {"role": "obligation", "addressees": [{"name": "Unternehmen", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+11:07:01 de-lksg art-7/par-3/pt-1 5.4s in=672 out=60 -> {"role": "obligation", "addressees": [{"name": "Unternehmen", "type": "regulated"}], "addressee_explicit": false, "kind": "duty"}
+11:07:03 de-lksg art-7/par-3/pt-2 4.44s in=675 out=60 -> {"role": "obligation", "addressees": [{"name": "Unternehmen", "type": "regulated"}], "addressee_explicit": false, "kind": "duty"}
+11:07:07 de-lksg art-7/par-3/pt-3 4.42s in=672 out=60 -> {"role": "obligation", "addressees": [{"name": "Unternehmen", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+11:07:13 de-lksg art-7/par-4 5.24s in=655 out=60 -> {"role": "obligation", "addressees": [{"name": "Unternehmen", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+11:07:19 de-lksg art-8/par-1 6.36s in=745 out=60 -> {"role": "obligation", "addressees": [{"name": "Unternehmen", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+11:07:23 de-lksg art-8/par-2 4.29s in=537 out=61 -> {"role": "obligation", "addressees": [{"name": "Unternehmen", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+11:07:28 de-lksg art-8/par-3 4.45s in=572 out=60 -> {"role": "obligation", "addressees": [{"name": "Personen", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+11:07:30 de-lksg art-8/par-4 4.98s in=615 out=61 -> {"role": "obligation", "addressees": [{"name": "Unternehmen", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+11:07:35 de-lksg art-8/par-5 4.93s in=625 out=60 -> {"role": "obligation", "addressees": [{"name": "Unternehmen", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+11:07:40 de-lksg art-9/par-1 5.06s in=613 out=60 -> {"role": "obligation", "addressees": [{"name": "Das Unternehmen", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+11:07:44 de-lksg art-9/par-2 4.42s in=558 out=60 -> {"role": "obligation", "addressees": [{"name": "Unternehmen", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+11:07:49 de-lksg art-9/par-3 4.65s in=597 out=61 -> {"role": "obligation", "addressees": [{"name": "Unternehmen", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+11:07:54 de-lksg art-9/par-3/pt-1 4.9s in=622 out=60 -> {"role": "obligation", "addressees": [{"name": "Unternehmen", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+11:07:56 de-lksg art-9/par-3/pt-2 4.71s in=680 out=60 -> {"role": "obligation", "addressees": [{"name": "Unternehmen", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+11:08:00 de-lksg art-9/par-3/pt-3 4.37s in=624 out=60 -> {"role": "obligation", "addressees": [{"name": "Unternehmen", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+11:08:05 de-lksg art-9/par-3/pt-4 4.4s in=625 out=60 -> {"role": "obligation", "addressees": [{"name": "Unternehmen", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+11:08:10 de-lksg art-9/par-4 5.31s in=588 out=69 -> {"role": "obligation", "addressees": [{"name": "Bundesministerium für Arbeit und So:1", "type": "authority"}], "addressee_explicit": true, "kind": "consequence"}
+11:08:15 de-lksg art-10/par-1 4.9s in=573 out=61 -> {"role": "obligation", "addressees": [{"name": "Unternehmen", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+11:08:20 de-lksg art-10/par-2 4.77s in=620 out=59 -> {"role": "obligation", "addressees": [{"name": "Unternehmen", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+11:09:26 de-lksg art-10/par-2/pt-1 74.12s in=670 out=59 -> {"role": "obligation", "addressees": [{"name": "Unternehmen", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+11:09:30 de-lksg art-10/par-2/pt-2 4.89s in=723 out=59 -> {"role": "obligation", "addressees": [{"name": "Unternehmen", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+11:09:35 de-lksg art-10/par-2/pt-3 4.14s in=643 out=59 -> {"role": "obligation", "addressees": [{"name": "Unternehmen", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+11:09:39 de-lksg art-10/par-2/pt-4 4.12s in=645 out=59 -> {"role": "obligation", "addressees": [{"name": "Unternehmen", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+11:09:44 de-lksg art-10/par-3 4.81s in=604 out=61 -> {"role": "obligation", "addressees": [{"name": "Unternehmen", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+11:09:45 de-lksg art-10/par-4 4.13s in=547 out=59 -> {"role": "obligation", "addressees": [{"name": "Unternehmen", "type": "regulated"}], "addressee_explicit": false, "kind": "duty"}
+11:09:50 de-lksg art-11/par-1 5.05s in=596 out=63 -> {"role": "obligation", "addressees": [{"name": "Wer geltend macht", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+11:09:56 de-lksg art-11/par-2 6.48s in=602 out=85 -> {"role": "obligation", "addressees": [{"name": "Gewerkschaft", "type": "regulated"}, {"name": "Nichtregierungsorganisation", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+11:10:01 de-lksg art-12/par-1 4.92s in=567 out=61 -> {"role": "obligation", "addressees": [{"name": "Unternehmen", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+11:10:06 de-lksg art-12/par-2 4.29s in=552 out=60 -> {"role": "obligation", "addressees": [{"name": "Unternehmen", "type": "regulated"}], "addressee_explicit": false, "kind": "duty"}
+11:10:11 de-lksg art-13/par-1 5.08s in=541 out=64 -> {"role": "obligation", "addressees": [{"name": "zuständige Behörde", "type": "authority"}], "addressee_explicit": true, "kind": "duty"}
+11:10:13 de-lksg art-13/par-1/pt-1 4.58s in=563 out=60 -> {"role": "obligation", "addressees": [{"name": "Behörde", "type": "authority"}], "addressee_explicit": false, "kind": "duty"}
+11:10:17 de-lksg art-13/par-1/pt-2 4.06s in=564 out=59 -> {"role": "obligation", "addressees": [{"name": "Behörde", "type": "authority"}], "addressee_explicit": false, "kind": "consequence"}
+11:10:21 de-lksg art-13/par-2 4.63s in=585 out=61 -> {"role": "obligation", "addressees": [{"name": "Unternehmen", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+11:10:27 de-lksg art-13/par-3 5.81s in=583 out=82 -> {"role": "obligation", "addressees": [{"name": "Bundesministerium für Arbeit und Soz. (Bundesministerium für Arbeit und Soziales)", "type": "authority"}], "addressee_explicit": true, "kind": "consequence"}
+11:10:32 de-lksg art-13/par-3/pt-1 4.86s in=601 out=61 -> {"role": "obligation", "addressees": [{"name": "Unternehmen", "type": "regulated"}], "addressee_explicit": false, "kind": "duty"}
+11:10:37 de-lksg art-13/par-3/pt-2 4.93s in=608 out=68 -> {"role": "obligation", "addressees": [{"name": "Bundesministerium für Arbeit und Soziales", "type": "authority"}], "addressee_explicit": false, "kind": "consequence"}
+11:10:39 de-lksg art-14/par-1 4.67s in=539 out=60 -> {"role": "obligation", "addressees": [{"name": "Behörde", "type": "authority"}], "addressee_explicit": false, "kind": "duty"}
+11:10:43 de-lksg art-14/par-1/pt-1 4.43s in=553 out=60 -> {"role": "obligation", "addressees": [{"name": "Behörde", "type": "authority"}], "addressee_explicit": false, "kind": "duty"}
+11:10:48 de-lksg art-14/par-1/pt-1/pt-a 4.79s in=612 out=60 -> {"role": "obligation", "addressees": [{"name": "Unternehmen", "type": "regulated"}], "addressee_explicit": false, "kind": "duty"}
+11:10:52 de-lksg art-14/par-1/pt-1/pt-b 4.35s in=571 out=61 -> {"role": "obligation", "addressees": [{"name": "Unternehmen", "type": "regulated"}], "addressee_explicit": false, "kind": "duty"}
+11:10:57 de-lksg art-14/par-1/pt-2 4.51s in=559 out=63 -> {"role": "obligation", "addressees": [{"name": "antragstellende Person", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+11:11:01 de-lksg art-14/par-1/pt-2/pt-a 4.49s in=587 out=60 -> {"role": "obligation", "addressees": [{"name": "Unternehmen", "type": "regulated"}], "addressee_explicit": false, "kind": "duty"}
+11:11:06 de-lksg art-14/par-1/pt-2/pt-b 4.4s in=569 out=62 -> {"role": "obligation", "addressees": [{"name": "antragstellende Person", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+11:11:09 de-lksg art-14/par-2 5.42s in=605 out=69 -> {"role": "obligation", "addressees": [{"name": "Bundesministerium für Arbeit und Soz:1", "type": "authority"}], "addressee_explicit": true, "kind": "consequence"}
+11:11:14 de-lksg art-15/par-1 5.31s in=589 out=64 -> {"role": "obligation", "addressees": [{"name": "zuständige Behörde", "type": "authority"}], "addressee_explicit": true, "kind": "duty"}
+11:11:19 de-lksg art-15/par-1/pt-1 4.9s in=593 out=60 -> {"role": "obligation", "addressees": [{"name": "Personen", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+11:11:23 de-lksg art-15/par-1/pt-2 4.63s in=637 out=61 -> {"role": "obligation", "addressees": [{"name": "Unternehmen", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+11:11:28 de-lksg art-15/par-1/pt-3 4.19s in=610 out=60 -> {"role": "obligation", "addressees": [{"name": "Unternehmen", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+11:11:34 de-lksg art-16/par-1 6.09s in=556 out=86 -> {"role": "obligation", "addressees": [{"name": "zuständige Behörde", "type": "authority"}, {"name": "ihre Beauftragten", "type": "authority"}], "addressee_explicit": false, "kind": "duty"}
+11:11:36 de-lksg art-16/par-1/pt-1 4.66s in=599 out=60 -> {"role": "obligation", "addressees": [{"name": "Unternehmen", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+11:11:42 de-lksg art-16/par-1/pt-2 6.09s in=626 out=85 -> {"role": "obligation", "addressees": [{"name": "zuständige Behörde", "type": "authority"}, {"name": "Beauftragten", "type": "authority"}], "addressee_explicit": true, "kind": "duty"}
+11:11:50 de-lksg art-17/par-1 8.16s in=732 out=94 -> {"role": "obligation", "addressees": [{"name": "Unternehmen", "type": "regulated"}, {"name": "nach § 15 Satz 2 Nummer 1 geladene Personen", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+11:11:54 de-lksg art-17/par-2 4.24s in=554 out=60 -> {"role": "obligation", "addressees": [{"name": "Unternehmen", "type": "regulated"}], "addressee_explicit": false, "kind": "duty"}
+11:11:59 de-lksg art-17/par-2/pt-1 4.61s in=583 out=61 -> {"role": "obligation", "addressees": [{"name": "Unternehmen", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+11:12:00 de-lksg art-17/par-2/pt-2 4.21s in=586 out=60 -> {"role": "obligation", "addressees": [{"name": "Unternehmen", "type": "regulated"}], "addressee_explicit": false, "kind": "duty"}
+11:12:05 de-lksg art-17/par-2/pt-3 4.4s in=602 out=59 -> {"role": "obligation", "addressees": [{"name": "Unternehmen", "type": "regulated"}], "addressee_explicit": false, "kind": "duty"}
+11:12:10 de-lksg art-17/par-3 5.77s in=687 out=65 -> {"role": "obligation", "addressees": [{"name": "auskunftspflichtige Person", "type": "regulated"}], "addressee_explicit": false, "kind": "duty"}
+11:12:15 de-lksg art-18/par-1 5.02s in=604 out=61 -> {"role": "obligation", "addressees": [{"name": "Unternehmen", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+11:12:19 de-lksg art-19/par-1 3.47s in=628 out=36 -> {"role": "applicability", "addressees": [], "addressee_explicit": false, "kind": "none"}
+11:12:23 de-lksg art-19/par-2 4.49s in=547 out=64 -> {"role": "obligation", "addressees": [{"name": "zuständige Behörde", "type": "authority"}], "addressee_explicit": false, "kind": "duty"}
+11:12:29 de-lksg art-20/par-1 5.27s in=616 out=64 -> {"role": "obligation", "addressees": [{"name": "zuständige Behörde", "type": "authority"}], "addressee_explicit": true, "kind": "duty"}
+11:12:31 de-lksg art-21/par-1 4.89s in=610 out=60 -> {"role": "obligation", "addressees": [{"name": "Behörde", "type": "authority"}], "addressee_explicit": true, "kind": "duty"}
+11:12:36 de-lksg art-21/par-2 4.65s in=586 out=61 -> {"role": "obligation", "addressees": [{"name": "Unternehmen", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+11:12:41 de-lksg art-22/par-1 5.66s in=693 out=60 -> {"role": "obligation", "addressees": [{"name": "Unternehmen", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+11:12:46 de-lksg art-22/par-2 4.56s in=584 out=60 -> {"role": "obligation", "addressees": [{"name": "Unternehmen", "type": "regulated"}], "addressee_explicit": false, "kind": "duty"}
+11:12:51 de-lksg art-22/par-2/pt-1 5.12s in=657 out=59 -> {"role": "obligation", "addressees": [{"name": "Unternehmen", "type": "regulated"}], "addressee_explicit": false, "kind": "duty"}
+11:12:55 de-lksg art-22/par-2/pt-2 4.46s in=650 out=59 -> {"role": "obligation", "addressees": [{"name": "Unternehmen", "type": "regulated"}], "addressee_explicit": false, "kind": "consequence"}
+11:12:57 de-lksg art-22/par-2/pt-3 4.56s in=643 out=60 -> {"role": "obligation", "addressees": [{"name": "Unternehmen", "type": "regulated"}], "addressee_explicit": false, "kind": "consequence"}
+11:13:02 de-lksg art-22/par-3 4.31s in=541 out=61 -> {"role": "obligation", "addressees": [{"name": "Bewerber", "type": "regulated"}], "addressee_explicit": true, "kind": "duty"}
+11:13:05 de-lksg art-23/par-1 3.41s in=591 out=38 -> {"role": "obligation", "addressees": [], "addressee_explicit": false, "kind": "consequence"}
+11:13:09 de-lksg art-24/par-1 4.44s in=540 out=59 -> {"role": "obligation", "addressees": [{"name": "Wer", "type": "regulated"}], "addressee_explicit": false, "kind": "sanction"}
+11:13:14 de-lksg art-24/par-1/pt-1 4.43s in=575 out=60 -> {"role": "obligation", "addressees": [{"name": "Unternehmen", "type": "regulated"}], "addressee_explicit": false, "kind": "sanction"}
+11:13:18 de-lksg art-24/par-1/pt-2 4.52s in=589 out=60 -> {"role": "obligation", "addressees": [{"name": "Unternehmen", "type": "regulated"}], "addressee_explicit": false, "kind": "sanction"}
+11:13:23 de-lksg art-24/par-1/pt-3 4.23s in=567 out=60 -> {"role": "obligation", "addressees": [{"name": "Unternehmen", "type": "regulated"}], "addressee_explicit": false, "kind": "consequence"}
+11:13:24 de-lksg art-24/par-1/pt-4 4.5s in=594 out=60 -> {"role": "obligation", "addressees": [{"name": "Unternehmen", "type": "regulated"}], "addressee_explicit": false, "kind": "sanction"}
+11:13:29 de-lksg art-24/par-1/pt-5 4.51s in=592 out=60 -> {"role": "obligation", "addressees": [{"name": "Unternehmen", "type": "regulated"}], "addressee_explicit": false, "kind": "sanction"}
+11:13:33 de-lksg art-24/par-1/pt-6 4.32s in=572 out=61 -> {"role": "obligation", "addressees": [{"name": "Unternehmen", "type": "regulated"}], "addressee_explicit": false, "kind": "consequence"}
+11:13:37 de-lksg art-24/par-1/pt-7 4.01s in=545 out=60 -> {"role": "obligation", "addressees": [{"name": "Unternehmen", "type": "regulated"}], "addressee_explicit": false, "kind": "sanction"}
+11:13:41 de-lksg art-24/par-1/pt-7/pt-a 4.21s in=539 out=60 -> {"role": "obligation", "addressees": [{"name": "Unternehmen", "type": "regulated"}], "addressee_explicit": false, "kind": "sanction"}
+11:13:46 de-lksg art-24/par-1/pt-7/pt-b 4.34s in=559 out=61 -> {"role": "obligation", "addressees": [{"name": "Unternehmen", "type": "regulated"}], "addressee_explicit": false, "kind": "sanction"}
+11:13:50 de-lksg art-24/par-1/pt-8 4.65s in=587 out=60 -> {"role": "obligation", "addressees": [{"name": "Unternehmen", "type": "regulated"}], "addressee_explicit": false, "kind": "sanction"}
+11:13:52 de-lksg art-24/par-1/pt-9 4.41s in=575 out=60 -> {"role": "obligation", "addressees": [{"name": "Unternehmen", "type": "regulated"}], "addressee_explicit": false, "kind": "sanction"}
+11:13:57 de-lksg art-24/par-1/pt-10 4.41s in=566 out=61 -> {"role": "obligation", "addressees": [{"name": "Unternehmen", "type": "regulated"}], "addressee_explicit": false, "kind": "sanction"}
+11:14:01 de-lksg art-24/par-1/pt-11 4.54s in=577 out=61 -> {"role": "obligation", "addressees": [{"name": "Unternehmen", "type": "regulated"}], "addressee_explicit": false, "kind": "sanction"}
+11:14:05 de-lksg art-24/par-1/pt-12 4.34s in=562 out=61 -> {"role": "obligation", "addressees": [{"name": "Unternehmen", "type": "regulated"}], "addressee_explicit": false, "kind": "sanction"}
+11:14:10 de-lksg art-24/par-1/pt-13 4.48s in=579 out=60 -> {"role": "obligation", "addressees": [{"name": "Unternehmen", "type": "regulated"}], "addressee_explicit": false, "kind": "sanction"}
+11:14:14 de-lksg art-24/par-2 4.53s in=582 out=60 -> {"role": "obligation", "addressees": [{"name": "Unternehmen", "type": "regulated"}], "addressee_explicit": false, "kind": "sanction"}
+11:14:17 de-lksg art-24/par-2/pt-1 4.85s in=611 out=60 -> {"role": "obligation", "addressees": [{"name": "Unternehmen", "type": "regulated"}], "addressee_explicit": false, "kind": "sanction"}
+11:14:21 de-lksg art-24/par-2/pt-1/pt-a 4.81s in=567 out=61 -> {"role": "obligation", "addressees": [{"name": "Unternehmen", "type": "regulated"}], "addressee_explicit": false, "kind": "sanction"}
+11:14:26 de-lksg art-24/par-2/pt-1/pt-b 4.17s in=562 out=61 -> {"role": "obligation", "addressees": [{"name": "Unternehmen", "type": "regulated"}], "addressee_explicit": false, "kind": "sanction"}
+11:14:30 de-lksg art-24/par-2/pt-2 4.75s in=627 out=59 -> {"role": "obligation", "addressees": [{"name": "Unternehmen", "type": "regulated"}], "addressee_explicit": false, "kind": "sanction"}
+11:14:35 de-lksg art-24/par-2/pt-3 4.23s in=612 out=60 -> {"role": "obligation", "addressees": [{"name": "Unternehmen", "type": "regulated"}], "addressee_explicit": false, "kind": "sanction"}
+11:14:41 de-lksg art-24/par-3 6.37s in=741 out=67 -> {"role": "obligation", "addressees": [{"name": "juristische Person oder Personenvereinigung", "type": "regulated"}], "addressee_explicit": false, "kind": "sanction"}
+11:14:45 de-lksg art-24/par-4 6.43s in=640 out=83 -> {"role": "obligation", "addressees": [{"name": "juristische Person", "type": "regulated"}, {"name": "Personenvereinigung", "type": "regulated"}], "addressee_explicit": false, "kind": "consequence"}
+11:14:50 de-lksg art-24/par-4/pt-1 5.28s in=661 out=61 -> {"role": "obligation", "addressees": [{"name": "der Vorwurf", "type": "regulated"}], "addressee_explicit": false, "kind": "consequence"}
+11:14:55 de-lksg art-24/par-4/pt-2 4.81s in=661 out=69 -> {"role": "obligation", "addressees": [{"name": "Täters der Ordnungswidrigkeit", "type": "regulated"}], "addressee_explicit": false, "kind": "consequence"}
+11:15:00 de-lksg art-24/par-4/pt-3 5.73s in=659 out=84 -> {"role": "obligation", "addressees": [{"name": "juristische Person", "type": "regulated"}, {"name": "Personenvereinigung", "type": "regulated"}], "addressee_explicit": false, "kind": "consequence"}
+11:15:07 de-lksg art-24/par-4/pt-4 6.31s in=678 out=84 -> {"role": "obligation", "addressees": [{"name": "juristische Person", "type": "regulated"}, {"name": "Personenvereinigung", "type": "regulated"}], "addressee_explicit": false, "kind": "consequence"}
+11:15:13 de-lksg art-24/par-4/pt-5 5.77s in=655 out=84 -> {"role": "obligation", "addressees": [{"name": "juristische Person", "type": "regulated"}, {"name": "Personenvereinigung", "type": "regulated"}], "addressee_explicit": false, "kind": "consequence"}
+11:15:16 de-lksg art-24/par-4/pt-6 6.45s in=748 out=82 -> {"role": "obligation", "addressees": [{"name": "juristische Person", "type": "regulated"}, {"name": "Personenvereinigung", "type": "regulated"}], "addressee_explicit": false, "kind": "consequence"}
+11:15:21 de-lksg art-24/par-4/pt-7 5.07s in=715 out=66 -> {"role": "obligation", "addressees": [{"name": "juristische Person oder Personenvereinigung", "type": "regulated"}], "addressee_explicit": false, "kind": "consequence"}
+11:15:27 de-lksg art-24/par-4/pt-8 5.82s in=669 out=83 -> {"role": "obligation", "addressees": [{"name": "juristische Person", "type": "regulated"}, {"name": "Personenvereinigung", "type": "regulated"}], "addressee_explicit": false, "kind": "consequence"}
+11:15:32 de-lksg art-24/par-5 4.94s in=601 out=63 -> {"role": "obligation", "addressees": [{"name": "Verwaltungsbehörde", "type": "regulated"}], "addressee_explicit": true, "kind": "consequence"}
+11:15:46 de-lksg anx 16.5s in=1770 out=34 -> {"role": "none", "addressees": [], "addressee_explicit": false, "kind": "none"}
+11:15:46 de-lksg 2021-07-16: {'units': 212, 'cached': 0, 'called': 212, 'missing': 0, 'seconds': 1065.5, 'prompt_tokens': 133010, 'output_tokens': 12536}
+11:15:46 GESAMT {'units': 314, 'cached': 0, 'called': 314, 'seconds': 1570.7, 'prompt_tokens': 202763, 'output_tokens': 18338, 'wall_seconds': 1571.8}

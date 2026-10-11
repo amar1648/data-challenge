@@ -1,24 +1,33 @@
-"""Answer the two content questions from the tags written at prepare time; no model, no parsing."""
+"""Answer the two content questions from the tags written at prepare time; no model call, no parsing.
+
+Three readings of the same tags:
+- "rules": tags["roles"] from the rule-based tagger only.
+- "combined": rules as pre-filter. For a candidate (rule hit, or unit of an article whose
+  heading names scope or definitions) the model answer in tags["model"] decides role and
+  addressees; kind and sanction references stay with the rules. Without a model answer the
+  rules apply.
+- "model": the model answer decides for every unit that has one; rules only as fallback.
+"""
 
 from challenge.model import Act, Unit
+from challenge.tagging import _SCOPE_HEADING, UNDETERMINED
 
+MODES = ("rules", "combined", "model")
 QUESTIONS = {"applicability": "applicability", "obligations": "obligation"}
 TYPE_ORDER = {"regulated": 0, "authority": 1, "unknown": 2}
 TYPE_LABEL = {"regulated": "Normadressat", "authority": "Behörde/Organ", "unknown": "Adressat unbestimmt"}
 KIND_LABEL = {"duty": "Pflicht", "sanction": "Sanktion", "consequence": "Rechtsfolge"}
 
 
-def query(units: list[Unit], question: str) -> list[dict]:
+def query(units: list[Unit], question: str, mode: str = "combined") -> list[dict]:
     """Hits for one question: address, label, text (with list items), reason, addressees."""
     role_name = QUESTIONS[question]
     by_address = {unit.address: unit for unit in units}
     sanctioned_by = _sanctioned_by(units)
     hits = []
     for unit in units:
-        for role in unit.tags.get("roles", []):
-            if role["role"] != role_name:
-                continue
-            article = _article(unit, by_address)
+        article = _article(unit, by_address)
+        for role in _findings(unit, article, role_name, mode):
             members = _subtree(unit, units) if role_name == "obligation" and _continues(unit) else [unit]
             hits.append({
                 "address": unit.address,
@@ -34,6 +43,30 @@ def query(units: list[Unit], question: str) -> list[dict]:
                 "sanctions": unit.tags.get("sanctions", []),
             })
     return hits
+
+
+def is_candidate(unit: Unit, article: Unit) -> bool:
+    """Units the rules pre-select for the model."""
+    return bool(unit.tags.get("roles")) or bool(_SCOPE_HEADING.search(article.heading or ""))
+
+
+def _findings(unit: Unit, article: Unit, role_name: str, mode: str) -> list[dict]:
+    rules = [role for role in unit.tags.get("roles", []) if role["role"] == role_name]
+    model = unit.tags.get("model")
+    if mode == "rules" or model is None or (mode == "combined" and not is_candidate(unit, article)):
+        return rules
+    if model["role"] != role_name:
+        return []
+    finding = {"role": role_name, "rule": ["model"], "evidence": [f"{model['model']} {model['prompt_version']}"]}
+    if role_name == "obligation":
+        rule_kinds = [role.get("kind") for role in rules]
+        kind = rule_kinds[0] if rule_kinds else (model["kind"] if model["kind"] != "none" else "duty")
+        addressees = [
+            {"name": a["name"], "type": a["type"], "explicit": bool(model["addressee_explicit"])}
+            for a in model["addressees"]
+        ] or [{"name": UNDETERMINED, "type": "unknown", "explicit": False}]
+        finding.update(kind=kind, addressees=addressees)
+    return [finding]
 
 
 def group_by_addressee(hits: list[dict]) -> list[tuple[dict, list[dict]]]:

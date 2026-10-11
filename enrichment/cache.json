@@ -1,0 +1,6418 @@
+{
+ "001d95c55bbd5842c63965245928f702eddceb2941fd7a2d4936742f0880215e|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-24/par-2/pt-1",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Unternehmen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": false,
+   "kind": "sanction"
+  },
+  "stats": {
+   "seconds": 4.85,
+   "prompt_tokens": 611,
+   "output_tokens": 60,
+   "load_seconds": 0.01
+  }
+ },
+ "015c3f174d1760080bd7eab4f34699ea3cdc7436b2f54c4b43b5654b69cf452f|qwen3:4b|v1": {
+  "act": "eu-2015-2120/2024-05-15_de",
+  "address": "art-5a/par-2",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Anbieter regulierter intra-EU-Kommunikation",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": false,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 6.37,
+   "prompt_tokens": 784,
+   "output_tokens": 70,
+   "load_seconds": 0.01
+  }
+ },
+ "025a3282f1b1762e352009f7a85ea836ee0aae76a30c14af7e45a54b95c1f9ce|qwen3:4b|v1": {
+  "act": "eu-2015-2120/2024-05-15_de",
+  "address": "art-4/par-1/pt-e",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Anbieter von Internetzugangsdiensten",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 5.41,
+   "prompt_tokens": 764,
+   "output_tokens": 66,
+   "load_seconds": 0.01
+  }
+ },
+ "0290db705d504095e63be6e359c248d1d2f092ccae23beb6135aa476e043b26d|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-21/par-1",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Behörde",
+     "type": "authority"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 4.89,
+   "prompt_tokens": 610,
+   "output_tokens": 60,
+   "load_seconds": 0.01
+  }
+ },
+ "031a321ea7697940b1bc22f1ab4cee72c902da466993af8c8b47f45c253a3699|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-24/par-1/pt-6",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Unternehmen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": false,
+   "kind": "consequence"
+  },
+  "stats": {
+   "seconds": 4.32,
+   "prompt_tokens": 572,
+   "output_tokens": 61,
+   "load_seconds": 0.01
+  }
+ },
+ "03784d68a89c5e69891a8c89639634e246e9b1da4b804b3c3ac790cbc557f53e|qwen3:4b|v1": {
+  "act": "eu-2015-2120/2024-05-15_de",
+  "address": "art-5a/par-10/pt-f",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Verbraucher",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "consequence"
+  },
+  "stats": {
+   "seconds": 4.75,
+   "prompt_tokens": 710,
+   "output_tokens": 59,
+   "load_seconds": 0.01
+  }
+ },
+ "04f4ffe8a1cb749e0fc8461265290c9cb2f9e0edbea5cfc71d821e69104babcc|qwen3:4b|v1": {
+  "act": "eu-2015-2120/2024-05-15_de",
+  "address": "art-5a/par-11",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Anbieter",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 5.74,
+   "prompt_tokens": 784,
+   "output_tokens": 59,
+   "load_seconds": 0.01
+  }
+ },
+ "0730b190c11c89002c666fd94225dd25e4a59819b78aa001b68736a56e44a193|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-6/par-1",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Unternehmen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 4.58,
+   "prompt_tokens": 567,
+   "output_tokens": 61,
+   "load_seconds": 0.01
+  }
+ },
+ "096d7f15d407a485e08a708bc942d9e798fd3f5cdee3e706f2bab9af5a1dee96|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-6/par-2",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Unternehmen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 4.5,
+   "prompt_tokens": 581,
+   "output_tokens": 60,
+   "load_seconds": 0.01
+  }
+ },
+ "0ae7977ae023ef97e92ca9339f1213eec0c7e775c06a33b8e50e9a2274d9500c|qwen3:4b|v1": {
+  "act": "de-burlg/2013-04-20_de",
+  "address": "art-10/par-1",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Arbeitnehmer",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 4.98,
+   "prompt_tokens": 564,
+   "output_tokens": 61,
+   "load_seconds": 0.01
+  }
+ },
+ "0d64cbae6bf703f6bd6d333a1171cea9121a203db701ae3314f3e687d2fe1e89|qwen3:4b|v1": {
+  "act": "de-burlg/2013-04-20_de",
+  "address": "art-12/par-1/pt-8",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "fremden Hilfskräfte",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 5.37,
+   "prompt_tokens": 725,
+   "output_tokens": 62,
+   "load_seconds": 0.01
+  }
+ },
+ "0db7e8330a4d7aac316de2a168821a88b10cf0f4f0233e29c8a65503b34ed291|qwen3:4b|v1": {
+  "act": "de-burlg/2013-04-20_de",
+  "address": "art-11/par-2",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Arbeitnehmer",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 4.24,
+   "prompt_tokens": 515,
+   "output_tokens": 60,
+   "load_seconds": 0.01
+  }
+ },
+ "0e9677e9e55175a237e385e83259e027965c6c6680df2cb896fe900b4f2c3182|qwen3:4b|v1": {
+  "act": "de-burlg/2013-04-20_de",
+  "address": "formula",
+  "answer": {
+   "role": "applicability",
+   "addressees": [],
+   "addressee_explicit": false,
+   "kind": "none"
+  },
+  "stats": {
+   "seconds": 3.19,
+   "prompt_tokens": 508,
+   "output_tokens": 37,
+   "load_seconds": 0.01
+  }
+ },
+ "0eaa634544fdf63be6bf5e30c915edabb67592725e09a54e6e3250ff065c642a|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-13/par-1/pt-1",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Behörde",
+     "type": "authority"
+    }
+   ],
+   "addressee_explicit": false,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 4.58,
+   "prompt_tokens": 563,
+   "output_tokens": 60,
+   "load_seconds": 0.01
+  }
+ },
+ "0fa309fb5546a2d4c17f48a1cc7952f477c263c8d9aa1b20c8707cbbde9340e0|qwen3:4b|v1": {
+  "act": "eu-2015-2120/2024-05-15_de",
+  "address": "art-2/par-1/pt-4",
+  "answer": {
+   "role": "obligation",
+   "addressees": [],
+   "addressee_explicit": false,
+   "kind": "none"
+  },
+  "stats": {
+   "seconds": 3.24,
+   "prompt_tokens": 717,
+   "output_tokens": 37,
+   "load_seconds": 0.01
+  }
+ },
+ "11752214bf8c23d7480a20607003b852072f04fc57395ab711625391d45b0782|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-10/par-3",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Unternehmen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 4.81,
+   "prompt_tokens": 604,
+   "output_tokens": 61,
+   "load_seconds": 0.01
+  }
+ },
+ "117af4c1575e9b6ef28a1e45c39111af190946a200e16a380febed43124d9754|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-9/par-3/pt-3",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Unternehmen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 4.37,
+   "prompt_tokens": 624,
+   "output_tokens": 60,
+   "load_seconds": 0.01
+  }
+ },
+ "12086c423cc8ddec004bf751e87b7804d0b735480e180dd7745009a2685418fe|qwen3:4b|v1": {
+  "act": "eu-2015-2120/2024-05-15_de",
+  "address": "art-2/par-1",
+  "answer": {
+   "role": "applicability",
+   "addressees": [],
+   "addressee_explicit": false,
+   "kind": "none"
+  },
+  "stats": {
+   "seconds": 3.25,
+   "prompt_tokens": 643,
+   "output_tokens": 36,
+   "load_seconds": 0.01
+  }
+ },
+ "15129792dbc2e278b10b45e0a37385610523b2fc4a4a0c66ef1e42422087c779|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-19/par-2",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "zuständige Behörde",
+     "type": "authority"
+    }
+   ],
+   "addressee_explicit": false,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 4.49,
+   "prompt_tokens": 547,
+   "output_tokens": 64,
+   "load_seconds": 0.01
+  }
+ },
+ "1531f5d12dac385a25a24e3cbfed2d5bdcfe4aad3eeba29eed4a1cc9e5d08fb3|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-2/par-2/pt-12",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Unternehmen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": false,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 5.01,
+   "prompt_tokens": 656,
+   "output_tokens": 59,
+   "load_seconds": 0.01
+  }
+ },
+ "15beebe598dbf1d02e68d07a4056c9c59e5580e3d87b07560d171366d176a9f7|qwen3:4b|v1": {
+  "act": "eu-2015-2120/2024-05-15_de",
+  "address": "art-4/par-3",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Mitgliedstaaten",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 5.72,
+   "prompt_tokens": 746,
+   "output_tokens": 61,
+   "load_seconds": 0.01
+  }
+ },
+ "17475706699bc3385bf251f8a95ba95bfa7a48c5177e19fa8564e81d2eae6f25|qwen3:4b|v1": {
+  "act": "eu-2015-2120/2024-05-15_de",
+  "address": "art-3/par-5",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Anbieter öffentlicher elektronischer Kommunikation",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 7.17,
+   "prompt_tokens": 847,
+   "output_tokens": 69,
+   "load_seconds": 0.01
+  }
+ },
+ "178a2b8b023e30376484cbb1db0d4d112fde7efcbcb453fea09fc39c4e487e64|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-22/par-2",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Unternehmen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": false,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 4.56,
+   "prompt_tokens": 584,
+   "output_tokens": 60,
+   "load_seconds": 0.01
+  }
+ },
+ "18720e21ba5d62715cc7811e42cc9b99d1c6cca3ca360c5f0ea8565f7effae9d|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-2/par-4",
+  "answer": {
+   "role": "obligation",
+   "addressees": [],
+   "addressee_explicit": false,
+   "kind": "none"
+  },
+  "stats": {
+   "seconds": 3.19,
+   "prompt_tokens": 607,
+   "output_tokens": 36,
+   "load_seconds": 0.01
+  }
+ },
+ "1a6e37463c98da695a4e131aff2826078b6fb71411c34a484e69fce94b6b66ea|qwen3:4b|v1": {
+  "act": "de-burlg/2013-04-20_de",
+  "address": "art-12/par-1/pt-2",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Anspruchsberechtigter",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 5.17,
+   "prompt_tokens": 701,
+   "output_tokens": 64,
+   "load_seconds": 0.01
+  }
+ },
+ "1abf0af858dc99925ef0018fdc2c3550c840073f9b310cf0f72ede4efc9d6cc0|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-14/par-1/pt-2",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "antragstellende Person",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 4.51,
+   "prompt_tokens": 559,
+   "output_tokens": 63,
+   "load_seconds": 0.01
+  }
+ },
+ "1b672472723ffce9c7de62a03baa826e0419f8305f3ce3e5471947d7b38d7163|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-24/par-1/pt-5",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Unternehmen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": false,
+   "kind": "sanction"
+  },
+  "stats": {
+   "seconds": 4.51,
+   "prompt_tokens": 592,
+   "output_tokens": 60,
+   "load_seconds": 0.01
+  }
+ },
+ "1baba2e07d71b87b472e923276573b06b0b30109da90ba3e17f43ee1c082bed9|qwen3:4b|v1": {
+  "act": "eu-2015-2120/2024-05-15_de",
+  "address": "art-10/par-2/pt-c",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Unternehmen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": false,
+   "kind": "consequence"
+  },
+  "stats": {
+   "seconds": 4.17,
+   "prompt_tokens": 643,
+   "output_tokens": 59,
+   "load_seconds": 0.01
+  }
+ },
+ "1c084e1067798e3b945e6e6acda96e37f301444d9bbdb1bebe92d7d787019f3d|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-1/par-1/sen-2/pt-2",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Unternehmen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 4.24,
+   "prompt_tokens": 574,
+   "output_tokens": 61,
+   "load_seconds": 0.01
+  }
+ },
+ "1ca95981c5b38de1aa2c23928b3fe4fcfbadf8219d7c3a78573459be7e72a5d0|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-2/par-2/pt-9/pt-d",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Person",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": false,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 3.88,
+   "prompt_tokens": 583,
+   "output_tokens": 58,
+   "load_seconds": 0.01
+  }
+ },
+ "1ce29313842b1ecbcaf0b9f1c7803e0833eba1e90ceeddc03940ee93b1ea5262|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-2/par-2/pt-3",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Unternehmen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": false,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 6.4,
+   "prompt_tokens": 788,
+   "output_tokens": 59,
+   "load_seconds": 0.01
+  }
+ },
+ "1f783f71a8036448706b428ddada1881919abbbb04c8e501f470cc1071b62057|qwen3:4b|v1": {
+  "act": "eu-2015-2120/2024-05-15_de",
+  "address": "art-1/par-2",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Endkunden",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 4.75,
+   "prompt_tokens": 660,
+   "output_tokens": 60,
+   "load_seconds": 0.01
+  }
+ },
+ "21f9f5cb4e2a186c8ff7be2f44be6146058507db4b14bfae6b9945b316700ceb|qwen3:4b|v1": {
+  "act": "eu-2015-2120/2024-05-15_de",
+  "address": "art-5a/par-7",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Anbieter",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 5.37,
+   "prompt_tokens": 757,
+   "output_tokens": 59,
+   "load_seconds": 0.01
+  }
+ },
+ "224ab209be1f239296943ff4201db5163c19b9272a8f5c212aa9270bfe326c68|qwen3:4b|v1": {
+  "act": "de-burlg/2013-04-20_de",
+  "address": "art-7/par-3",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Arbeitnehmer",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 5.25,
+   "prompt_tokens": 643,
+   "output_tokens": 59,
+   "load_seconds": 0.01
+  }
+ },
+ "2500d91d4eb1f07ba919a97ea629ccbd342fef424a2afdf5c961a21ec58b5dd1|qwen3:4b|v1": {
+  "act": "eu-2015-2120/2024-05-15_de",
+  "address": "art-10/par-3",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Mitgliedstaaten",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 5.19,
+   "prompt_tokens": 704,
+   "output_tokens": 61,
+   "load_seconds": 0.01
+  }
+ },
+ "2524ec7c23b7187e32e7a2c35fb0d794aac0ca9ad3ed91049f06e430a853a9dc|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-22/par-1",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Unternehmen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 5.66,
+   "prompt_tokens": 693,
+   "output_tokens": 60,
+   "load_seconds": 0.01
+  }
+ },
+ "25e802bad5b886ab4814c8ac30170c2a28e4e0339c897851147a84856019cff3|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-6/par-3/pt-3",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Unternehmen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 4.15,
+   "prompt_tokens": 560,
+   "output_tokens": 61,
+   "load_seconds": 0.01
+  }
+ },
+ "268a7e46bb53bfcdb58106ced9b3384adbd12c6b56fbf492c3beae3202106fa1|qwen3:4b|v1": {
+  "act": "eu-2015-2120/2024-05-15_de",
+  "address": "art-5a/par-10/pt-c",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Endkunden",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": false,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 4.52,
+   "prompt_tokens": 671,
+   "output_tokens": 59,
+   "load_seconds": 0.01
+  }
+ },
+ "27464ff6f8c7022544c359c05f35b08ad628b8ba1133c4af008548ff49eef6cc|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-13/par-3",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Bundesministerium für Arbeit und Soz. (Bundesministerium für Arbeit und Soziales)",
+     "type": "authority"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "consequence"
+  },
+  "stats": {
+   "seconds": 5.81,
+   "prompt_tokens": 583,
+   "output_tokens": 82,
+   "load_seconds": 0.01
+  }
+ },
+ "288c1021a32179589be2926100a76d6199ed48e142dec2632e5e10b47e9ef168|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-15/par-1",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "zuständige Behörde",
+     "type": "authority"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 5.31,
+   "prompt_tokens": 589,
+   "output_tokens": 64,
+   "load_seconds": 0.01
+  }
+ },
+ "28d69378b622a31f03707461689614dc904d46593f4573d761d31510f769bc97|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-2/par-2/pt-8",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Unternehmen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": false,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 4.65,
+   "prompt_tokens": 629,
+   "output_tokens": 61,
+   "load_seconds": 0.01
+  }
+ },
+ "292bef3e5f3f91c1968521d23024307300e135118e7c5e5f876153376f61e419|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-2/par-1",
+  "answer": {
+   "role": "obligation",
+   "addressees": [],
+   "addressee_explicit": false,
+   "kind": "none"
+  },
+  "stats": {
+   "seconds": 3.48,
+   "prompt_tokens": 569,
+   "output_tokens": 37,
+   "load_seconds": 0.01
+  }
+ },
+ "2a342e81391defa4773a0df0843e59fad7dc17d354a54d1063080ddd54898307|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-6/par-2/pt-1",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Unternehmen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 4.91,
+   "prompt_tokens": 639,
+   "output_tokens": 59,
+   "load_seconds": 0.01
+  }
+ },
+ "2a789579da6fb9f5e7fd97b0335f446a562d3b159a5a6268215099ed706678bc|qwen3:4b|v1": {
+  "act": "eu-2015-2120/2024-05-15_de",
+  "address": "art-1/par-3",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Verbraucher",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 5.18,
+   "prompt_tokens": 693,
+   "output_tokens": 59,
+   "load_seconds": 0.01
+  }
+ },
+ "2aed01e46043d64472a1f9d0bffc515f8440c033f8532234dbc778c857b8489a|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-6/par-4",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Unternehmen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 4.34,
+   "prompt_tokens": 547,
+   "output_tokens": 60,
+   "load_seconds": 0.01
+  }
+ },
+ "2c76057c7f8652d7506cc474e481d8b5fc0b985c440b05c1b204611577e63b1a|qwen3:4b|v1": {
+  "act": "de-burlg/2013-04-20_de",
+  "address": "art-3/par-2",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Arbeitnehmer",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 4.25,
+   "prompt_tokens": 518,
+   "output_tokens": 60,
+   "load_seconds": 0.01
+  }
+ },
+ "2dff5ae24c4747fe1c9187b7be8891c488d2cf563d8ab6b419ff7c70eafe5b4e|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-2/par-2/pt-6/pt-b",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Unternehmen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": false,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 4.35,
+   "prompt_tokens": 582,
+   "output_tokens": 60,
+   "load_seconds": 0.01
+  }
+ },
+ "2e2d17640d48856d9590daee198305509adc662af411362ba2ceb354925dff43|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-2/par-3/pt-6/pt-c",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Unternehmen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": false,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 4.51,
+   "prompt_tokens": 905,
+   "output_tokens": 59,
+   "load_seconds": 0.01
+  }
+ },
+ "319baba6a258ed7a804362f199c4e43289e7aa7c8423983fef565d47dc0d8579|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-3/par-1/pt-1",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Unternehmen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 5.15,
+   "prompt_tokens": 652,
+   "output_tokens": 59,
+   "load_seconds": 0.01
+  }
+ },
+ "32ef7bd86211c666a39bd6dd1d81e66aa3327f09adedaacdcca9289d518f4b74|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-24/par-4/pt-7",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "juristische Person oder Personenvereinigung",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": false,
+   "kind": "consequence"
+  },
+  "stats": {
+   "seconds": 5.07,
+   "prompt_tokens": 715,
+   "output_tokens": 66,
+   "load_seconds": 0.01
+  }
+ },
+ "32ff19a3e249b72fa821533551a1aaf2312cd0d0956d41b8eb66295211e97e8e|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-8/par-2",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Unternehmen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 4.29,
+   "prompt_tokens": 537,
+   "output_tokens": 61,
+   "load_seconds": 0.01
+  }
+ },
+ "332abf648fecf7fb9d3f7bccafcee9dceacaac219097e4b79a5ab170e8945036|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-4/par-4",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Unternehmen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 4.89,
+   "prompt_tokens": 621,
+   "output_tokens": 60,
+   "load_seconds": 0.01
+  }
+ },
+ "35a278f0e26688f8e8653fc8a8e35ddbeec8be02fc46012e7aac5d9a06bae7b2|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-14/par-1/pt-1/pt-b",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Unternehmen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": false,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 4.35,
+   "prompt_tokens": 571,
+   "output_tokens": 61,
+   "load_seconds": 0.01
+  }
+ },
+ "382b9540a1a6e5a6d2d8844e713a87fafb226afb47f650f888ce1b422b82d494|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-3/par-2/pt-4",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Unternehmen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": false,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 4.45,
+   "prompt_tokens": 605,
+   "output_tokens": 59,
+   "load_seconds": 0.01
+  }
+ },
+ "3a3b4997ade4e2644015e2dcd37870712f0c8c65e9f685a37f68ab45535077d9|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-2/par-2/pt-2/pt-d",
+  "answer": {
+   "role": "obligation",
+   "addressees": [],
+   "addressee_explicit": false,
+   "kind": "none"
+  },
+  "stats": {
+   "seconds": 3.08,
+   "prompt_tokens": 677,
+   "output_tokens": 36,
+   "load_seconds": 0.01
+  }
+ },
+ "3a7158615196ccd21c66104bac3db8a4ce5c8ca5f3676f277eb194685e89ea84|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-9/par-4",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Bundesministerium für Arbeit und So:1",
+     "type": "authority"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "consequence"
+  },
+  "stats": {
+   "seconds": 5.31,
+   "prompt_tokens": 588,
+   "output_tokens": 69,
+   "load_seconds": 0.01
+  }
+ },
+ "3a77ba4c32950bc3b406694e69bbfe06c99f8cffb66f7c3cde1759f27b550559|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-6/par-3/pt-2",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Unternehmen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 4.41,
+   "prompt_tokens": 582,
+   "output_tokens": 61,
+   "load_seconds": 0.01
+  }
+ },
+ "3b09986c636905f2fc1481c904d72c1192d36652e230138e994676976e511a94|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-12/par-1",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Unternehmen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 4.92,
+   "prompt_tokens": 567,
+   "output_tokens": 61,
+   "load_seconds": 0.01
+  }
+ },
+ "3bfbe9cb7aa26b615d307b27461845520ae7f991b9a4b1176c4fbbe047376601|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-24/par-1",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Wer",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": false,
+   "kind": "sanction"
+  },
+  "stats": {
+   "seconds": 4.44,
+   "prompt_tokens": 540,
+   "output_tokens": 59,
+   "load_seconds": 0.01
+  }
+ },
+ "3c2c8eb6dd7ea7594bb02ef0ea8e77a4233662a5845550737d8460a514c50bce|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-8/par-4",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Unternehmen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 4.98,
+   "prompt_tokens": 615,
+   "output_tokens": 61,
+   "load_seconds": 0.01
+  }
+ },
+ "3d975f5b0556713660105b4813a7fd6dc7054d54be58f05930e237b6095563c6|qwen3:4b|v1": {
+  "act": "de-burlg/2013-04-20_de",
+  "address": "art-9/par-1",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Arbeitnehmer",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 4.78,
+   "prompt_tokens": 537,
+   "output_tokens": 61,
+   "load_seconds": 0.01
+  }
+ },
+ "3dcb0f0553406d4d5f3b91ae880c67b074d06f0d87d0a73a7ee61f7057361884|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-14/par-2",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Bundesministerium für Arbeit und Soz:1",
+     "type": "authority"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "consequence"
+  },
+  "stats": {
+   "seconds": 5.42,
+   "prompt_tokens": 605,
+   "output_tokens": 69,
+   "load_seconds": 0.01
+  }
+ },
+ "3fb8ff201d05c998cc611da3c204dbe9b331d8e81e64e6fb3cf473ea3a057bc4|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-1/par-1/sen-2/pt-1",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Unternehmen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 4.7,
+   "prompt_tokens": 579,
+   "output_tokens": 61,
+   "load_seconds": 0.01
+  }
+ },
+ "4014290b3e93000cd5d6152c8ea16cfd0babcacb378995bd86ec47b5a26a483f|qwen3:4b|v1": {
+  "act": "de-burlg/2013-04-20_de",
+  "address": "art-6/par-1",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Arbeitnehmer",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 4.73,
+   "prompt_tokens": 537,
+   "output_tokens": 60,
+   "load_seconds": 0.01
+  }
+ },
+ "4158a33120c44eb7897b3cdaaf2faff08d951af9ddc5765c92c7d333e2739836|qwen3:4b|v1": {
+  "act": "eu-2015-2120/2024-05-15_de",
+  "address": "art-5/par-2",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Anbieter öffentlicher elektronischer Kommunikation",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 5.85,
+   "prompt_tokens": 739,
+   "output_tokens": 69,
+   "load_seconds": 0.01
+  }
+ },
+ "41bbaaef683475a59ab619b204d1227f685bb7b6ed0fe3bc0638c4839025fb6c|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-22/par-2/pt-1",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Unternehmen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": false,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 5.12,
+   "prompt_tokens": 657,
+   "output_tokens": 59,
+   "load_seconds": 0.01
+  }
+ },
+ "443450eedbce1ca52fb8ba90a4806891e9b8ba003a187ca701d25d64547b3e51|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-14/par-1/pt-2/pt-a",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Unternehmen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": false,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 4.49,
+   "prompt_tokens": 587,
+   "output_tokens": 60,
+   "load_seconds": 0.01
+  }
+ },
+ "44973d505cafa7181733bc6fdddf55288981dc06bd0bcb3fbe3dff0011cfc86a|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-6/par-5",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Unternehmen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 5.38,
+   "prompt_tokens": 653,
+   "output_tokens": 61,
+   "load_seconds": 0.01
+  }
+ },
+ "457673fa4a5ba57c04f6dbc41d32dbdb3c20cab13227ae6ac14202ce5cca135b|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-8/par-3",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Personen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 4.45,
+   "prompt_tokens": 572,
+   "output_tokens": 60,
+   "load_seconds": 0.01
+  }
+ },
+ "466a16a360d394de202f10f316ad4b44207b2785d37531d86ed069fe3fd91f58|qwen3:4b|v1": {
+  "act": "eu-2015-2120/2024-05-15_de",
+  "address": "art-6/par-1",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Mitgliedstaaten",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 6.62,
+   "prompt_tokens": 835,
+   "output_tokens": 61,
+   "load_seconds": 0.01
+  }
+ },
+ "46a756031edfcbd6f970ab793ad66044e0f0bce2356be277696a207329e17003|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-6/par-2/pt-3",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Unternehmen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 4.57,
+   "prompt_tokens": 639,
+   "output_tokens": 61,
+   "load_seconds": 0.01
+  }
+ },
+ "46b37597c1496311461f49040bb3a68937c5a6fbd28a50133543e001b8e77cbb|qwen3:4b|v1": {
+  "act": "eu-2015-2120/2024-05-15_de",
+  "address": "art-3/par-2",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Anbieter von Internetzugangsdiensten",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 5.42,
+   "prompt_tokens": 690,
+   "output_tokens": 66,
+   "load_seconds": 0.01
+  }
+ },
+ "498701446413f3de6233fb70b02be934ed3b09c2aa4e59ef18b08f1ed5eb76d7|qwen3:4b|v1": {
+  "act": "de-burlg/2013-04-20_de",
+  "address": "art-7/par-2",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Arbeitnehmer",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 5.06,
+   "prompt_tokens": 616,
+   "output_tokens": 60,
+   "load_seconds": 0.01
+  }
+ },
+ "4aecbb03a9e81c938ba7042e874ea320e95d75b2ba110f942a476d54eb2c509f|qwen3:4b|v1": {
+  "act": "de-burlg/2013-04-20_de",
+  "address": "art-4/par-1",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Arbeitnehmer",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 4.62,
+   "prompt_tokens": 520,
+   "output_tokens": 60,
+   "load_seconds": 0.01
+  }
+ },
+ "4afea9c86eb88032323b11955b1ca886e1887f4c66577616b5dcb757ed87e851|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-7/par-2/pt-2",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Unternehmen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": false,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 4.36,
+   "prompt_tokens": 679,
+   "output_tokens": 59,
+   "load_seconds": 0.01
+  }
+ },
+ "4c1662a381a1161e548a1a6ca52732fe25ee8b8914d0fe6f20f774edf3a6a7c4|qwen3:4b|v1": {
+  "act": "de-burlg/2013-04-20_de",
+  "address": "art-12/par-1/pt-1",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Heimarbeiter",
+     "type": "regulated"
+    },
+    {
+     "name": "nach § 1 Abs. 2 Buchstabe a des Heimarbeitsgesetzes Gleichgestellte",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": false,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 9.71,
+   "prompt_tokens": 802,
+   "output_tokens": 101,
+   "load_seconds": 0.01
+  }
+ },
+ "4cfe777237612e1e3189c2b01d2f281ae2015343d33dd19eeeec1380f9a70157|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-6/par-3/pt-4",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Unternehmen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 4.39,
+   "prompt_tokens": 594,
+   "output_tokens": 60,
+   "load_seconds": 0.01
+  }
+ },
+ "4d18cf1db291a308f6ec2b4532772f836996661edcbfeaa10dfd8dc426f9b828|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-2/par-5/pt-2",
+  "answer": {
+   "role": "applicability",
+   "addressees": [],
+   "addressee_explicit": false,
+   "kind": "none"
+  },
+  "stats": {
+   "seconds": 2.58,
+   "prompt_tokens": 624,
+   "output_tokens": 36,
+   "load_seconds": 0.01
+  }
+ },
+ "4d694096890d01cf5ae76ff9ecbf794a5a8c22635bfaf9b3fd6fc595903f0364|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-2/par-2/pt-5/pt-d",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Beschäftigte",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 4.28,
+   "prompt_tokens": 600,
+   "output_tokens": 62,
+   "load_seconds": 0.01
+  }
+ },
+ "4d99f4c90603ed5a70fef1ee6a673f7b3bd94cc4654605f260a114f5ceeb7f11|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-24/par-1/pt-3",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Unternehmen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": false,
+   "kind": "consequence"
+  },
+  "stats": {
+   "seconds": 4.23,
+   "prompt_tokens": 567,
+   "output_tokens": 60,
+   "load_seconds": 0.01
+  }
+ },
+ "4de450e3da4b3cdf854103000d40b41f250c7ab893bd9c8eb50ed4a8f3b3dbc7|qwen3:4b|v1": {
+  "act": "de-burlg/2013-04-20_de",
+  "address": "art-6/par-2",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Arbeitgeber",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 4.51,
+   "prompt_tokens": 551,
+   "output_tokens": 60,
+   "load_seconds": 0.01
+  }
+ },
+ "4df0eb7e072a73dd4423546050715914643559749660b2b2d8df0f35fafcad00|qwen3:4b|v1": {
+  "act": "eu-2015-2120/2024-05-15_de",
+  "address": "art-5a/par-4",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Anbieter",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 4.83,
+   "prompt_tokens": 698,
+   "output_tokens": 59,
+   "load_seconds": 0.01
+  }
+ },
+ "4f0b6650af1bcd2c25af8af95bcca33fc82517043393504a18af684786b63069|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-7/par-1",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Unternehmen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 5.71,
+   "prompt_tokens": 725,
+   "output_tokens": 59,
+   "load_seconds": 0.01
+  }
+ },
+ "4f7729c4573ad090e9d1a390832fb4ba8c3a28384ca2975b9cbc93ebf5f29168|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-2/par-2/pt-11/pt-c",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Unternehmen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": false,
+   "kind": "consequence"
+  },
+  "stats": {
+   "seconds": 4.1,
+   "prompt_tokens": 594,
+   "output_tokens": 60,
+   "load_seconds": 0.01
+  }
+ },
+ "4fbe94875499baf45e7f3142a9c18678436ab1a3a1443cb7323c3389bcb71099|qwen3:4b|v1": {
+  "act": "eu-2015-2120/2024-05-15_de",
+  "address": "art-1/par-1",
+  "answer": {
+   "role": "applicability",
+   "addressees": [],
+   "addressee_explicit": false,
+   "kind": "none"
+  },
+  "stats": {
+   "seconds": 4.28,
+   "prompt_tokens": 655,
+   "output_tokens": 36,
+   "load_seconds": 0.01
+  }
+ },
+ "4fdc72b54703ccb604f9700b970336219adce80ab6b78b3a19847fbb7722ec90|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-3/par-1",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Unternehmen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 5.08,
+   "prompt_tokens": 633,
+   "output_tokens": 59,
+   "load_seconds": 0.01
+  }
+ },
+ "5037c2a6f0569ff8acab130e889fbb0a752699a2547aeca1b3132f4c869f724c|qwen3:4b|v1": {
+  "act": "de-burlg/2013-04-20_de",
+  "address": "art-16/par-1",
+  "answer": {
+   "role": "obligation",
+   "addressees": [],
+   "addressee_explicit": false,
+   "kind": "none"
+  },
+  "stats": {
+   "seconds": 3.11,
+   "prompt_tokens": 514,
+   "output_tokens": 37,
+   "load_seconds": 0.01
+  }
+ },
+ "5060d1c16b9dc54affe431793a30e0b8c4d7c3fe3b6270482d261d1cf6e88a52|qwen3:4b|v1": {
+  "act": "de-burlg/2013-04-20_de",
+  "address": "art-2/par-1",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Arbeitnehmer",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 4.98,
+   "prompt_tokens": 567,
+   "output_tokens": 61,
+   "load_seconds": 0.01
+  }
+ },
+ "50672c6d6edea08aabdbedfd0146763d190928632c8b6f4c3f0899707dd7d455|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-24/par-4/pt-2",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Täters der Ordnungswidrigkeit",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": false,
+   "kind": "consequence"
+  },
+  "stats": {
+   "seconds": 4.81,
+   "prompt_tokens": 661,
+   "output_tokens": 69,
+   "load_seconds": 0.01
+  }
+ },
+ "50720432e89cd5d44fca3f1b99f78a7696e55d6de87d82e3fcafeee67a983e67|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-2/par-3/pt-6/pt-a",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Vertragspartei",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 7.61,
+   "prompt_tokens": 921,
+   "output_tokens": 61,
+   "load_seconds": 0.01
+  }
+ },
+ "509a458b7202f49fed8df752a97dd7e1f8976eccf3a99a9cb00e30e04331d088|qwen3:4b|v1": {
+  "act": "eu-2015-2120/2024-05-15_de",
+  "address": "art-2/par-1/pt-6",
+  "answer": {
+   "role": "obligation",
+   "addressees": [],
+   "addressee_explicit": false,
+   "kind": "none"
+  },
+  "stats": {
+   "seconds": 3.33,
+   "prompt_tokens": 719,
+   "output_tokens": 37,
+   "load_seconds": 0.01
+  }
+ },
+ "542786ef059178fe39e2ef3e0a937a0a860bc19fd57fdc58d1d0f71b6f4ab8ce|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-2/par-3/pt-4",
+  "answer": {
+   "role": "applicability",
+   "addressees": [],
+   "addressee_explicit": false,
+   "kind": "none"
+  },
+  "stats": {
+   "seconds": 5.06,
+   "prompt_tokens": 847,
+   "output_tokens": 36,
+   "load_seconds": 0.01
+  }
+ },
+ "55078b21fe5c36200995aa80b2c2325d8fc66fe70d3ef64acc84cfcb4424ae4b|qwen3:4b|v1": {
+  "act": "eu-2015-2120/2024-05-15_de",
+  "address": "art-3/par-4",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Verwaltungsbehörde",
+     "type": "authority"
+    }
+   ],
+   "addressee_explicit": false,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 5.72,
+   "prompt_tokens": 729,
+   "output_tokens": 63,
+   "load_seconds": 0.01
+  }
+ },
+ "554c97053db9cbc4835964dfab6dce13d514a44ecee38fc799ac3261745741a8|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-2/par-2/pt-5",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Unternehmen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": false,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 4.64,
+   "prompt_tokens": 629,
+   "output_tokens": 61,
+   "load_seconds": 0.01
+  }
+ },
+ "5693fc4abf0f5b190dae3a814d4298eaf6915b8c8f997c500390f5e85cb050b7|qwen3:4b|v1": {
+  "act": "de-burlg/2013-04-20_de",
+  "address": "art-12/par-1",
+  "answer": {
+   "role": "applicability",
+   "addressees": [],
+   "addressee_explicit": false,
+   "kind": "none"
+  },
+  "stats": {
+   "seconds": 3.69,
+   "prompt_tokens": 604,
+   "output_tokens": 36,
+   "load_seconds": 0.01
+  }
+ },
+ "56c7a2b5dbf6f56aa2e30f7cc1146cfa8299ff553ace16de8e7637b1fcf769c4|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-2/par-2/pt-2/pt-a",
+  "answer": {
+   "role": "obligation",
+   "addressees": [],
+   "addressee_explicit": false,
+   "kind": "none"
+  },
+  "stats": {
+   "seconds": 4.53,
+   "prompt_tokens": 714,
+   "output_tokens": 36,
+   "load_seconds": 0.01
+  }
+ },
+ "578b5663dde32c7f6576fc4c592f29e75d2753836f752adb60256c06d84393c3|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-5/par-3",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Unternehmen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 4.42,
+   "prompt_tokens": 566,
+   "output_tokens": 61,
+   "load_seconds": 0.01
+  }
+ },
+ "5825615836526a3376e4c8e40b7234b3ea3e513250edf16ad89329014ca29855|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-5/par-1",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Unternehmen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 5.45,
+   "prompt_tokens": 685,
+   "output_tokens": 59,
+   "load_seconds": 0.01
+  }
+ },
+ "58504eef439d4c1d0dcf857cde236936f3534cbfdd897a37e938d58b53846efe|qwen3:4b|v1": {
+  "act": "eu-2015-2120/2024-05-15_de",
+  "address": "art-10/par-1",
+  "answer": {
+   "role": "applicability",
+   "addressees": [],
+   "addressee_explicit": false,
+   "kind": "none"
+  },
+  "stats": {
+   "seconds": 3.04,
+   "prompt_tokens": 625,
+   "output_tokens": 36,
+   "load_seconds": 0.01
+  }
+ },
+ "593c926f5b15644a34160b54cd092e86c064c34afaae7e73dab31cce4697e715|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-24/par-3",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "juristische Person oder Personenvereinigung",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": false,
+   "kind": "sanction"
+  },
+  "stats": {
+   "seconds": 6.37,
+   "prompt_tokens": 741,
+   "output_tokens": 67,
+   "load_seconds": 0.01
+  }
+ },
+ "5a268c8f42fff76994611fc6d4bec1c8b6089d5c26c1eadf6648d165d19fafee|qwen3:4b|v1": {
+  "act": "eu-2015-2120/2024-05-15_de",
+  "address": "art-5a/par-10",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Endkunden",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 4.16,
+   "prompt_tokens": 621,
+   "output_tokens": 59,
+   "load_seconds": 0.01
+  }
+ },
+ "5a498a067aa6d30d4559d4aa4b3a75e66388140da87807b255b39be02f5e2d80|qwen3:4b|v1": {
+  "act": "eu-2015-2120/2024-05-15_de",
+  "address": "art-2/par-1/pt-2",
+  "answer": {
+   "role": "applicability",
+   "addressees": [],
+   "addressee_explicit": false,
+   "kind": "none"
+  },
+  "stats": {
+   "seconds": 3.2,
+   "prompt_tokens": 711,
+   "output_tokens": 36,
+   "load_seconds": 0.01
+  }
+ },
+ "5b03503050346f96394288a9ef471ca0baaf34c646a5e96e6400b9ee763bd0bd|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-24/par-1/pt-13",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Unternehmen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": false,
+   "kind": "sanction"
+  },
+  "stats": {
+   "seconds": 4.48,
+   "prompt_tokens": 579,
+   "output_tokens": 60,
+   "load_seconds": 0.01
+  }
+ },
+ "5c03e7b6af36c85028f3adc21306483ca05d27ce706a4d971d5e4c2e86a0e193|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-1/par-1/sen-1/pt-2",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Unternehmen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 4.59,
+   "prompt_tokens": 574,
+   "output_tokens": 60,
+   "load_seconds": 0.01
+  }
+ },
+ "5dbdfbc1cec5e37355ceb5a7a61e589fd084d485cd1fe89f82cd76e504efe21c|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-2/par-7",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Unternehmen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 4.84,
+   "prompt_tokens": 600,
+   "output_tokens": 61,
+   "load_seconds": 0.01
+  }
+ },
+ "5f45a2bc7c09ca65779419719d575be6c101a4f1597fa6a8a648f56f6109aa92|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-24/par-1/pt-12",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Unternehmen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": false,
+   "kind": "sanction"
+  },
+  "stats": {
+   "seconds": 4.34,
+   "prompt_tokens": 562,
+   "output_tokens": 61,
+   "load_seconds": 0.01
+  }
+ },
+ "5f781a334fd55074f89261833da17311c77cd6eb8a420cdd09bd4df3e7393ea7|qwen3:4b|v1": {
+  "act": "eu-2015-2120/2024-05-15_de",
+  "address": "art-5a/par-1",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Endkunden",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 4.9,
+   "prompt_tokens": 675,
+   "output_tokens": 59,
+   "load_seconds": 0.01
+  }
+ },
+ "613c6dedb33a07a2d807bf8535c642e458a30246312d69d1f4b720abd37dc183|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-24/par-1/pt-1",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Unternehmen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": false,
+   "kind": "sanction"
+  },
+  "stats": {
+   "seconds": 4.43,
+   "prompt_tokens": 575,
+   "output_tokens": 60,
+   "load_seconds": 0.01
+  }
+ },
+ "614002405066298f9c3aa65d22e09e93bddc0e51756f1fdca7c0adfc104d5fa1|qwen3:4b|v1": {
+  "act": "eu-2015-2120/2024-05-15_de",
+  "address": "art-2/par-1/pt-5",
+  "answer": {
+   "role": "obligation",
+   "addressees": [],
+   "addressee_explicit": false,
+   "kind": "none"
+  },
+  "stats": {
+   "seconds": 3.34,
+   "prompt_tokens": 717,
+   "output_tokens": 37,
+   "load_seconds": 0.01
+  }
+ },
+ "6155250e366d1989d21e2971d1cf113654711bf8bc86dbb2337ded255c7cbdc0|qwen3:4b|v1": {
+  "act": "de-burlg/2013-04-20_de",
+  "address": "art-5/par-1/pt-a",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Arbeitnehmer",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 4.89,
+   "prompt_tokens": 566,
+   "output_tokens": 61,
+   "load_seconds": 0.01
+  }
+ },
+ "61d57e47194316b84be157cbc10e7ed841ea7d97aaa4b5674045db2c81f97d1e|qwen3:4b|v1": {
+  "act": "eu-2015-2120/2024-05-15_de",
+  "address": "art-5a/par-6",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "nationalen Regulierungsbehörde",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 8.22,
+   "prompt_tokens": 1005,
+   "output_tokens": 65,
+   "load_seconds": 0.01
+  }
+ },
+ "630d87a01251fcb3f131587779bd3edeb3a8121fa146b2fb05c17b2c18a91abe|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-2/par-2/pt-2/pt-c",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Unternehmen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": false,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 4.72,
+   "prompt_tokens": 672,
+   "output_tokens": 59,
+   "load_seconds": 0.01
+  }
+ },
+ "64675dde22004aef10b0b4f30dd653047e4331f515b3b0adc662fb4fecb2c514|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-24/par-4/pt-1",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "der Vorwurf",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": false,
+   "kind": "consequence"
+  },
+  "stats": {
+   "seconds": 5.28,
+   "prompt_tokens": 661,
+   "output_tokens": 61,
+   "load_seconds": 0.01
+  }
+ },
+ "657ba62456dadf1b8a08977471aed968c581066366960ac739944ff7d1e61740|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-2/par-2/pt-6/pt-c",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Gewerkschaften",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 4.54,
+   "prompt_tokens": 586,
+   "output_tokens": 63,
+   "load_seconds": 0.01
+  }
+ },
+ "65831c6a63b19351f779614ce113efdf76f8708a482471bd827b1ebb3d6af8d6|qwen3:4b|v1": {
+  "act": "de-burlg/2013-04-20_de",
+  "address": "art-7/par-1",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Arbeitnehmer",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 5.34,
+   "prompt_tokens": 620,
+   "output_tokens": 59,
+   "load_seconds": 0.01
+  }
+ },
+ "6642b6bc60c789586f8a5b63cd502609bf707c745b9293e7a343b54813d9aad8|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-3/par-1/pt-4",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Unternehmen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 4.02,
+   "prompt_tokens": 652,
+   "output_tokens": 59,
+   "load_seconds": 0.01
+  }
+ },
+ "66f871f24ee3bdfdd982109b7c1c0a77c1bd15c2b6d05cf16f0a359458db9130|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-6/par-4/pt-4",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Unternehmen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 4.47,
+   "prompt_tokens": 604,
+   "output_tokens": 60,
+   "load_seconds": 0.01
+  }
+ },
+ "6735945335fa8080ef9a7a7bb61cf3c58613f77c8f01dd6aec75a70f0cbbdc62|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-1/par-3",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Arbeitnehmer",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 5.05,
+   "prompt_tokens": 604,
+   "output_tokens": 60,
+   "load_seconds": 0.01
+  }
+ },
+ "685354d34cd8c925c754804a67b12a86586e6183a537edbaa26a12a0ba3b458f|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-24/par-1/pt-10",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Unternehmen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": false,
+   "kind": "sanction"
+  },
+  "stats": {
+   "seconds": 4.41,
+   "prompt_tokens": 566,
+   "output_tokens": 61,
+   "load_seconds": 0.01
+  }
+ },
+ "69e3f107bb6091aa536be6c90529112c61eea87724f8b0d0099d57cb6e0464ce|qwen3:4b|v1": {
+  "act": "de-burlg/2013-04-20_de",
+  "address": "art-5/par-2",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Arbeitnehmer",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 4.55,
+   "prompt_tokens": 522,
+   "output_tokens": 60,
+   "load_seconds": 0.01
+  }
+ },
+ "6a5aa7dedd56619698fa3669a825834b8a9a49747c38d6c2163ce71f05ad72d9|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-2/par-2/pt-5/pt-a",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Unternehmen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": false,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 4.66,
+   "prompt_tokens": 621,
+   "output_tokens": 59,
+   "load_seconds": 0.01
+  }
+ },
+ "6ae18d22d16815b0ff64ce536d78990d0b947e7f4d23e0126bebc8d89c89c7a1|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-24/par-4/pt-8",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "juristische Person",
+     "type": "regulated"
+    },
+    {
+     "name": "Personenvereinigung",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": false,
+   "kind": "consequence"
+  },
+  "stats": {
+   "seconds": 5.82,
+   "prompt_tokens": 669,
+   "output_tokens": 83,
+   "load_seconds": 0.01
+  }
+ },
+ "6af4f97f2537aaf1f3f9df99e48d11c5024d781651f25fd1841e8a4995bff2ba|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-18/par-1",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Unternehmen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 5.02,
+   "prompt_tokens": 604,
+   "output_tokens": 61,
+   "load_seconds": 0.01
+  }
+ },
+ "6b840fd24a42fba363621bc2de0f11a12eb772d6c4f948e3d144db9af5d6a71a|qwen3:4b|v1": {
+  "act": "eu-2015-2120/2024-05-15_de",
+  "address": "art-5a/par-3",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Verbraucher",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "consequence"
+  },
+  "stats": {
+   "seconds": 4.84,
+   "prompt_tokens": 709,
+   "output_tokens": 59,
+   "load_seconds": 0.01
+  }
+ },
+ "6ba2cecbbd425de961f1cd6f66a0da237b85a495359018eb27ab48e36374ed9d|qwen3:4b|v1": {
+  "act": "eu-2015-2120/2024-05-15_de",
+  "address": "art-5/par-4",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Mitgliedstaaten",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 4.68,
+   "prompt_tokens": 642,
+   "output_tokens": 62,
+   "load_seconds": 0.01
+  }
+ },
+ "6c1869c680ae9402e983729cfe473bd16049126f7678d911714d2c070040c5e9|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-8/par-5",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Unternehmen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 4.93,
+   "prompt_tokens": 625,
+   "output_tokens": 60,
+   "load_seconds": 0.01
+  }
+ },
+ "6dace50b405883593b40995847e68161d365bcb5235f7e3b0ebdfc7075532e20|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-24/par-1/pt-11",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Unternehmen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": false,
+   "kind": "sanction"
+  },
+  "stats": {
+   "seconds": 4.54,
+   "prompt_tokens": 577,
+   "output_tokens": 61,
+   "load_seconds": 0.01
+  }
+ },
+ "6dc823f0392d4afb42a86b6f41869ade2e9961efe529e96140e645d9f6f60076|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-24/par-2/pt-2",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Unternehmen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": false,
+   "kind": "sanction"
+  },
+  "stats": {
+   "seconds": 4.75,
+   "prompt_tokens": 627,
+   "output_tokens": 59,
+   "load_seconds": 0.01
+  }
+ },
+ "6eb43d79750ab78428a8a4e76ee1cdba1ed3e9a9a6f02262240c4f21a8c278ce|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-3/par-2/pt-2",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Unternehmen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": false,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 4.61,
+   "prompt_tokens": 609,
+   "output_tokens": 60,
+   "load_seconds": 0.01
+  }
+ },
+ "6ec4eaf79b79c6153f8a7e3e82ade07885f729fb1697718edf10a356afe232ff|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-1/par-1/sen-2",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Unternehmen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 4.96,
+   "prompt_tokens": 604,
+   "output_tokens": 59,
+   "load_seconds": 0.01
+  }
+ },
+ "701508243dbf099ba53d4bf22799767e2c9371889f08dcbec9c5f8be38613f07|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-22/par-2/pt-2",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Unternehmen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": false,
+   "kind": "consequence"
+  },
+  "stats": {
+   "seconds": 4.46,
+   "prompt_tokens": 650,
+   "output_tokens": 59,
+   "load_seconds": 0.01
+  }
+ },
+ "7069a4cc5b614e39f96cb4743aed19fae44f90da010b6a632716986c80817e3c|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-17/par-2/pt-3",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Unternehmen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": false,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 4.4,
+   "prompt_tokens": 602,
+   "output_tokens": 59,
+   "load_seconds": 0.01
+  }
+ },
+ "70781a52945365232a50d87bb520f7d9ae1543eb0e3ce8c8fa5bfdf360172e1f|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-22/par-3",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Bewerber",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 4.31,
+   "prompt_tokens": 541,
+   "output_tokens": 61,
+   "load_seconds": 0.01
+  }
+ },
+ "70b45f73b063b02098679f9c761af3c7af6dbfba378f275f82e235eb6f955163|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "anx",
+  "answer": {
+   "role": "none",
+   "addressees": [],
+   "addressee_explicit": false,
+   "kind": "none"
+  },
+  "stats": {
+   "seconds": 16.5,
+   "prompt_tokens": 1770,
+   "output_tokens": 34,
+   "load_seconds": 0.01
+  }
+ },
+ "70c04ff3aaa5fb204ddee97efb404e6666a8d3a78a4443a85e58b0ccd6b6d774|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-1/par-1",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Unternehmen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 5.18,
+   "prompt_tokens": 568,
+   "output_tokens": 60,
+   "load_seconds": 0.01
+  }
+ },
+ "713c9ff49d0f289fbcfaade401b368ed6731b392cc5d0be21b5d26f0b72f1c09|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-2/par-2/pt-11",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Unternehmen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": false,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 4.25,
+   "prompt_tokens": 621,
+   "output_tokens": 59,
+   "load_seconds": 0.01
+  }
+ },
+ "722752a42207a82aa51831815c3b2b7a93192ce0afd9f357d486b629c2ac33e6|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-7/par-4",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Unternehmen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 5.24,
+   "prompt_tokens": 655,
+   "output_tokens": 60,
+   "load_seconds": 0.01
+  }
+ },
+ "724487c43182ea288c7c80a8eaca57dbda7b6f96d858a87455ddc4ed24837e03|qwen3:4b|v1": {
+  "act": "eu-2015-2120/2024-05-15_de",
+  "address": "art-5a/par-5",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Unternehmen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": false,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 5.79,
+   "prompt_tokens": 801,
+   "output_tokens": 59,
+   "load_seconds": 0.01
+  }
+ },
+ "72ecadc55dd6d5a3d3154dcf190a44a4270f8385c5009f1e8ec96516f86d4723|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-24/par-1/pt-4",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Unternehmen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": false,
+   "kind": "sanction"
+  },
+  "stats": {
+   "seconds": 4.5,
+   "prompt_tokens": 594,
+   "output_tokens": 60,
+   "load_seconds": 0.01
+  }
+ },
+ "744a9d1933d7179d086fc95432a15ff47480fb7d499407f29e3534267dce311e|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-2/par-5",
+  "answer": {
+   "role": "applicability",
+   "addressees": [],
+   "addressee_explicit": false,
+   "kind": "none"
+  },
+  "stats": {
+   "seconds": 3.09,
+   "prompt_tokens": 608,
+   "output_tokens": 36,
+   "load_seconds": 0.01
+  }
+ },
+ "7652ecc4af9c03a8f781fb1d970ef0b94594c1c5790e85797ee82c2a358241d2|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-15/par-1/pt-3",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Unternehmen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 4.19,
+   "prompt_tokens": 610,
+   "output_tokens": 60,
+   "load_seconds": 0.01
+  }
+ },
+ "76c336518a273976e9a708e6789841cd1e82895456b0d7e65795f44eafd1f583|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-13/par-3/pt-2",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Bundesministerium für Arbeit und Soziales",
+     "type": "authority"
+    }
+   ],
+   "addressee_explicit": false,
+   "kind": "consequence"
+  },
+  "stats": {
+   "seconds": 4.93,
+   "prompt_tokens": 608,
+   "output_tokens": 68,
+   "load_seconds": 0.01
+  }
+ },
+ "76eb7ec2b5f19349124770d7d3caa0a126649c7b9bf2bb7d26d4cac2cc541c5f|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-2/par-6",
+  "answer": {
+   "role": "none",
+   "addressees": [],
+   "addressee_explicit": false,
+   "kind": "none"
+  },
+  "stats": {
+   "seconds": 3.65,
+   "prompt_tokens": 657,
+   "output_tokens": 34,
+   "load_seconds": 0.01
+  }
+ },
+ "770bf4d16e11ad0ccb303b355968c50d5ef370863f0e22f44549e0d062281ab4|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-17/par-3",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "auskunftspflichtige Person",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": false,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 5.77,
+   "prompt_tokens": 687,
+   "output_tokens": 65,
+   "load_seconds": 0.01
+  }
+ },
+ "7777a99466fa60349c724da9b4af6685af56d428e3836cdf17a246895305a33e|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-10/par-1",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Unternehmen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 4.9,
+   "prompt_tokens": 573,
+   "output_tokens": 61,
+   "load_seconds": 0.01
+  }
+ },
+ "77c2b8c61dfb6f389aadbb32dadc4e2d253fca40a85048ea6747ba101b0bb1a4|qwen3:4b|v1": {
+  "act": "de-burlg/2013-04-20_de",
+  "address": "art-15a/par-1",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Arbeitnehmer",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 5.14,
+   "prompt_tokens": 596,
+   "output_tokens": 60,
+   "load_seconds": 0.01
+  }
+ },
+ "77d99ec0cc60db108c3e4c1d5819869d83e80059bfb8ba6bcc95c4da8aece2f5|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-2/par-2/pt-11/pt-a",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Unternehmen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": false,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 4.79,
+   "prompt_tokens": 603,
+   "output_tokens": 60,
+   "load_seconds": 0.01
+  }
+ },
+ "7813bf82c241265fd18b9ecdd1463912c6bae74202908c86294776418f27e18f|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-4/par-2",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Unternehmen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 4.86,
+   "prompt_tokens": 615,
+   "output_tokens": 61,
+   "load_seconds": 0.01
+  }
+ },
+ "7a2d3b616671c36d79e66ba589c19cb30277316582c996d4b4c1077cd05d206b|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-2/par-8",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Unternehmen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 4.55,
+   "prompt_tokens": 591,
+   "output_tokens": 60,
+   "load_seconds": 0.01
+  }
+ },
+ "7c5ac9d9f226159136c71e80c89cc7adef5e2a4f99bd344b3691b4b363f52f23|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-12/par-2",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Unternehmen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": false,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 4.29,
+   "prompt_tokens": 552,
+   "output_tokens": 60,
+   "load_seconds": 0.01
+  }
+ },
+ "7c8deb1dcb290ac3a4670856d16398331b48cb0d96c23f886bdba3f69973d541|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-10/par-2/pt-4",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Unternehmen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 4.12,
+   "prompt_tokens": 645,
+   "output_tokens": 59,
+   "load_seconds": 0.01
+  }
+ },
+ "7cc698c529c04d6c51f031949927decc286abb6ba92aa07db9b344f31f348254|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-23/par-1",
+  "answer": {
+   "role": "obligation",
+   "addressees": [],
+   "addressee_explicit": false,
+   "kind": "consequence"
+  },
+  "stats": {
+   "seconds": 3.41,
+   "prompt_tokens": 591,
+   "output_tokens": 38,
+   "load_seconds": 0.01
+  }
+ },
+ "7d3c8500b6bc572c6aca7293d8f4042b044d4f64fb765819439f8bd3c490bded|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-2/par-5/pt-3",
+  "answer": {
+   "role": "obligation",
+   "addressees": [],
+   "addressee_explicit": false,
+   "kind": "none"
+  },
+  "stats": {
+   "seconds": 2.59,
+   "prompt_tokens": 624,
+   "output_tokens": 37,
+   "load_seconds": 0.01
+  }
+ },
+ "7d72fa7c6a3508204f6d1fee063f88eefe18efdc7a6e60c9f913d4d8a81906ca|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-2/par-3/pt-7",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Unternehmen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": false,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 5.03,
+   "prompt_tokens": 650,
+   "output_tokens": 59,
+   "load_seconds": 0.01
+  }
+ },
+ "8011cd27e7522beb47b5b398187440b4194b2af7bd22f9d834958d8951c218de|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-13/par-1/pt-2",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Behörde",
+     "type": "authority"
+    }
+   ],
+   "addressee_explicit": false,
+   "kind": "consequence"
+  },
+  "stats": {
+   "seconds": 4.06,
+   "prompt_tokens": 564,
+   "output_tokens": 59,
+   "load_seconds": 0.01
+  }
+ },
+ "8053c2d0dd052a05947004dd0884a15883414d4fb98df4176b84af1975cb7581|qwen3:4b|v1": {
+  "act": "eu-2015-2120/2024-05-15_de",
+  "address": "art-4/par-4",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Verbraucher",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 5.98,
+   "prompt_tokens": 797,
+   "output_tokens": 59,
+   "load_seconds": 0.01
+  }
+ },
+ "8146873442ab302134e83e658fa22b08075d22ce9e98904f7958c326ed8ba9d5|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-6/par-2/pt-2",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Unternehmen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 4.4,
+   "prompt_tokens": 614,
+   "output_tokens": 61,
+   "load_seconds": 0.01
+  }
+ },
+ "84200b9f3d626982f6ee537a00bd5aaecc3b16e0dee68c69f661f38397b2fe56|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-7/par-3/pt-1",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Unternehmen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": false,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 5.4,
+   "prompt_tokens": 672,
+   "output_tokens": 60,
+   "load_seconds": 0.01
+  }
+ },
+ "844e690783424a3d122922f0b76f0d3d272d7edb6447678d9cb444d0a3e0f2d8|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-2/par-2/pt-9/pt-b",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Person",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 4.1,
+   "prompt_tokens": 592,
+   "output_tokens": 59,
+   "load_seconds": 0.01
+  }
+ },
+ "84f9cc886a22440fc05171c8b65aa21ef17f1fcdf4504ba62c17e2f93266159a|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-9/par-3/pt-4",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Unternehmen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 4.4,
+   "prompt_tokens": 625,
+   "output_tokens": 60,
+   "load_seconds": 0.01
+  }
+ },
+ "850dd3ea4fee73f75dcbe4e9bf0ad51f48699de43030ad3b07fd991ba69b364f|qwen3:4b|v1": {
+  "act": "eu-2015-2120/2024-05-15_de",
+  "address": "art-4/par-1",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Anbieter von Internetzugangsdiensten",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 5.42,
+   "prompt_tokens": 667,
+   "output_tokens": 66,
+   "load_seconds": 0.01
+  }
+ },
+ "852104ade111fb33b377a6871912e2a3d671c12fb24be3e03324a07037c2cce9|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-10/par-2/pt-2",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Unternehmen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 4.89,
+   "prompt_tokens": 723,
+   "output_tokens": 59,
+   "load_seconds": 0.01
+  }
+ },
+ "8540d9cd2a6a6d3ae86d08f5492441b6c76a75f6a26bb32c9c5a13d107c06c6c|qwen3:4b|v1": {
+  "act": "eu-2015-2120/2024-05-15_de",
+  "address": "art-2/par-1/pt-7",
+  "answer": {
+   "role": "obligation",
+   "addressees": [],
+   "addressee_explicit": false,
+   "kind": "none"
+  },
+  "stats": {
+   "seconds": 3.21,
+   "prompt_tokens": 719,
+   "output_tokens": 37,
+   "load_seconds": 0.01
+  }
+ },
+ "86b06a9b20d4df3991845dc31d4aac140fc5e43409982de6ccc141b9eb0748a3|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-9/par-3/pt-1",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Unternehmen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 4.9,
+   "prompt_tokens": 622,
+   "output_tokens": 60,
+   "load_seconds": 0.01
+  }
+ },
+ "86ea14a6b89036338d978671d17d0f9e069c75e01f9dca29ec1f878674bbd05d|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-2/par-2/pt-5/pt-c",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Unternehmen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": false,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 4.37,
+   "prompt_tokens": 639,
+   "output_tokens": 59,
+   "load_seconds": 0.01
+  }
+ },
+ "8720e023eac7c5dd39ca278f41f435d2b5fc02b4e63489b3f6295ef300138cd3|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-17/par-2",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Unternehmen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": false,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 4.24,
+   "prompt_tokens": 554,
+   "output_tokens": 60,
+   "load_seconds": 0.01
+  }
+ },
+ "873a999ca074eb62a8618b3e1bc349459015f37277ad6755c2ee6880a98fd4f5|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-17/par-1",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Unternehmen",
+     "type": "regulated"
+    },
+    {
+     "name": "nach § 15 Satz 2 Nummer 1 geladene Personen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 8.16,
+   "prompt_tokens": 732,
+   "output_tokens": 94,
+   "load_seconds": 0.01
+  }
+ },
+ "88842fe84898423352af7c2f4e3bbbc447ec1bc657b41f9f03a59398751811c2|qwen3:4b|v1": {
+  "act": "de-burlg/2013-04-20_de",
+  "address": "art-5/par-1",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Arbeitnehmer",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 4.53,
+   "prompt_tokens": 524,
+   "output_tokens": 60,
+   "load_seconds": 0.01
+  }
+ },
+ "89e2625f3409a0d144a1feb4bc21b3ccf87f24cbbee500b236148a2af1965859|qwen3:4b|v1": {
+  "act": "eu-2015-2120/2024-05-15_de",
+  "address": "art-3/par-3/pt-a",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Anbieter von Internetzugangsdiensten",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 9.28,
+   "prompt_tokens": 1072,
+   "output_tokens": 66,
+   "load_seconds": 0.01
+  }
+ },
+ "8abd3fee418679277c477eccd2850eddca9f46c4f757bdcf6b980c9cfad2eca4|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-5/par-2",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Unternehmen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 4.4,
+   "prompt_tokens": 568,
+   "output_tokens": 61,
+   "load_seconds": 0.01
+  }
+ },
+ "8bde40d0c648c1300d0f4d20ab64a2689c14f8530e358b9885e10c56565c8d80|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-16/par-1/pt-1",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Unternehmen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 4.66,
+   "prompt_tokens": 599,
+   "output_tokens": 60,
+   "load_seconds": 0.01
+  }
+ },
+ "8cddc5c21fd2bc3ccf4287d8659e83959d357e5c3e7d92b07cfe5c13e6054d4c|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-2/par-3",
+  "answer": {
+   "role": "obligation",
+   "addressees": [],
+   "addressee_explicit": false,
+   "kind": "none"
+  },
+  "stats": {
+   "seconds": 3.0,
+   "prompt_tokens": 565,
+   "output_tokens": 37,
+   "load_seconds": 0.01
+  }
+ },
+ "8fa6e238845b05697c59f204c2b25ceff0edea5792002785e39faf18195dae39|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-7/par-2",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Unternehmen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 5.1,
+   "prompt_tokens": 638,
+   "output_tokens": 61,
+   "load_seconds": 0.01
+  }
+ },
+ "917afd86fd7699107c333a66e62599f0e74c7f0091b313cda7b66ad6e56b152a|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-2/par-2/pt-6/pt-a",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Arbeitnehmer",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 4.49,
+   "prompt_tokens": 557,
+   "output_tokens": 60,
+   "load_seconds": 0.01
+  }
+ },
+ "91a509152ff0f281acdd604e35577919c6d21dfce889459db27fd8e726df9150|qwen3:4b|v1": {
+  "act": "eu-2015-2120/2024-05-15_de",
+  "address": "art-3/par-3/pt-c",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Anbieter von Internetzugangsdiensten",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 5.62,
+   "prompt_tokens": 1012,
+   "output_tokens": 66,
+   "load_seconds": 0.01
+  }
+ },
+ "944bf419df3ac173ecd786d1a8aa5897d7a6da7cf656c1eaa801944a9bd81964|qwen3:4b|v1": {
+  "act": "eu-2015-2120/2024-05-15_de",
+  "address": "art-4/par-1/pt-c",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Anbieter von Internetzugangsdiensten",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 5.25,
+   "prompt_tokens": 749,
+   "output_tokens": 66,
+   "load_seconds": 0.01
+  }
+ },
+ "9c4c40c95051d208ec4f07ca76f041c2380152231b7d6b1f1e10eacab4489ed4|qwen3:4b|v1": {
+  "act": "de-burlg/2013-04-20_de",
+  "address": "art-5/par-1/pt-c",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Arbeitnehmer",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 4.4,
+   "prompt_tokens": 558,
+   "output_tokens": 60,
+   "load_seconds": 0.01
+  }
+ },
+ "9ef23fe4d37fdfaaf9550f51dd01c8a07b71c2d9e6870b791f2ad7b5c67a115f|qwen3:4b|v1": {
+  "act": "de-burlg/2013-04-20_de",
+  "address": "art-1/par-1",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Arbeitnehmer",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 4.56,
+   "prompt_tokens": 514,
+   "output_tokens": 60,
+   "load_seconds": 0.01
+  }
+ },
+ "a1b9dd7b378eabe5c12a04b359f39165fe5a3952db654864ebffeb3fa6b0d81b|qwen3:4b|v1": {
+  "act": "eu-2015-2120/2024-05-15_de",
+  "address": "art-2/par-1/pt-1",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Anbieter öffentlicher elektronischer Kommunikation",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": false,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 5.74,
+   "prompt_tokens": 690,
+   "output_tokens": 69,
+   "load_seconds": 0.01
+  }
+ },
+ "a2a01c24ef5a888b52c4121110350b8086a7f2fda50da8cfab09be173ec5fe89|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-2/par-2/pt-9/pt-c",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Person",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 4.09,
+   "prompt_tokens": 591,
+   "output_tokens": 59,
+   "load_seconds": 0.01
+  }
+ },
+ "a2a3916f1ea5b4d4b368f8e65a44504f483010ef0c6c5e62c7399e2d3d60a553|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-1/par-1/sen-1",
+  "answer": {
+   "role": "applicability",
+   "addressees": [],
+   "addressee_explicit": false,
+   "kind": "none"
+  },
+  "stats": {
+   "seconds": 3.27,
+   "prompt_tokens": 591,
+   "output_tokens": 37,
+   "load_seconds": 0.01
+  }
+ },
+ "a402b9a5636316b4e8dc015a609cdf7a598ac2567533602237d14e7ccbe0a5f4|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-2/par-3/pt-5",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Unternehmen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": false,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 4.54,
+   "prompt_tokens": 646,
+   "output_tokens": 59,
+   "load_seconds": 0.01
+  }
+ },
+ "a42f1e6812b0d80149342a7459a1798d4926d49ba8c1f46dccdc4a03cb39a2cd|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-24/par-1/pt-2",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Unternehmen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": false,
+   "kind": "sanction"
+  },
+  "stats": {
+   "seconds": 4.52,
+   "prompt_tokens": 589,
+   "output_tokens": 60,
+   "load_seconds": 0.01
+  }
+ },
+ "a49e3562af67de16ac6a8c57c308fe5f94d34f93283a1638356c6a6524ff306b|qwen3:4b|v1": {
+  "act": "eu-2015-2120/2024-05-15_de",
+  "address": "art-2/par-1/pt-3",
+  "answer": {
+   "role": "applicability",
+   "addressees": [],
+   "addressee_explicit": false,
+   "kind": "none"
+  },
+  "stats": {
+   "seconds": 3.39,
+   "prompt_tokens": 740,
+   "output_tokens": 36,
+   "load_seconds": 0.01
+  }
+ },
+ "a58ce618eadd66236e77169330db41c79361774881d6368e47a1e61ed68ff15c|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-3/par-1/pt-8",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Unternehmen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 4.3,
+   "prompt_tokens": 669,
+   "output_tokens": 59,
+   "load_seconds": 0.01
+  }
+ },
+ "a7edf2b81dee83d85af85d4bad3cb0413a0751492748fd563b615fa26a4a7d01|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-9/par-2",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Unternehmen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 4.42,
+   "prompt_tokens": 558,
+   "output_tokens": 60,
+   "load_seconds": 0.01
+  }
+ },
+ "a7ee6e477d5ebbf7013bee0e7b60160fc1831596cff0c92c4b6b18b7e1865ab7|qwen3:4b|v1": {
+  "act": "de-burlg/2013-04-20_de",
+  "address": "art-3/par-1",
+  "answer": {
+   "role": "obligation",
+   "addressees": [],
+   "addressee_explicit": false,
+   "kind": "none"
+  },
+  "stats": {
+   "seconds": 3.07,
+   "prompt_tokens": 511,
+   "output_tokens": 37,
+   "load_seconds": 0.01
+  }
+ },
+ "a9ae4e06dbd434140d5bcad44bb0c665dfbaea1d7954a496b6b99cea4acf9262|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-2/par-2/pt-6",
+  "answer": {
+   "role": "applicability",
+   "addressees": [],
+   "addressee_explicit": false,
+   "kind": "none"
+  },
+  "stats": {
+   "seconds": 3.08,
+   "prompt_tokens": 580,
+   "output_tokens": 37,
+   "load_seconds": 0.01
+  }
+ },
+ "ab9ba5cf639b9174d0b8984d2bd4fd6fdfb5a4214e297c1a8c36bd638daacafe|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-1/par-2",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Entleihunternehmen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 4.71,
+   "prompt_tokens": 578,
+   "output_tokens": 62,
+   "load_seconds": 0.01
+  }
+ },
+ "ac37c9437dbd958501e83fc579888fcb23ef994fc16882666829c809819ae4b2|qwen3:4b|v1": {
+  "act": "de-burlg/2013-04-20_de",
+  "address": "art-15/par-2",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "landesrechtliche Vorschriften",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": false,
+   "kind": "consequence"
+  },
+  "stats": {
+   "seconds": 5.35,
+   "prompt_tokens": 583,
+   "output_tokens": 67,
+   "load_seconds": 0.01
+  }
+ },
+ "ad54d29f02430a7cadd79e0f663bb3b6beb49d1e0dd7f935e20c2138a5e0b17c|qwen3:4b|v1": {
+  "act": "eu-2015-2120/2024-05-15_de",
+  "address": "art-10/par-2",
+  "answer": {
+   "role": "applicability",
+   "addressees": [],
+   "addressee_explicit": false,
+   "kind": "none"
+  },
+  "stats": {
+   "seconds": 2.98,
+   "prompt_tokens": 622,
+   "output_tokens": 37,
+   "load_seconds": 0.01
+  }
+ },
+ "adcd86e3daf2c335cba1db06455e8ec1b7329f8639834f72c132ff6e166b50b9|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-2/par-3/pt-6/pt-b",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Einfuhrstaat",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": false,
+   "kind": "consequence"
+  },
+  "stats": {
+   "seconds": 5.22,
+   "prompt_tokens": 967,
+   "output_tokens": 62,
+   "load_seconds": 0.01
+  }
+ },
+ "ae85f5cbd160cbea8f0068b2a014cba88cd29fb651e3f24cbb51f76985a7ac76|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-13/par-2",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Unternehmen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 4.63,
+   "prompt_tokens": 585,
+   "output_tokens": 61,
+   "load_seconds": 0.01
+  }
+ },
+ "afeb0daa8be3fd08fde0749794524cef7ab711776308ebb26de6913791778e9a|qwen3:4b|v1": {
+  "act": "eu-2015-2120/2024-05-15_de",
+  "address": "art-5a/par-10/pt-e",
+  "answer": {
+   "role": "obligation",
+   "addressees": [],
+   "addressee_explicit": false,
+   "kind": "none"
+  },
+  "stats": {
+   "seconds": 2.99,
+   "prompt_tokens": 672,
+   "output_tokens": 36,
+   "load_seconds": 0.01
+  }
+ },
+ "b014c948740ef829eca7858165896039c1d2613616b7ec08d3a44b6335c862ad|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-10/par-4",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Unternehmen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": false,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 4.13,
+   "prompt_tokens": 547,
+   "output_tokens": 59,
+   "load_seconds": 0.01
+  }
+ },
+ "b031c40b0464493bab3e01285c0439a318fe0439a67e81381660f4a57a726c2e|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-7/par-2/pt-3",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Unternehmen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": false,
+   "kind": "consequence"
+  },
+  "stats": {
+   "seconds": 4.31,
+   "prompt_tokens": 663,
+   "output_tokens": 60,
+   "load_seconds": 0.01
+  }
+ },
+ "b0cc594a3a3c4aa76f3ca5637eaddf82ce143b38859872b4bd364479e85e341f|qwen3:4b|v1": {
+  "act": "eu-2015-2120/2024-05-15_de",
+  "address": "art-10/par-5",
+  "answer": {
+   "role": "obligation",
+   "addressees": [],
+   "addressee_explicit": false,
+   "kind": "none"
+  },
+  "stats": {
+   "seconds": 2.75,
+   "prompt_tokens": 622,
+   "output_tokens": 36,
+   "load_seconds": 0.01
+  }
+ },
+ "b1ba5089754340bc0984ff41c80a5b6777148f3901ae06e0e337ea38e236778d|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-21/par-2",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Unternehmen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 4.65,
+   "prompt_tokens": 586,
+   "output_tokens": 61,
+   "load_seconds": 0.01
+  }
+ },
+ "b1ff23bc4645caab53ea5b1609baca163f9705dbf659bcf733900bc1f297f2d9|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-24/par-1/pt-8",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Unternehmen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": false,
+   "kind": "sanction"
+  },
+  "stats": {
+   "seconds": 4.65,
+   "prompt_tokens": 587,
+   "output_tokens": 60,
+   "load_seconds": 0.01
+  }
+ },
+ "b2f7fc5fdc418bdf5cda44c9de7d45cf1379a0ebf4faf1eba86649042b27e071|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-15/par-1/pt-2",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Unternehmen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 4.63,
+   "prompt_tokens": 637,
+   "output_tokens": 61,
+   "load_seconds": 0.01
+  }
+ },
+ "b3e95032a161f6ddfb3f1e73806cf5a628418e0aa65a8611b8e0e3b23b85f28b|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-2/par-2/pt-5/pt-b",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Unternehmen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": false,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 4.35,
+   "prompt_tokens": 621,
+   "output_tokens": 59,
+   "load_seconds": 0.01
+  }
+ },
+ "b4054b00a3dfe606651a70b19d67146de296e959d9e168fd192a662b9c6964c6|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-24/par-1/pt-9",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Unternehmen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": false,
+   "kind": "sanction"
+  },
+  "stats": {
+   "seconds": 4.41,
+   "prompt_tokens": 575,
+   "output_tokens": 60,
+   "load_seconds": 0.01
+  }
+ },
+ "b42f0e69114bcfc7e7f7b251114f74c491244458ce9f9e2be5c60e90df35ff0f|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-7/par-2/pt-1",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Unternehmen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 5.66,
+   "prompt_tokens": 678,
+   "output_tokens": 60,
+   "load_seconds": 0.01
+  }
+ },
+ "b4c766cceef458a53943690800189f54dba0d602fcf98107d7cab52cb52dade6|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-7/par-3",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Unternehmen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 5.24,
+   "prompt_tokens": 638,
+   "output_tokens": 60,
+   "load_seconds": 0.01
+  }
+ },
+ "b4fbe8a9aa622aa5eaa7d2768ebd4bad1e16fd35894990cea639c4b0e8bf4fd4|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-3/par-2/pt-3",
+  "answer": {
+   "role": "obligation",
+   "addressees": [],
+   "addressee_explicit": false,
+   "kind": "none"
+  },
+  "stats": {
+   "seconds": 3.34,
+   "prompt_tokens": 602,
+   "output_tokens": 37,
+   "load_seconds": 0.01
+  }
+ },
+ "b5163c140825dd7b939c0ec2b2be2aaf2cb294717b48b5c3cdac522c91a33bdc|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-4/par-3",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Das Unternehmen",
+     "type": "regulated"
+    },
+    {
+     "name": "Die Geschäftsleitung",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 5.73,
+   "prompt_tokens": 595,
+   "output_tokens": 79,
+   "load_seconds": 0.01
+  }
+ },
+ "b69816d812e5efc4bd0502df300710fed1d07450d8830b702a9a6e6689b2baf6|qwen3:4b|v1": {
+  "act": "eu-2015-2120/2024-05-15_de",
+  "address": "art-5a/par-10/pt-d",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Anbieter",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": false,
+   "kind": "consequence"
+  },
+  "stats": {
+   "seconds": 5.96,
+   "prompt_tokens": 824,
+   "output_tokens": 59,
+   "load_seconds": 0.01
+  }
+ },
+ "b711df523f80a520dd4f70af9abd69fb9a27d92e888ce7f597afbb43b1aa086a|qwen3:4b|v1": {
+  "act": "eu-2015-2120/2024-05-15_de",
+  "address": "art-10/par-2/pt-a",
+  "answer": {
+   "role": "applicability",
+   "addressees": [],
+   "addressee_explicit": false,
+   "kind": "none"
+  },
+  "stats": {
+   "seconds": 6.65,
+   "prompt_tokens": 998,
+   "output_tokens": 36,
+   "load_seconds": 0.01
+  }
+ },
+ "b728ba97c72d37f327003ad9b5c68968a127fab1a5f8e34d297bb3825e1c67aa|qwen3:4b|v1": {
+  "act": "de-burlg/2013-04-20_de",
+  "address": "art-12/par-1/pt-4",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Hausgewerbetreibende",
+     "type": "regulated"
+    },
+    {
+     "name": "nach § 1 Abs. 2 Buchstaben b und c des Heimarbeitsgesetzes Gleichgestellte",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": false,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 9.07,
+   "prompt_tokens": 785,
+   "output_tokens": 107,
+   "load_seconds": 0.01
+  }
+ },
+ "b8b1efb3fe9bd4e0cb8981b367525b1806d31cf59aa227fb16e5bae6449e6216|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-17/par-2/pt-1",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Unternehmen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 4.61,
+   "prompt_tokens": 583,
+   "output_tokens": 61,
+   "load_seconds": 0.01
+  }
+ },
+ "b9ea13b1d263791f6d21318eca97e8c7e1d7bbfa8c26870b553227ea17cbdb2a|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-24/par-4/pt-4",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "juristische Person",
+     "type": "regulated"
+    },
+    {
+     "name": "Personenvereinigung",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": false,
+   "kind": "consequence"
+  },
+  "stats": {
+   "seconds": 6.31,
+   "prompt_tokens": 678,
+   "output_tokens": 84,
+   "load_seconds": 0.01
+  }
+ },
+ "bb1cf0bdc0500223b9700246ef195c7bec63673e8f926edecc7538cc9d09aa05|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-3/par-1/pt-6",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Unternehmen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 4.18,
+   "prompt_tokens": 658,
+   "output_tokens": 59,
+   "load_seconds": 0.01
+  }
+ },
+ "bc7d6a34817e4c0057b6e8314070295a73b8233e8251059cb59d70de48e8351a|qwen3:4b|v1": {
+  "act": "eu-2015-2120/2024-05-15_de",
+  "address": "art-5a/par-9",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Kommission",
+     "type": "authority"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 4.52,
+   "prompt_tokens": 676,
+   "output_tokens": 58,
+   "load_seconds": 0.01
+  }
+ },
+ "bc922f12946d38667fad3056986741c534cc7eac0f7c3c95f2c4084277cdd484|qwen3:4b|v1": {
+  "act": "de-burlg/2013-04-20_de",
+  "address": "art-7/par-4",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Arbeitnehmer",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 4.51,
+   "prompt_tokens": 536,
+   "output_tokens": 61,
+   "load_seconds": 0.01
+  }
+ },
+ "bd9d5f98ab292e09a93ef94632054e9b02b5177122ffb9e270e19f328457ca01|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-14/par-1/pt-2/pt-b",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "antragstellende Person",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 4.4,
+   "prompt_tokens": 569,
+   "output_tokens": 62,
+   "load_seconds": 0.01
+  }
+ },
+ "bdf3f1c57a3726896b4d0c4b5e815268ba16a56484116bcdda84f30e39e82e8b|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-10/par-2/pt-3",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Unternehmen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 4.14,
+   "prompt_tokens": 643,
+   "output_tokens": 59,
+   "load_seconds": 0.01
+  }
+ },
+ "bf73d9327959d62d85bbbce07f4087bbb41d44015a9ff0e9b8e0e630759f745f|qwen3:4b|v1": {
+  "act": "eu-2015-2120/2024-05-15_de",
+  "address": "art-4/par-1/pt-d",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Anbieter von Internetzugangsdiensten",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 5.97,
+   "prompt_tokens": 812,
+   "output_tokens": 66,
+   "load_seconds": 0.01
+  }
+ },
+ "bfb82d03491e7ffd5636cfa73e54b4b45bec0e9a943504437cb28d1adf1ca2cf|qwen3:4b|v1": {
+  "act": "de-burlg/2013-04-20_de",
+  "address": "art-5/par-3",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Arbeitnehmer",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "consequence"
+  },
+  "stats": {
+   "seconds": 4.47,
+   "prompt_tokens": 543,
+   "output_tokens": 60,
+   "load_seconds": 0.01
+  }
+ },
+ "c12d81af4461214dfd193a3bd86292aeb5b76f3eac66c0cd02d2daeb4bb0aafe|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-5/par-4",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Unternehmen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 4.65,
+   "prompt_tokens": 615,
+   "output_tokens": 59,
+   "load_seconds": 0.01
+  }
+ },
+ "c1736c5cfc1b39eebbdf750ce7dce1121fbc0ebf5e3c54c69f198ede8324b066|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-7/par-3/pt-3",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Unternehmen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 4.42,
+   "prompt_tokens": 672,
+   "output_tokens": 60,
+   "load_seconds": 0.01
+  }
+ },
+ "c245f59392287750376f7f42696ae596fe7a2776df0825df0cb3014009624ff8|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-10/par-2/pt-1",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Unternehmen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 74.12,
+   "prompt_tokens": 670,
+   "output_tokens": 59,
+   "load_seconds": 0.01
+  }
+ },
+ "c25ab5def0f40352c94f3cbd81d22a6c5a885282504ffaace8aa8b7773596640|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-2/par-2/pt-2/pt-b",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Unternehmen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": false,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 4.7,
+   "prompt_tokens": 667,
+   "output_tokens": 59,
+   "load_seconds": 0.01
+  }
+ },
+ "c4c60e7d9677378bb2158b4e0ca0f02f5363ebeac52a214ceb03d2d2ccfa2102|qwen3:4b|v1": {
+  "act": "de-burlg/2013-04-20_de",
+  "address": "art-12/par-1/pt-3",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Arbeitnehmer",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 4.43,
+   "prompt_tokens": 646,
+   "output_tokens": 59,
+   "load_seconds": 0.01
+  }
+ },
+ "c50b7582ce19d51083a5370b26ea9e3fddd39b2ff047e63475afeeecb9b6060a|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-24/par-5",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Verwaltungsbehörde",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "consequence"
+  },
+  "stats": {
+   "seconds": 4.94,
+   "prompt_tokens": 601,
+   "output_tokens": 63,
+   "load_seconds": 0.01
+  }
+ },
+ "c51b2cd36ddbe45733fd9988193c855505495d6469f52eb47f8bcbc0ad76f0d9|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-14/par-1/pt-1/pt-a",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Unternehmen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": false,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 4.79,
+   "prompt_tokens": 612,
+   "output_tokens": 60,
+   "load_seconds": 0.01
+  }
+ },
+ "c55249c911e232bd6735b2957af144de531bc9650f6f63f436f1e50a1209cd40|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-3/par-1/pt-2",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Unternehmen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 4.09,
+   "prompt_tokens": 656,
+   "output_tokens": 59,
+   "load_seconds": 0.01
+  }
+ },
+ "c5770aeb8f483878fbfbe9c01b0548abe3ef4614fc63955742f6d1dc373960af|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-4/par-1",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Unternehmen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 4.89,
+   "prompt_tokens": 584,
+   "output_tokens": 61,
+   "load_seconds": 0.01
+  }
+ },
+ "c5f831498b7dc17207737f7b98694dec84c6b74d337f381b8b0f2c58fcf81be9|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-2/par-2/pt-7",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Unternehmen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": false,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 5.38,
+   "prompt_tokens": 680,
+   "output_tokens": 61,
+   "load_seconds": 0.01
+  }
+ },
+ "c633c25564dcec53e73e6e2cfc3590b63f16b22e82b763d5e369b560c14668b4|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-24/par-1/pt-7/pt-a",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Unternehmen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": false,
+   "kind": "sanction"
+  },
+  "stats": {
+   "seconds": 4.21,
+   "prompt_tokens": 539,
+   "output_tokens": 60,
+   "load_seconds": 0.01
+  }
+ },
+ "c73ec343ba537745e914f9fea8e1eceb0ac6e31ab5a0d210d39ef5703bdb5227|qwen3:4b|v1": {
+  "act": "eu-2015-2120/2024-05-15_de",
+  "address": "art-5a/par-8",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Anbieter",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 6.05,
+   "prompt_tokens": 824,
+   "output_tokens": 59,
+   "load_seconds": 0.01
+  }
+ },
+ "c75d1bb20f9736b1cbbcbbf7496afef976fd5354f128db53c2dde1b0b9c2b910|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-24/par-4/pt-5",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "juristische Person",
+     "type": "regulated"
+    },
+    {
+     "name": "Personenvereinigung",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": false,
+   "kind": "consequence"
+  },
+  "stats": {
+   "seconds": 5.77,
+   "prompt_tokens": 655,
+   "output_tokens": 84,
+   "load_seconds": 0.01
+  }
+ },
+ "c76769617865969f2710c9b1d112689349fbbf569780a29f4ac1a0a99c874658|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-6/par-3",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Unternehmen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 4.36,
+   "prompt_tokens": 543,
+   "output_tokens": 61,
+   "load_seconds": 0.01
+  }
+ },
+ "c7cde7f5efe712620d0daa2c1ea2efe47cad165b345a9d8e1db0cf2a117bbdf9|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-11/par-2",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Gewerkschaft",
+     "type": "regulated"
+    },
+    {
+     "name": "Nichtregierungsorganisation",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 6.48,
+   "prompt_tokens": 602,
+   "output_tokens": 85,
+   "load_seconds": 0.01
+  }
+ },
+ "c7e68f6045d8e0dc4f8f5d3699fda5b79670842073e5b3f136c7879fa07990b7|qwen3:4b|v1": {
+  "act": "eu-2015-2120/2024-05-15_de",
+  "address": "art-5a/par-10/pt-a",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Endkunden",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": false,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 4.38,
+   "prompt_tokens": 647,
+   "output_tokens": 59,
+   "load_seconds": 0.01
+  }
+ },
+ "c8961bb91246b80c22edb92b27b45926c9c7395cad94456fa708a7b6adcda265|qwen3:4b|v1": {
+  "act": "eu-2015-2120/2024-05-15_de",
+  "address": "art-10/par-2/pt-b",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Kommission",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 4.76,
+   "prompt_tokens": 719,
+   "output_tokens": 58,
+   "load_seconds": 0.01
+  }
+ },
+ "c9dd155a930e3bc1db179d5d1c392bb2e41a525ec44a237deb7ce0c2948cc522|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-14/par-1/pt-1",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Behörde",
+     "type": "authority"
+    }
+   ],
+   "addressee_explicit": false,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 4.43,
+   "prompt_tokens": 553,
+   "output_tokens": 60,
+   "load_seconds": 0.01
+  }
+ },
+ "caa649a8859573e963973c317919b5f95340dd7eb548d388874985f2f2bd5662|qwen3:4b|v1": {
+  "act": "eu-2015-2120/2024-05-15_de",
+  "address": "art-3/par-3",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Anbieter von Internetzugangsdiensten",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 7.98,
+   "prompt_tokens": 956,
+   "output_tokens": 66,
+   "load_seconds": 0.01
+  }
+ },
+ "cae9ddbe74f2caecad0cfbe2365db0a0b65f5036e052229b2c9537c40110a6e3|qwen3:4b|v1": {
+  "act": "eu-2015-2120/2024-05-15_de",
+  "address": "art-5a/par-10/pt-b",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Endkunden",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": false,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 4.42,
+   "prompt_tokens": 678,
+   "output_tokens": 59,
+   "load_seconds": 0.01
+  }
+ },
+ "cb254daa609c2e9cdf2275f6a2145c6fd5830b946fef18e0e41cf456dfc41039|qwen3:4b|v1": {
+  "act": "eu-2015-2120/2024-05-15_de",
+  "address": "art-4/par-1/pt-b",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Anbieter von Internetzugangsdiensten",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 5.39,
+   "prompt_tokens": 739,
+   "output_tokens": 67,
+   "load_seconds": 0.01
+  }
+ },
+ "cdb6fc1f17e1213b449e017dd497a0c712270ab029a3483d56b73576fa62089c|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-6/par-4/pt-3",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Unternehmen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 4.31,
+   "prompt_tokens": 585,
+   "output_tokens": 61,
+   "load_seconds": 0.01
+  }
+ },
+ "cde0556d8a0aa9ebfab29dbc96d695f3080396c5f5497ae65e2f7f91c66de274|qwen3:4b|v1": {
+  "act": "de-burlg/2013-04-20_de",
+  "address": "art-13/par-1",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Arbeitnehmer",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 5.27,
+   "prompt_tokens": 632,
+   "output_tokens": 59,
+   "load_seconds": 0.01
+  }
+ },
+ "ce025599971736343900f8a0a9d7895db7c97a45cc98b2f0bd60ba5f7110a26d|qwen3:4b|v1": {
+  "act": "eu-2015-2120/2024-05-15_de",
+  "address": "art-5/par-3",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "GEREK",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 4.69,
+   "prompt_tokens": 680,
+   "output_tokens": 60,
+   "load_seconds": 0.01
+  }
+ },
+ "cebb4d0e8af83b04ead8b8f0375a8ccf9751ef4595d8b145f1cd752f7046d53e|qwen3:4b|v1": {
+  "act": "de-burlg/2013-04-20_de",
+  "address": "art-12/par-1/pt-5",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Zwischenmeister",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 4.95,
+   "prompt_tokens": 676,
+   "output_tokens": 61,
+   "load_seconds": 0.01
+  }
+ },
+ "cebe887a3bfca5324f370074e0fbf1aa42521635615e3408c339801416fefce7|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-20/par-1",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "zuständige Behörde",
+     "type": "authority"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 5.27,
+   "prompt_tokens": 616,
+   "output_tokens": 64,
+   "load_seconds": 0.01
+  }
+ },
+ "ced76ae3863c58c87ae5bdb180eeec8ac2d3d8006b2a1ef94d18766e577f135d|qwen3:4b|v1": {
+  "act": "eu-2015-2120/2024-05-15_de",
+  "address": "art-4/par-1/pt-a",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Anbieter von Internetzugangsdiensten",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 5.77,
+   "prompt_tokens": 729,
+   "output_tokens": 66,
+   "load_seconds": 0.01
+  }
+ },
+ "cf72e2fcf2a1a715f86613e25fa4c8fb907e249154e5757b396c2d0c6dfaba1d|qwen3:4b|v1": {
+  "act": "eu-2015-2120/2024-05-15_de",
+  "address": "art-10/par-2/pt-d",
+  "answer": {
+   "role": "applicability",
+   "addressees": [],
+   "addressee_explicit": false,
+   "kind": "none"
+  },
+  "stats": {
+   "seconds": 2.82,
+   "prompt_tokens": 651,
+   "output_tokens": 36,
+   "load_seconds": 0.01
+  }
+ },
+ "cf988c427fa126f323f03cddcfcf78f6ac6c188930b18ad9c0105ea5feb9e838|qwen3:4b|v1": {
+  "act": "de-burlg/2013-04-20_de",
+  "address": "art-13/par-3",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Unternehmen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": false,
+   "kind": "consequence"
+  },
+  "stats": {
+   "seconds": 5.12,
+   "prompt_tokens": 621,
+   "output_tokens": 59,
+   "load_seconds": 0.01
+  }
+ },
+ "d0afc033573ebfe746058fb00c3919bfd61e2ffc2ea944bf4acebfcfc22ca524|qwen3:4b|v1": {
+  "act": "de-burlg/2013-04-20_de",
+  "address": "art-5/par-1/pt-b",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Arbeitnehmer",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 4.18,
+   "prompt_tokens": 547,
+   "output_tokens": 59,
+   "load_seconds": 0.01
+  }
+ },
+ "d107ca2b62418e89262e27929af25f2c2dab2ead976fdc25cbc53140390aa0ab|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-3/par-3",
+  "answer": {
+   "role": "obligation",
+   "addressees": [],
+   "addressee_explicit": false,
+   "kind": "consequence"
+  },
+  "stats": {
+   "seconds": 3.13,
+   "prompt_tokens": 564,
+   "output_tokens": 38,
+   "load_seconds": 0.01
+  }
+ },
+ "d27f813ff8e11b92fb22a565c16caa88c36b05835989523a382c0be05af8c91c|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-13/par-1",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "zuständige Behörde",
+     "type": "authority"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 5.08,
+   "prompt_tokens": 541,
+   "output_tokens": 64,
+   "load_seconds": 0.01
+  }
+ },
+ "d3b48f6458004b202af993108c9136c649f8ce35eb770960e6d1afe2474c6a24|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-2/par-5/pt-1",
+  "answer": {
+   "role": "applicability",
+   "addressees": [],
+   "addressee_explicit": false,
+   "kind": "none"
+  },
+  "stats": {
+   "seconds": 3.33,
+   "prompt_tokens": 625,
+   "output_tokens": 36,
+   "load_seconds": 0.01
+  }
+ },
+ "d4c2179a43e679be829a769886b7ce0b9ede91f20f75fb2d829724a639fb48ac|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-2/par-2",
+  "answer": {
+   "role": "obligation",
+   "addressees": [],
+   "addressee_explicit": false,
+   "kind": "none"
+  },
+  "stats": {
+   "seconds": 3.28,
+   "prompt_tokens": 563,
+   "output_tokens": 37,
+   "load_seconds": 0.01
+  }
+ },
+ "d6d5f8f4ed42040a9a479c482422659c48cd0cc6a11eea7a80823f49d13172dd|qwen3:4b|v1": {
+  "act": "de-burlg/2013-04-20_de",
+  "address": "art-15/par-1",
+  "answer": {
+   "role": "applicability",
+   "addressees": [],
+   "addressee_explicit": false,
+   "kind": "none"
+  },
+  "stats": {
+   "seconds": 4.96,
+   "prompt_tokens": 710,
+   "output_tokens": 36,
+   "load_seconds": 0.01
+  }
+ },
+ "d72aaf372541207e14316070c5c5ed7cca0aa733abf6f7c8a61bb58822e626cd|qwen3:4b|v1": {
+  "act": "de-burlg/2013-04-20_de",
+  "address": "art-11/par-1",
+  "answer": {
+   "role": "obligation",
+   "addressees": [],
+   "addressee_explicit": false,
+   "kind": "none"
+  },
+  "stats": {
+   "seconds": 4.62,
+   "prompt_tokens": 713,
+   "output_tokens": 36,
+   "load_seconds": 0.01
+  }
+ },
+ "d7fe32da829aefaeb99ecb5bf77d1fad4a6a910bf4a0d5090bb2718912414870|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-24/par-2/pt-1/pt-a",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Unternehmen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": false,
+   "kind": "sanction"
+  },
+  "stats": {
+   "seconds": 4.81,
+   "prompt_tokens": 567,
+   "output_tokens": 61,
+   "load_seconds": 0.01
+  }
+ },
+ "d91bb8a9b9fb37b4b44fcbf5c9d9acf3b759fcfe7972babd706558a9ca52a0cd|qwen3:4b|v1": {
+  "act": "eu-2015-2120/2024-05-15_de",
+  "address": "art-10/par-4",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Kommission",
+     "type": "authority"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "consequence"
+  },
+  "stats": {
+   "seconds": 5.13,
+   "prompt_tokens": 717,
+   "output_tokens": 58,
+   "load_seconds": 0.01
+  }
+ },
+ "d9663527b430c3190c9246b0c2687f3f468028a08ebe5dc4e83107fbc903d724|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-14/par-1",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Behörde",
+     "type": "authority"
+    }
+   ],
+   "addressee_explicit": false,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 4.67,
+   "prompt_tokens": 539,
+   "output_tokens": 60,
+   "load_seconds": 0.01
+  }
+ },
+ "d9e96b630ae3dfc7968eaf5f2c65a5989d8b28177367eb48b923f74562770a60|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-3/par-2/pt-1",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Unternehmen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 4.37,
+   "prompt_tokens": 565,
+   "output_tokens": 60,
+   "load_seconds": 0.01
+  }
+ },
+ "db45eac447a769f8143d1d10bf21f4709affb4b3102b2990884c5040d2ddccef|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-3/par-1/pt-9",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Unternehmen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 4.23,
+   "prompt_tokens": 665,
+   "output_tokens": 59,
+   "load_seconds": 0.01
+  }
+ },
+ "dc78e9e89c571acb1915071a73842b7ac949ecd06fb5dc5da19e82ccb8e157ee|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-2/par-2/pt-1",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Unternehmen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": false,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 6.51,
+   "prompt_tokens": 728,
+   "output_tokens": 60,
+   "load_seconds": 0.01
+  }
+ },
+ "ddef15f6c78dabe16f1056824315c13f5e1d7728e002a45bde905ca5f6fe99a2|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-24/par-1/pt-7/pt-b",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Unternehmen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": false,
+   "kind": "sanction"
+  },
+  "stats": {
+   "seconds": 4.34,
+   "prompt_tokens": 559,
+   "output_tokens": 61,
+   "load_seconds": 0.01
+  }
+ },
+ "ddf80da3027745b226d1420c74285382184eda014344c144472c0eaa188a7df9|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-16/par-1",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "zuständige Behörde",
+     "type": "authority"
+    },
+    {
+     "name": "ihre Beauftragten",
+     "type": "authority"
+    }
+   ],
+   "addressee_explicit": false,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 6.09,
+   "prompt_tokens": 556,
+   "output_tokens": 86,
+   "load_seconds": 0.01
+  }
+ },
+ "de1825d5c751301c7c3a41081f85ff611c856a681a71fc7dbcb01a31c9e1c6f7|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-24/par-4/pt-3",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "juristische Person",
+     "type": "regulated"
+    },
+    {
+     "name": "Personenvereinigung",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": false,
+   "kind": "consequence"
+  },
+  "stats": {
+   "seconds": 5.73,
+   "prompt_tokens": 659,
+   "output_tokens": 84,
+   "load_seconds": 0.01
+  }
+ },
+ "de5f89ad46c48f7860aade48c39365fe7725e9e1ab32148450f8ca00e54ba427|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-2/par-2/pt-10",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Unternehmen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": false,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 5.11,
+   "prompt_tokens": 641,
+   "output_tokens": 60,
+   "load_seconds": 0.01
+  }
+ },
+ "dea09e3598d9daad9b4f2d42bd1013a85c847e017818fb0f376e7dd0edb5f2f6|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-2/par-3/pt-8",
+  "answer": {
+   "role": "applicability",
+   "addressees": [],
+   "addressee_explicit": false,
+   "kind": "none"
+  },
+  "stats": {
+   "seconds": 2.95,
+   "prompt_tokens": 618,
+   "output_tokens": 36,
+   "load_seconds": 0.01
+  }
+ },
+ "df0d21a75e67ffc537bd05b9ab844b1c32444ff4abf18cba78a9e05f0885297c|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-6/par-4/pt-2",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "unmittelbarer Zulieferer",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": false,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 4.97,
+   "prompt_tokens": 613,
+   "output_tokens": 67,
+   "load_seconds": 0.01
+  }
+ },
+ "df3226f3154ebb816adc9eaff9950b89c8047d5c6b4928e3cf4aaa56d3301a1c|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-2/par-2/pt-9/pt-a",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Unternehmen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": false,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 4.62,
+   "prompt_tokens": 598,
+   "output_tokens": 60,
+   "load_seconds": 0.01
+  }
+ },
+ "df4ac376af35f60380597e7549caae8aed6cf766f8e650dc546d8944be9346b2|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-6/par-4/pt-1",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Unternehmen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 4.64,
+   "prompt_tokens": 586,
+   "output_tokens": 60,
+   "load_seconds": 0.01
+  }
+ },
+ "e05a3f55b19ae905174ca1a50269c618b18f0c878f14f36060152a0f54dcc6dd|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-11/par-1",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Wer geltend macht",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 5.05,
+   "prompt_tokens": 596,
+   "output_tokens": 63,
+   "load_seconds": 0.01
+  }
+ },
+ "e09361ae5c3c6b59f93444e88dadae644288c79e476c5b14be30c18aab718008|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-10/par-2",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Unternehmen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 4.77,
+   "prompt_tokens": 620,
+   "output_tokens": 59,
+   "load_seconds": 0.01
+  }
+ },
+ "e13abec102071f6828256d9ac815d2a4a5dc12f68f7c4cca206eb58c37a8c585|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-3/par-1/pt-7",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Unternehmen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 4.01,
+   "prompt_tokens": 650,
+   "output_tokens": 59,
+   "load_seconds": 0.01
+  }
+ },
+ "e16f3f802971d7c9ef7856fd5f2a6712a5bcb2d05116e32bda12c6ae380a42ae|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-3/par-2",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Unternehmen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": false,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 4.4,
+   "prompt_tokens": 548,
+   "output_tokens": 61,
+   "load_seconds": 0.01
+  }
+ },
+ "e1921c0b34bbbafa5ae0abef67da295e5a635281455f0e6bcbbd62b66bcdc7ac|qwen3:4b|v1": {
+  "act": "de-burlg/2013-04-20_de",
+  "address": "art-12/par-1/pt-6",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Arbeitnehmer",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 4.41,
+   "prompt_tokens": 636,
+   "output_tokens": 59,
+   "load_seconds": 0.01
+  }
+ },
+ "e1e24d2f6c2e434368f0c6a661a65e178f1c723ccd2c62484b2869583eca68b6|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-2/par-2/pt-9",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Unternehmen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": false,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 4.36,
+   "prompt_tokens": 618,
+   "output_tokens": 59,
+   "load_seconds": 0.01
+  }
+ },
+ "e20518a4183e47bdf3d7824f6a5b6576cf53173ee58c249c98ad12e9663bbaa3|qwen3:4b|v1": {
+  "act": "eu-2015-2120/2024-05-15_de",
+  "address": "art-3/par-1",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Endnutzer",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 5.78,
+   "prompt_tokens": 742,
+   "output_tokens": 60,
+   "load_seconds": 0.01
+  }
+ },
+ "e28b8ed08ea60e25f3aa3d970a0a787d11ddef793bf8f140e8b692d3dc548828|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-6/par-3/pt-1",
+  "answer": {
+   "role": "applicability",
+   "addressees": [],
+   "addressee_explicit": false,
+   "kind": "none"
+  },
+  "stats": {
+   "seconds": 2.94,
+   "prompt_tokens": 575,
+   "output_tokens": 36,
+   "load_seconds": 0.01
+  }
+ },
+ "e2db88fddc8c5ba933074423e1634180afcfc06d8a2994fecc4930ca4dcbc465|qwen3:4b|v1": {
+  "act": "eu-2015-2120/2024-05-15_de",
+  "address": "art-9/par-1",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Kommission",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 4.82,
+   "prompt_tokens": 664,
+   "output_tokens": 59,
+   "load_seconds": 0.01
+  }
+ },
+ "e340ce0db6701d4a2e5a5a34817ed9c12a2470023ca568d70ee44539b8bfa579|qwen3:4b|v1": {
+  "act": "de-burlg/2013-04-20_de",
+  "address": "art-14/par-1",
+  "answer": {
+   "role": "applicability",
+   "addressees": [],
+   "addressee_explicit": false,
+   "kind": "none"
+  },
+  "stats": {
+   "seconds": 3.27,
+   "prompt_tokens": 547,
+   "output_tokens": 36,
+   "load_seconds": 0.01
+  }
+ },
+ "e3ae6f14efb350ec2c2820b179bb2cc6403dc4ee548f18325b6fc3458cdc855e|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-3/par-1/pt-3",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Unternehmen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 4.03,
+   "prompt_tokens": 650,
+   "output_tokens": 59,
+   "load_seconds": 0.01
+  }
+ },
+ "e4472b206285c9f067d2475c15bd67e92beeefe55333cdfb3842745a5460dd73|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-9/par-1",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Das Unternehmen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 5.06,
+   "prompt_tokens": 613,
+   "output_tokens": 60,
+   "load_seconds": 0.01
+  }
+ },
+ "e4fb3f90d75f033f677bd58f9cbe3e3696963ae6c2ed3964952f00f58b5e8d38|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-24/par-2/pt-1/pt-b",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Unternehmen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": false,
+   "kind": "sanction"
+  },
+  "stats": {
+   "seconds": 4.17,
+   "prompt_tokens": 562,
+   "output_tokens": 61,
+   "load_seconds": 0.01
+  }
+ },
+ "e5148264eeafe5a58812059c5cba0cb33e9224a7c7265842dd10e163d588a0b1|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-2/par-3/pt-1",
+  "answer": {
+   "role": "applicability",
+   "addressees": [],
+   "addressee_explicit": false,
+   "kind": "none"
+  },
+  "stats": {
+   "seconds": 3.5,
+   "prompt_tokens": 656,
+   "output_tokens": 36,
+   "load_seconds": 0.01
+  }
+ },
+ "e5db3d51624d162ab55668752629f8adc1be4f08d21a99474625fdc0f238a8af|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-2/par-3/pt-3",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Unternehmen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": false,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 4.38,
+   "prompt_tokens": 610,
+   "output_tokens": 60,
+   "load_seconds": 0.01
+  }
+ },
+ "e767ba5d393127ec5cd35d56099a6d76c4b0837ec18d5eac8826cd8e12a8376b|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-22/par-2/pt-3",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Unternehmen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": false,
+   "kind": "consequence"
+  },
+  "stats": {
+   "seconds": 4.56,
+   "prompt_tokens": 643,
+   "output_tokens": 60,
+   "load_seconds": 0.01
+  }
+ },
+ "e80adbc2c988dada2ec55b9a925de91d31e2afa3a2de4141e9cfdd3af6a6aeda|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-13/par-3/pt-1",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Unternehmen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": false,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 4.86,
+   "prompt_tokens": 601,
+   "output_tokens": 61,
+   "load_seconds": 0.01
+  }
+ },
+ "e8592edd274703c264dc8ca6064415662b6d6acc4168aae41bcc0d65a2213574|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-2/par-2/pt-2",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Unternehmen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": false,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 5.27,
+   "prompt_tokens": 676,
+   "output_tokens": 59,
+   "load_seconds": 0.01
+  }
+ },
+ "e96bf6c206f9bc66414ab8ad943e90c3ed1b11ae7bc36b4187af5dc6bdac90c6|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-8/par-1",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Unternehmen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 6.36,
+   "prompt_tokens": 745,
+   "output_tokens": 60,
+   "load_seconds": 0.01
+  }
+ },
+ "ea720425bc2fffb95f07d809a453f6f6b461566f7ac045bc0124acfeecde6e8b|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-16/par-1/pt-2",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "zuständige Behörde",
+     "type": "authority"
+    },
+    {
+     "name": "Beauftragten",
+     "type": "authority"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 6.09,
+   "prompt_tokens": 626,
+   "output_tokens": 85,
+   "load_seconds": 0.01
+  }
+ },
+ "eb13566a4057014594f01d176fe4eb63e966199b5ad5dab05d496d2e588939e1|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-19/par-1",
+  "answer": {
+   "role": "applicability",
+   "addressees": [],
+   "addressee_explicit": false,
+   "kind": "none"
+  },
+  "stats": {
+   "seconds": 3.47,
+   "prompt_tokens": 628,
+   "output_tokens": 36,
+   "load_seconds": 0.01
+  }
+ },
+ "eb2cbe85f64d83c1f99239c1635fea713d44d9f13c89958102fb95f0415cce34|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-24/par-2/pt-3",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Unternehmen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": false,
+   "kind": "sanction"
+  },
+  "stats": {
+   "seconds": 4.23,
+   "prompt_tokens": 612,
+   "output_tokens": 60,
+   "load_seconds": 0.01
+  }
+ },
+ "eb8252df61578cc8b6ace686fb7071d3107f309a58bbc9f708f2ee8cc37faf24|qwen3:4b|v1": {
+  "act": "eu-2015-2120/2024-05-15_de",
+  "address": "art-3/par-3/pt-b",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Anbieter von Internetzugangsdiensten",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 5.4,
+   "prompt_tokens": 992,
+   "output_tokens": 66,
+   "load_seconds": 0.01
+  }
+ },
+ "ebbd3123ce2b031ce60afea0c87ef0f78b78c6c336aa2108ff2abb94313ae1a0|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-24/par-1/pt-7",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Unternehmen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": false,
+   "kind": "sanction"
+  },
+  "stats": {
+   "seconds": 4.01,
+   "prompt_tokens": 545,
+   "output_tokens": 60,
+   "load_seconds": 0.01
+  }
+ },
+ "ec63d73de0f268cca42c8de40b3592fe01b454310faae0ae06cf8f8c58767cde|qwen3:4b|v1": {
+  "act": "eu-2015-2120/2024-05-15_de",
+  "address": "art-5b/par-2",
+  "answer": {
+   "role": "applicability",
+   "addressees": [],
+   "addressee_explicit": false,
+   "kind": "none"
+  },
+  "stats": {
+   "seconds": 2.84,
+   "prompt_tokens": 625,
+   "output_tokens": 36,
+   "load_seconds": 0.01
+  }
+ },
+ "eca9dff460a8a190b0d2b639d9efe35760423eafa6010849719809d6f6ceefcf|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-17/par-2/pt-2",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Unternehmen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": false,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 4.21,
+   "prompt_tokens": 586,
+   "output_tokens": 60,
+   "load_seconds": 0.01
+  }
+ },
+ "ecfda5e7efb3acb339c5e1c838df837e76afbe698cb938f3a666a77fcd9c0fa3|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-24/par-4",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "juristische Person",
+     "type": "regulated"
+    },
+    {
+     "name": "Personenvereinigung",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": false,
+   "kind": "consequence"
+  },
+  "stats": {
+   "seconds": 6.43,
+   "prompt_tokens": 640,
+   "output_tokens": 83,
+   "load_seconds": 0.01
+  }
+ },
+ "ed42d203bce30d58d43fff982163fcefba9d85000930f83ff45f76081875b33a|qwen3:4b|v1": {
+  "act": "eu-2015-2120/2024-05-15_de",
+  "address": "art-5b/par-1",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Kommission",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 4.92,
+   "prompt_tokens": 691,
+   "output_tokens": 58,
+   "load_seconds": 0.01
+  }
+ },
+ "edccf9000c593bc29694cea50999883fb343572b1c9d5fc6bd1634b93b34b317|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-2/par-3/pt-6/pt-d",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Unternehmen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": false,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 4.71,
+   "prompt_tokens": 930,
+   "output_tokens": 59,
+   "load_seconds": 0.01
+  }
+ },
+ "ef26ff128c68155302aae2eeb27a430fbe675ee6c109521d4ec4e0ee0863c1ce|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-15/par-1/pt-1",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Personen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 4.9,
+   "prompt_tokens": 593,
+   "output_tokens": 60,
+   "load_seconds": 0.01
+  }
+ },
+ "ef90efc40c917c8b8c3af40450fe01909eaa2c556ff28f98e6b44e86ad70afdd|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-2/par-3/pt-2",
+  "answer": {
+   "role": "applicability",
+   "addressees": [],
+   "addressee_explicit": false,
+   "kind": "none"
+  },
+  "stats": {
+   "seconds": 3.05,
+   "prompt_tokens": 648,
+   "output_tokens": 36,
+   "load_seconds": 0.01
+  }
+ },
+ "efcf6ace37a878a959edc79622982477dc2f0c60c1e8ca4199b0316ad6ec268a|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-9/par-3/pt-2",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Unternehmen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 4.71,
+   "prompt_tokens": 680,
+   "output_tokens": 60,
+   "load_seconds": 0.01
+  }
+ },
+ "f102fce40bd36651858e0ae137d57310e752b0a7cc01a39fc12478084c9dcaf4|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-7/par-3/pt-2",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Unternehmen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": false,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 4.44,
+   "prompt_tokens": 675,
+   "output_tokens": 60,
+   "load_seconds": 0.01
+  }
+ },
+ "f2263f35ce0e99b97b429c63de75334749d3296f14d9254720b7d60b8124be85|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-1/par-1/sen-1/pt-1",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Unternehmen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 5.06,
+   "prompt_tokens": 573,
+   "output_tokens": 61,
+   "load_seconds": 0.01
+  }
+ },
+ "f32866cf6de7e84948b220b297af4b3aac625b9e7774a773d999475d6b5e4764|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-24/par-2",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Unternehmen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": false,
+   "kind": "sanction"
+  },
+  "stats": {
+   "seconds": 4.53,
+   "prompt_tokens": 582,
+   "output_tokens": 60,
+   "load_seconds": 0.01
+  }
+ },
+ "f763ba858e5a2add8f97b55e45902d7c8a53affee8388c8f20ea7d9446ee27ad|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-24/par-4/pt-6",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "juristische Person",
+     "type": "regulated"
+    },
+    {
+     "name": "Personenvereinigung",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": false,
+   "kind": "consequence"
+  },
+  "stats": {
+   "seconds": 6.45,
+   "prompt_tokens": 748,
+   "output_tokens": 82,
+   "load_seconds": 0.01
+  }
+ },
+ "f81e2bf7f346d7da4b0f556bfebbb8886245658a5a243782c6907795d7397d68|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-2/par-2/pt-4",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Unternehmen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": false,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 4.55,
+   "prompt_tokens": 636,
+   "output_tokens": 60,
+   "load_seconds": 0.01
+  }
+ },
+ "f822b0d4c7ec9b9dd162a9f9e6690677bf6529b4f2d238af514119673f54c687|qwen3:4b|v1": {
+  "act": "de-burlg/2013-04-20_de",
+  "address": "art-8/par-1",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Arbeitnehmer",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 4.67,
+   "prompt_tokens": 522,
+   "output_tokens": 61,
+   "load_seconds": 0.01
+  }
+ },
+ "f85ef6f35e444849c76e11248200b5d317856e9ad8987d41ee5f4d821320fb74|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-2/par-3/pt-6",
+  "answer": {
+   "role": "applicability",
+   "addressees": [],
+   "addressee_explicit": false,
+   "kind": "none"
+  },
+  "stats": {
+   "seconds": 5.58,
+   "prompt_tokens": 918,
+   "output_tokens": 36,
+   "load_seconds": 0.01
+  }
+ },
+ "f9064d876f0d6486b51a4695f514b1f414bf5798f1314242e9d6e5159cb2fca5|qwen3:4b|v1": {
+  "act": "eu-2015-2120/2024-05-15_de",
+  "address": "art-4/par-2",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Anbieter von Internetzugangsdiensten",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 5.23,
+   "prompt_tokens": 667,
+   "output_tokens": 66,
+   "load_seconds": 0.01
+  }
+ },
+ "f95706245d74cda40769a5783a40ea4fde82f65ca49ea91549e5c2e7b799e541|qwen3:4b|v1": {
+  "act": "de-burlg/2013-04-20_de",
+  "address": "art-12/par-1/pt-7",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Heimarbeiter",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 4.69,
+   "prompt_tokens": 681,
+   "output_tokens": 59,
+   "load_seconds": 0.01
+  }
+ },
+ "fb33858d445e1870964a3ea99d2c2049147e64c633cd89aa09330b8322de8b91|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-9/par-3",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Unternehmen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 4.65,
+   "prompt_tokens": 597,
+   "output_tokens": 61,
+   "load_seconds": 0.01
+  }
+ },
+ "fb76409e7f81a1cb52567a120419683b6c11eb94c3ceea03bfda19347bf9d7d3|qwen3:4b|v1": {
+  "act": "eu-2015-2120/2024-05-15_de",
+  "address": "art-5/par-1",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "nationalen Regulierungsbehörden",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 6.64,
+   "prompt_tokens": 812,
+   "output_tokens": 65,
+   "load_seconds": 0.01
+  }
+ },
+ "fb932f49b6528e3cf57e5b84855ab31b0a2fbc3d040ade5b776a94499887965f|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-2/par-2/pt-11/pt-b",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Unternehmen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": false,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 4.06,
+   "prompt_tokens": 585,
+   "output_tokens": 61,
+   "load_seconds": 0.01
+  }
+ },
+ "fc397dd27bc3765b402aff1c6a42122bca65b0944494160493e598f39d71266d|qwen3:4b|v1": {
+  "act": "de-burlg/2013-04-20_de",
+  "address": "art-13/par-2",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Arbeitnehmer",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 5.32,
+   "prompt_tokens": 643,
+   "output_tokens": 59,
+   "load_seconds": 0.01
+  }
+ },
+ "fe245bf4409b7e36fb71f5b265d745504e67a608caf5adc6c383ba178a4cd8a9|qwen3:4b|v1": {
+  "act": "de-lksg/2021-07-16_de",
+  "address": "art-3/par-1/pt-5",
+  "answer": {
+   "role": "obligation",
+   "addressees": [
+    {
+     "name": "Unternehmen",
+     "type": "regulated"
+    }
+   ],
+   "addressee_explicit": true,
+   "kind": "duty"
+  },
+  "stats": {
+   "seconds": 4.49,
+   "prompt_tokens": 684,
+   "output_tokens": 59,
+   "load_seconds": 0.01
+  }
+ }
+}

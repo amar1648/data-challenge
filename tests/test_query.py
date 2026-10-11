@@ -64,6 +64,30 @@ class Rules(unittest.TestCase):
         tag_units(units)
         self.assertNotIn("roles", units[1].tags)
 
+    def test_readings_of_the_model_answer(self):
+        units = _unit("art-1/par-1", "Der Arbeitgeber ist verpflichtet, Urlaub zu gewähren.")
+        tag_units(units)
+        units[1].tags["model"] = {
+            "role": "none", "addressees": [], "addressee_explicit": False, "kind": "none",
+            "model": "test", "prompt_version": "v0",
+        }
+        self.assertEqual(len(query(units, "obligations", "rules")), 1)
+        self.assertEqual(query(units, "obligations", "combined"), [])  # candidate: the model decides
+        units[1].tags["model"].update(role="obligation", kind="none")
+        hit = query(units, "obligations", "combined")[0]
+        self.assertEqual(hit["addressees"], [{"name": "unbestimmt", "type": "unknown", "explicit": False}])
+        self.assertEqual(hit["kind"], "duty")  # kind stays with the rules
+
+    def test_combined_ignores_model_answers_outside_the_candidates(self):
+        units = _unit("art-1/par-1", "Der Urlaub beträgt jährlich mindestens 24 Werktage.")
+        tag_units(units)
+        units[1].tags["model"] = {
+            "role": "obligation", "addressees": [{"name": "Arbeitgeber", "type": "regulated"}],
+            "addressee_explicit": False, "kind": "duty", "model": "test", "prompt_version": "v0",
+        }
+        self.assertEqual(query(units, "obligations", "combined"), [])
+        self.assertEqual(query(units, "obligations", "model")[0]["addressees"][0]["name"], "Arbeitgeber")
+
     def test_query_only_reads_tags(self):
         units = _unit("art-1/par-1", "Der Arbeitgeber ist verpflichtet, Urlaub zu gewähren.")
         self.assertEqual(query(units, "obligations"), [])
