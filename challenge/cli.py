@@ -7,16 +7,16 @@ from pathlib import Path
 
 from challenge import de_gii, eurlex_html
 from challenge.diff import diff, german_summary
-from challenge.lookup import lookup
-from challenge.model import Act, Unit, write_act
+from challenge.lookup import latest_version, lookup
+from challenge.query import query, render
+from challenge.tagging import tag_units
+from challenge.model import Act, Unit, read_act, write_act
 from challenge.samples import (
     EU_CONSOLIDATED,
     EU_ORIGINAL,
     ROOT,
-    describe_xml,
     german_acts,
     iter_samples,
-    resolve_act,
 )
 
 OUTPUT = ROOT / "output"
@@ -46,6 +46,8 @@ def main() -> None:
         required=True,
         choices=("applicability", "obligations"),
     )
+    query.add_argument("--lang", default="de", help="Sprachfassung, Standard: de")
+    query.add_argument("--json", action="store_true", help="Treffer als JSON ausgeben")
 
     diff = sub.add_parser("diff", help="Zwei Stände gegenüberstellen")
     diff.add_argument("--from", dest="source", required=True)
@@ -57,7 +59,7 @@ def main() -> None:
     elif args.command == "lookup":
         lookup_cmd(args.act, args.ref, args.lang)
     elif args.command == "query":
-        query_cmd(args.act, args.question)
+        query_cmd(args.act, args.question, args.lang, args.json)
     elif args.command == "diff":
         diff_cmd(args.source, args.target)
 
@@ -76,6 +78,7 @@ def prepare() -> None:
 
 
 def _write(act: Act, units: list[Unit]) -> None:
+    tag_units(units)
     target = write_act(OUTPUT, act, units)
     print(f"geschrieben   {target.relative_to(ROOT)} ({len(units)} Einheiten)")
 
@@ -84,15 +87,13 @@ def lookup_cmd(act_id: str, ref: str, language: str) -> None:
     print(lookup(OUTPUT, act_id, ref, language))
 
 
-def query_cmd(act_id: str, question: str) -> None:
-    path = resolve_act(act_id)
-    _pending(
-        "query soll Treffer mit Adresse und Textstück liefern, nicht den ganzen Akt.\n"
-        f"Frage: {question}.\n"
-        "Ob dafür ein Modell nötig ist, und welches, entscheidest du. "
-        "Dieser Stub ruft keines auf.",
-        [describe_xml(path)],
-    )
+def query_cmd(act_id: str, question: str, language: str, as_json: bool) -> None:
+    act, units = read_act(latest_version(OUTPUT, act_id, language))
+    hits = query(units, question)
+    if as_json:
+        print(json.dumps({"act": act.__dict__, "question": question, "hits": hits}, ensure_ascii=False, indent=2))
+    else:
+        print(render(act, question, hits))
 
 
 def diff_cmd(source: str, target: str) -> None:
@@ -111,13 +112,3 @@ def _parse_source(value: str) -> tuple[Act, list[Unit]]:
     if path.suffix == ".xml":
         return de_gii.parse(path, f"de-{path.stem}")
     raise SystemExit(f"Unbekanntes Format: {path.name} (erwartet .html oder .xml)")
-
-
-def _pending(task: str, loaded: list[str]) -> None:
-    print("Nicht implementiert.")
-    print()
-    print(task)
-    print()
-    print("Gelesen:")
-    for line in loaded:
-        print(f"- {line}")

@@ -1,0 +1,313 @@
+{
+  "act": "de-burlg",
+  "version": "2013-04-20",
+  "language": "de",
+  "match": "A hit counts for a gold entry only if it is that unit or a descendant of it; ancestors do not count. Hits on borderline entries (or their descendants) are not scored.",
+  "applicability": [
+    {
+      "address": "art-1/par-1",
+      "reason": "„Jeder Arbeitnehmer hat … Anspruch auf bezahlten Erholungsurlaub“: persönlicher Anwendungsbereich (alle Arbeitnehmer)."
+    },
+    {
+      "address": "art-2/par-1",
+      "reason": "Überschrift „Geltungsbereich“; „Arbeitnehmer im Sinne des Gesetzes sind Arbeiter und Angestellte sowie die zu ihrer Berufsausbildung Beschäftigten“, dazu arbeitnehmerähnliche Personen."
+    },
+    {
+      "address": "art-12/par-1",
+      "reason": "Erweitert den Kreis auf „die in Heimarbeit Beschäftigten und die ihnen … Gleichgestellten“; Nr. 1, 4, 5 nennen Heimarbeiter, Hausgewerbetreibende, Zwischenmeister."
+    }
+  ],
+  "obligations": [
+    {
+      "address": "art-1/par-1",
+      "addressees": [
+        {
+          "name": "Arbeitgeber",
+          "type": "regulated"
+        }
+      ],
+      "addressee_explicit": false,
+      "kind": "duty",
+      "reason": "Anspruch des Arbeitnehmers auf bezahlten Erholungsurlaub; die Kernpflicht des Arbeitgebers folgt aus diesem Anspruch."
+    },
+    {
+      "address": "art-3/par-1",
+      "addressees": [
+        {
+          "name": "Arbeitgeber",
+          "type": "regulated"
+        }
+      ],
+      "addressee_explicit": false,
+      "kind": "duty",
+      "reason": "„Der Urlaub beträgt jährlich mindestens 24 Werktage“: Mindestumfang der Urlaubsgewährung."
+    },
+    {
+      "address": "art-5/par-1",
+      "addressees": [
+        {
+          "name": "Arbeitgeber",
+          "type": "regulated"
+        }
+      ],
+      "addressee_explicit": false,
+      "kind": "duty",
+      "reason": "„Anspruch auf ein Zwölftel des Jahresurlaubs … hat der Arbeitnehmer“ in den Fällen a bis c: Teilurlaub ist zu gewähren."
+    },
+    {
+      "address": "art-5/par-2",
+      "addressees": [
+        {
+          "name": "Arbeitgeber",
+          "type": "regulated"
+        }
+      ],
+      "addressee_explicit": false,
+      "kind": "duty",
+      "reason": "„sind auf volle Urlaubstage aufzurunden“."
+    },
+    {
+      "address": "art-6/par-2",
+      "addressees": [
+        {
+          "name": "Arbeitgeber",
+          "type": "regulated"
+        }
+      ],
+      "addressee_explicit": true,
+      "kind": "duty",
+      "reason": "„Der Arbeitgeber ist verpflichtet, … eine Bescheinigung … auszuhändigen“."
+    },
+    {
+      "address": "art-7/par-1",
+      "addressees": [
+        {
+          "name": "Arbeitgeber",
+          "type": "regulated"
+        }
+      ],
+      "addressee_explicit": false,
+      "kind": "duty",
+      "reason": "„sind die Urlaubswünsche des Arbeitnehmers zu berücksichtigen“; „Der Urlaub ist zu gewähren, wenn …“."
+    },
+    {
+      "address": "art-7/par-2",
+      "addressees": [
+        {
+          "name": "Arbeitgeber",
+          "type": "regulated"
+        }
+      ],
+      "addressee_explicit": false,
+      "kind": "duty",
+      "reason": "„Der Urlaub ist zusammenhängend zu gewähren“; „so muß einer der Urlaubsteile mindestens zwölf … Werktage umfassen“."
+    },
+    {
+      "address": "art-7/par-3",
+      "addressees": [
+        {
+          "name": "Arbeitgeber",
+          "type": "regulated"
+        },
+        {
+          "name": "Arbeitnehmer",
+          "type": "regulated"
+        }
+      ],
+      "addressee_explicit": false,
+      "kind": "duty",
+      "reason": "„Der Urlaub muß im laufenden Kalenderjahr gewährt und genommen werden“; Teilurlaub „ist … zu übertragen“."
+    },
+    {
+      "address": "art-7/par-4",
+      "addressees": [
+        {
+          "name": "Arbeitgeber",
+          "type": "regulated"
+        }
+      ],
+      "addressee_explicit": false,
+      "kind": "duty",
+      "reason": "„so ist er abzugelten“ bei Beendigung des Arbeitsverhältnisses."
+    },
+    {
+      "address": "art-8/par-1",
+      "addressees": [
+        {
+          "name": "Arbeitnehmer",
+          "type": "regulated"
+        }
+      ],
+      "addressee_explicit": true,
+      "kind": "duty",
+      "reason": "„darf der Arbeitnehmer keine dem Urlaubszweck widersprechende Erwerbstätigkeit leisten“."
+    },
+    {
+      "address": "art-9/par-1",
+      "addressees": [
+        {
+          "name": "Arbeitgeber",
+          "type": "regulated"
+        }
+      ],
+      "addressee_explicit": false,
+      "kind": "duty",
+      "reason": "Durch ärztliches Zeugnis nachgewiesene Krankheitstage „werden auf den Jahresurlaub nicht angerechnet“."
+    },
+    {
+      "address": "art-10/par-1",
+      "addressees": [
+        {
+          "name": "Arbeitgeber",
+          "type": "regulated"
+        }
+      ],
+      "addressee_explicit": false,
+      "kind": "duty",
+      "reason": "Vorsorge- und Rehamaßnahmen „dürfen nicht auf den Urlaub angerechnet werden“."
+    },
+    {
+      "address": "art-11/par-1",
+      "addressees": [
+        {
+          "name": "Arbeitgeber",
+          "type": "regulated"
+        }
+      ],
+      "addressee_explicit": false,
+      "kind": "duty",
+      "reason": "Bemessung des Urlaubsentgelts; „ist von dem erhöhten Verdienst auszugehen“; Sachbezüge „sind … in bar abzugelten“."
+    },
+    {
+      "address": "art-11/par-2",
+      "addressees": [
+        {
+          "name": "Arbeitgeber",
+          "type": "regulated"
+        }
+      ],
+      "addressee_explicit": false,
+      "kind": "duty",
+      "reason": "„Das Urlaubsentgelt ist vor Antritt des Urlaubs auszuzahlen“."
+    },
+    {
+      "address": "art-12/par-1/pt-1",
+      "addressees": [
+        {
+          "name": "Auftraggeber",
+          "type": "regulated"
+        },
+        {
+          "name": "Zwischenmeister",
+          "type": "regulated"
+        }
+      ],
+      "addressee_explicit": true,
+      "kind": "duty",
+      "reason": "Heimarbeiter „erhalten von ihrem Auftraggeber oder … Zwischenmeister … ein Urlaubsentgelt von 9,1 vom Hundert“."
+    },
+    {
+      "address": "art-12/par-1/pt-3",
+      "addressees": [
+        {
+          "name": "Auftraggeber",
+          "type": "regulated"
+        },
+        {
+          "name": "Zwischenmeister",
+          "type": "regulated"
+        }
+      ],
+      "addressee_explicit": false,
+      "kind": "duty",
+      "reason": "Urlaubsentgelt „soll erst bei der letzten Entgeltzahlung vor Antritt des Urlaubs ausgezahlt werden“."
+    },
+    {
+      "address": "art-12/par-1/pt-4",
+      "addressees": [
+        {
+          "name": "Auftraggeber",
+          "type": "regulated"
+        },
+        {
+          "name": "Zwischenmeister",
+          "type": "regulated"
+        }
+      ],
+      "addressee_explicit": true,
+      "kind": "duty",
+      "reason": "Hausgewerbetreibende „erhalten von ihrem Auftraggeber oder … Zwischenmeister … einen Betrag von 9,1 vom Hundert“."
+    },
+    {
+      "address": "art-12/par-1/pt-5",
+      "addressees": [
+        {
+          "name": "Auftraggeber",
+          "type": "regulated"
+        }
+      ],
+      "addressee_explicit": true,
+      "kind": "duty",
+      "reason": "Zwischenmeister „haben gegen ihren Auftraggeber Anspruch auf die … zu zahlenden Beträge“."
+    },
+    {
+      "address": "art-12/par-1/pt-6",
+      "addressees": [
+        {
+          "name": "Auftraggeber",
+          "type": "regulated"
+        },
+        {
+          "name": "Zwischenmeister",
+          "type": "regulated"
+        }
+      ],
+      "addressee_explicit": false,
+      "kind": "duty",
+      "reason": "„Die Beträge … sind gesondert im Entgeltbeleg auszuweisen“."
+    }
+  ],
+  "borderline": [
+    {
+      "address": "art-13/par-1",
+      "question": "obligations",
+      "reason": "Unabdingbarkeit: „kann … nicht zuungunsten des Arbeitnehmers abgewichen werden“ – Schranke für Vereinbarungen, keine Handlungspflicht."
+    },
+    {
+      "address": "art-5/par-3",
+      "question": "obligations",
+      "reason": "„kann das … Urlaubsentgelt nicht zurückgefordert werden“: Ausschluss eines Rückforderungsrechts, keine Handlungspflicht."
+    },
+    {
+      "address": "art-12/par-1/pt-2",
+      "question": "obligations",
+      "reason": "„brauchen … nur so viele Urlaubstage gegeben zu werden“: begrenzt eine Pflicht, statt eine aufzustellen."
+    },
+    {
+      "address": "art-12/par-1/pt-8",
+      "question": "obligations",
+      "reason": "Verweist für die Beträge auf §§ 23 bis 25, 27, 28 HAG (Entgeltschutz); die Folgen stehen im HAG, nicht hier."
+    },
+    {
+      "address": "art-13/par-2",
+      "question": "applicability",
+      "reason": "Baugewerbe: Tarifverträge dürfen weiter abweichen; ändert den Inhalt, nicht den Adressatenkreis."
+    },
+    {
+      "address": "art-13/par-3",
+      "question": "applicability",
+      "reason": "Deutsche Bahn und Nachfolgeunternehmen der Bundespost: Abweichung vom Kalenderjahr per Tarifvertrag."
+    },
+    {
+      "address": "art-14/par-1",
+      "question": "applicability",
+      "reason": "Räumliche Geltung in Berlin (Berlin-Klausel, historisch)."
+    },
+    {
+      "address": "art-15/par-2",
+      "question": "applicability",
+      "reason": "Landesrechtliche Urlaubsregeln für Opfer des Nationalsozialismus und Menschen mit Behinderung bleiben in Kraft."
+    }
+  ],
+  "notes": "BUrlG enthält keine Sanktions- oder Bußgeldvorschrift. Die Folgen einer nicht erfüllten Pflicht stehen nur mittelbar im Text: Abgeltung (§ 7 Abs. 4), keine Anrechnung (§§ 9, 10), Unwirksamkeit abweichender Vereinbarungen (§ 13 Abs. 1)."
+}

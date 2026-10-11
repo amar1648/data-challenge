@@ -1,0 +1,363 @@
+{
+  "act": "eu-2015-2120",
+  "version": "2024-05-15",
+  "language": "de",
+  "match": "A hit counts for a gold entry only if it is that unit or a descendant of it; ancestors do not count. Hits on borderline entries (or their descendants) are not scored.",
+  "applicability": [
+    {
+      "address": "art-1/par-1",
+      "reason": "Überschrift „Gegenstand und Geltungsbereich“; Regeln für die Behandlung des Verkehrs „bei der Bereitstellung von Internetzugangsdiensten“ und die Rechte der Endnutzer."
+    },
+    {
+      "address": "art-1/par-2",
+      "reason": "Gegenstand: Mechanismus für Endkundenpreise bei Roamingdiensten (betrifft Roaminganbieter; die Durchführung in Art. 7 fehlt in der Datei)."
+    },
+    {
+      "address": "art-1/par-3",
+      "reason": "Gegenstand: Regeln gegen überhöhte Preise für nummerngebundene interpersonelle Kommunikation von Verbrauchern in andere Mitgliedstaaten."
+    },
+    {
+      "address": "art-2/par-1",
+      "reason": "Überschrift „Begriffsbestimmungen“; übernimmt die Begriffe aus Art. 2 RL 2002/21/EG (dort u. a. Endnutzer, Verbraucher)."
+    },
+    {
+      "address": "art-2/par-1/pt-1",
+      "reason": "Definiert den Adressaten „Anbieter öffentlicher elektronischer Kommunikation“."
+    },
+    {
+      "address": "art-2/par-1/pt-2",
+      "reason": "„Internetzugangsdienst“: bestimmt, wer Anbieter von Internetzugangsdiensten ist (Hauptadressat von Art. 3 und 4)."
+    },
+    {
+      "address": "art-2/par-1/pt-3",
+      "reason": "„Regulierte intra-EU-Kommunikation“: bestimmt die Anbieter, an die sich Art. 5a richtet."
+    },
+    {
+      "address": "art-2/par-1/pt-4",
+      "reason": "„Nummerngebundener interpersoneller Kommunikationsdienst“: Grundbegriff für Nr. 3, 6 und 7."
+    },
+    {
+      "address": "art-2/par-1/pt-6",
+      "reason": "„inländische Kommunikation“: Bezugsgröße der Pflicht in Art. 5a Abs. 7."
+    },
+    {
+      "address": "art-2/par-1/pt-7",
+      "reason": "„Intra-EU-Kommunikation“: Bezugsgröße der Pflicht in Art. 5a Abs. 7."
+    }
+  ],
+  "obligations": [
+    {
+      "address": "art-3/par-2",
+      "addressees": [
+        {
+          "name": "Anbieter von Internetzugangsdiensten",
+          "type": "regulated"
+        }
+      ],
+      "addressee_explicit": true,
+      "kind": "duty",
+      "reason": "Vereinbarungen und Geschäftspraxis der Anbieter „dürfen die Ausübung der Rechte der Endnutzer gemäß Absatz 1 nicht einschränken“."
+    },
+    {
+      "address": "art-3/par-3",
+      "addressees": [
+        {
+          "name": "Anbieter von Internetzugangsdiensten",
+          "type": "regulated"
+        }
+      ],
+      "addressee_explicit": true,
+      "kind": "duty",
+      "reason": "„behandeln den gesamten Verkehr … gleich“; Maßnahmen „müssen … transparent, nichtdiskriminierend und verhältnismäßig sein“; „dürfen sie nicht … blockieren, verlangsamen …“ außer in den Fällen a bis c."
+    },
+    {
+      "address": "art-3/par-4",
+      "addressees": [
+        {
+          "name": "Anbieter von Internetzugangsdiensten",
+          "type": "regulated"
+        }
+      ],
+      "addressee_explicit": false,
+      "kind": "duty",
+      "reason": "Beim Verkehrsmanagement „dürfen personenbezogene Daten nur verarbeitet werden, wenn …“; Verarbeitung „muss nach Maßgabe der Richtlinie 95/46/EG … erfolgen“."
+    },
+    {
+      "address": "art-3/par-5",
+      "addressees": [
+        {
+          "name": "Anbieter öffentlicher elektronischer Kommunikation",
+          "type": "regulated"
+        }
+      ],
+      "addressee_explicit": true,
+      "kind": "duty",
+      "reason": "„dürfen diese anderen Dienste nur dann anbieten …, wenn die Netzkapazität ausreicht“; sie „dürfen nicht als Ersatz für Internetzugangsdienste nutzbar sein“."
+    },
+    {
+      "address": "art-4/par-1",
+      "addressees": [
+        {
+          "name": "Anbieter von Internetzugangsdiensten",
+          "type": "regulated"
+        }
+      ],
+      "addressee_explicit": true,
+      "kind": "duty",
+      "reason": "„stellen sicher, dass ein Vertrag … mindestens folgende Angaben enthält“ (a bis e); „veröffentlichen die … Informationen“."
+    },
+    {
+      "address": "art-4/par-2",
+      "addressees": [
+        {
+          "name": "Anbieter von Internetzugangsdiensten",
+          "type": "regulated"
+        }
+      ],
+      "addressee_explicit": true,
+      "kind": "duty",
+      "reason": "„richten transparente, einfache und effiziente Verfahren zum Umgang mit Beschwerden … ein“."
+    },
+    {
+      "address": "art-4/par-4",
+      "addressees": [
+        {
+          "name": "Anbieter von Internetzugangsdiensten",
+          "type": "regulated"
+        }
+      ],
+      "addressee_explicit": false,
+      "kind": "consequence",
+      "reason": "Erhebliche Abweichungen von der angegebenen Leistung gelten „als nicht vertragskonforme Leistung“ und lösen die Rechtsbehelfe der Verbraucher aus."
+    },
+    {
+      "address": "art-5/par-1",
+      "addressees": [
+        {
+          "name": "Nationale Regulierungsbehörden",
+          "type": "authority"
+        }
+      ],
+      "addressee_explicit": true,
+      "kind": "duty",
+      "reason": "„überwachen genau und stellen sicher, dass Artikel 3 und 4 … eingehalten werden“; „veröffentlichen jährlich Berichte“."
+    },
+    {
+      "address": "art-5/par-2",
+      "addressees": [
+        {
+          "name": "Anbieter öffentlicher elektronischer Kommunikation",
+          "type": "regulated"
+        }
+      ],
+      "addressee_explicit": true,
+      "kind": "duty",
+      "reason": "„legen auf Ersuchen der nationalen Regulierungsbehörde dieser Informationen … vor“; „übermitteln die angeforderten Informationen gemäß dem … verlangten Zeitplan“."
+    },
+    {
+      "address": "art-5/par-3",
+      "addressees": [
+        {
+          "name": "GEREK",
+          "type": "authority"
+        }
+      ],
+      "addressee_explicit": true,
+      "kind": "duty",
+      "reason": "„gibt das GEREK spätestens bis zum 30. August 2016 … Leitlinien … heraus“."
+    },
+    {
+      "address": "art-5a/par-1",
+      "addressees": [
+        {
+          "name": "Anbieter regulierter intra-EU-Kommunikation",
+          "type": "regulated"
+        }
+      ],
+      "addressee_explicit": false,
+      "kind": "duty",
+      "reason": "Endkundenpreise „dürfen … 0,19 EUR pro Minute für Anrufe und 0,06 EUR je SMS nicht überschreiten“."
+    },
+    {
+      "address": "art-5a/par-2",
+      "addressees": [
+        {
+          "name": "Anbieter regulierter intra-EU-Kommunikation",
+          "type": "regulated"
+        }
+      ],
+      "addressee_explicit": true,
+      "kind": "duty",
+      "reason": "„unterrichtet der Anbieter … diese darüber, welcher Art die Vorteile sind, die sie dadurch verlieren würden“."
+    },
+    {
+      "address": "art-5a/par-3",
+      "addressees": [
+        {
+          "name": "Anbieter regulierter intra-EU-Kommunikation",
+          "type": "regulated"
+        }
+      ],
+      "addressee_explicit": false,
+      "kind": "duty",
+      "reason": "Ohne bestätigte Wahl „erhalten Verbraucher … automatisch die in Absatz 1 vorgesehenen Tarife“."
+    },
+    {
+      "address": "art-5a/par-4",
+      "addressees": [
+        {
+          "name": "Anbieter regulierter intra-EU-Kommunikation",
+          "type": "regulated"
+        }
+      ],
+      "addressee_explicit": true,
+      "kind": "duty",
+      "reason": "Kostenfreier Tarifwechsel, „wobei die Anbieter sicherstellen, dass ein solcher Wechsel keine Bedingungen … nach sich zieht“."
+    },
+    {
+      "address": "art-5a/par-6",
+      "addressees": [
+        {
+          "name": "Nationale Regulierungsbehörden",
+          "type": "authority"
+        },
+        {
+          "name": "GEREK",
+          "type": "authority"
+        }
+      ],
+      "addressee_explicit": true,
+      "kind": "duty",
+      "reason": "„überwachen den Markt … und erstatten der Kommission Bericht“; Behörde „bestimmt … das maximale Preisniveau“; „Das GEREK veröffentlicht Leitlinien“."
+    },
+    {
+      "address": "art-5a/par-7",
+      "addressees": [
+        {
+          "name": "Anbieter regulierter intra-EU-Kommunikation",
+          "type": "regulated"
+        },
+        {
+          "name": "Kommission",
+          "type": "authority"
+        }
+      ],
+      "addressee_explicit": true,
+      "kind": "duty",
+      "reason": "„Ab dem 1. Januar 2029 berechnen Anbieter … keine unterschiedlichen Endkundenpreise“; „erlässt die Kommission … einen Durchführungsrechtsakt“."
+    },
+    {
+      "address": "art-5a/par-8",
+      "addressees": [
+        {
+          "name": "Kommission",
+          "type": "authority"
+        }
+      ],
+      "addressee_explicit": true,
+      "kind": "duty",
+      "reason": "„erlässt die Kommission … bis zum 31. Dezember 2024 einen Durchführungsrechtsakt über die angemessene Nutzung“."
+    },
+    {
+      "address": "art-5a/par-9",
+      "addressees": [
+        {
+          "name": "Kommission",
+          "type": "authority"
+        }
+      ],
+      "addressee_explicit": true,
+      "kind": "duty",
+      "reason": "„Bis zum 30. Juni 2027 überprüft die Kommission … den vorliegenden Artikel“."
+    },
+    {
+      "address": "art-5a/par-11",
+      "addressees": [
+        {
+          "name": "Anbieter regulierter intra-EU-Kommunikation",
+          "type": "regulated"
+        },
+        {
+          "name": "GEREK",
+          "type": "authority"
+        },
+        {
+          "name": "Kommission",
+          "type": "authority"
+        }
+      ],
+      "addressee_explicit": true,
+      "kind": "duty",
+      "reason": "„sind Anbieter verpflichtet zusammenzuarbeiten“; „erhebt das GEREK regelmäßig einschlägige Informationen“; „Die Kommission veröffentlicht diese Daten“."
+    },
+    {
+      "address": "art-6/par-1",
+      "addressees": [
+        {
+          "name": "Mitgliedstaaten",
+          "type": "authority"
+        }
+      ],
+      "addressee_explicit": true,
+      "kind": "sanction",
+      "reason": "„erlassen für Verstöße gegen die Artikel 3, 4 und 5“ bzw. „gegen Artikel 5a Vorschriften über Sanktionen“; Sanktionen „müssen wirksam, verhältnismäßig und abschreckend sein“."
+    },
+    {
+      "address": "art-9/par-1",
+      "addressees": [
+        {
+          "name": "Kommission",
+          "type": "authority"
+        }
+      ],
+      "addressee_explicit": true,
+      "kind": "duty",
+      "reason": "„Die Kommission überprüft bis zum 30. April 2019 die Artikel 3, 4, 5 und 6 … und erstattet … Bericht“."
+    },
+    {
+      "address": "art-10/par-3",
+      "addressees": [
+        {
+          "name": "Mitgliedstaaten",
+          "type": "authority"
+        }
+      ],
+      "addressee_explicit": true,
+      "kind": "duty",
+      "reason": "„Die betreffenden Mitgliedstaaten teilen der Kommission diese Maßnahmen bis zum 30. April 2016 mit“."
+    }
+  ],
+  "borderline": [
+    {
+      "address": "art-2/par-1/pt-5",
+      "question": "applicability",
+      "reason": "„nummernunabhängiger interpersoneller Kommunikationsdienst“ wird nur in den Prüfkriterien von Art. 5a Abs. 10 Buchst. e verwendet und begründet keinen Adressaten."
+    },
+    {
+      "address": "art-10/par-2",
+      "question": "applicability",
+      "reason": "Zeitliche Geltung („gilt ab dem 30. April 2016“), nicht der Adressatenkreis."
+    },
+    {
+      "address": "art-10/par-5",
+      "question": "applicability",
+      "reason": "Zeitliche Geltung von Art. 5a bis 30. Juni 2032."
+    },
+    {
+      "address": "art-4/par-3",
+      "question": "obligations",
+      "reason": "Zusätzliche nationale Anforderungen „müssen der vorliegenden Verordnung … entsprechen“: eher Rahmen für Mitgliedstaaten als eine Pflicht."
+    },
+    {
+      "address": "art-5a/par-5",
+      "question": "obligations",
+      "reason": "Obergrenzen in Fremdwährung „sind … festzulegen“, ohne genannten Adressaten."
+    },
+    {
+      "address": "art-5a/par-10",
+      "question": "obligations",
+      "reason": "Inhalt der Bewertung durch die Kommission (a bis f): beschreibt den Gegenstand einer Pflicht aus Abs. 9, keine eigene Pflicht."
+    }
+  ],
+  "notes": "Sanktionen stehen in Art. 6. Er knüpft an Verstöße gegen Art. 3, 4, 5 und 5a an und verpflichtet die Mitgliedstaaten, nicht die Anbieter direkt. Die vertragliche Folge für Internetzugangsanbieter steht in Art. 4 Abs. 4."
+}
